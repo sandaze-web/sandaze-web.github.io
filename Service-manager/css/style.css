@@ -709,6 +709,7 @@ label {
 
 .contact-us .contact-us-inner .form-contact-us form {
     display: inline-block;
+    margin: 5px;
 }
 
 .contact-us .contact-us-inner .form-contact-us .form-contact-us__name,
@@ -741,8 +742,6 @@ label {
 .contact-us .contact-us-inner .form-contact-us .form-contact-us__message {}
 
 .contact-us .contact-us-inner .form-contact-us .form-contact-us__message textarea {
-    /* width: 700px; */
-    margin-right: 40px;
     width: 100%;
     border: none;
     border: 1px solid #061e37;
@@ -933,6 +932,15 @@ label {
         display: none;
     }
 
+    .services-inner .statistics {
+        width: 90%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
     .contact-us .contact-us-inner .form-contact-us .form-contact-us__name input,
     .contact-us .contact-us-inner .form-contact-us .form-contact-us__email-phone input {
         display: flex;
@@ -1024,10 +1032,23 @@ label {
         }
 
         .about-us-inner .top-about-us .customers {
-            margin: 10px;
+            margin-left: 10px;
         }
 
         .main-statistics-content__logo {
             display: none;
+        }
+
+        .section-easy-useful .section-easy-useful-inner .statistic .statistic-box {
+            display: flex;
+            flex-grow: 1;
+            padding-left: 50px;
+            align-items: center;
+            height: 150px;
+            justify-content: left;
+        }
+
+        .contact-us-inner {
+            justify-content: center;
         }
     }
