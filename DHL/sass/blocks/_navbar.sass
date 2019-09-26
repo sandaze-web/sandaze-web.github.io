@@ -1,0 +1,80 @@
+.navbar
+    &-wrap
+        display: flex
+        justify-content: space-between
+        color: white
+        min-height: 50px
+        align-items: center
+    &-top
+        background-color: $text-color
+        &__language
+            color: white
+            text-decoration: none
+            &::after
+                content: '\f078'
+                font-family: "FontAwesome"
+                margin-left: 5px
+                letter-spacing: 0.42px
+        &__contact-us
+            display: flex
+            align-items: center
+        &__contact-us a
+            color: white
+            font-size: 14px
+            margin-left: 30px
+            +poppinsB
+        &__item-first::before
+            content: '\f0c0'
+            font-family: "FontAwesome"
+            margin-right: 5px
+        &__item-second::after
+            content: '\f0c0'
+            font-family: "FontAwesome"
+            margin-left: 5px
+.navbar
+    &__button-search
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 50px
+        width: 50px
+        background-color: $text-color
+        border: none
+        border-radius: 50px
+        color: white
+        box-shadow: 0 10px 18px rgba(186, 0, 0, 0.4)
+    &-bottom
+        background-color: #ffcc00
+        &-wrap
+            display: flex
+            justify-content: space-between
+            align-items: center
+            // min-height: 120px
+    &-menu
+        display: flex
+        flex-wrap: wrap
+        &__link
+            display: flex
+            align-items: center
+            color: $text-color
+            margin-left: 50px
+            min-height: 120px
+            border-bottom: 4px solid transparent
+            &:hover
+                border-bottom: 4px solid red
+
+a.active
+    border-bottom: 4px solid red
+    +poppinsB
+
+@media screen and ( max-width: 1199px )
+    .navbar
+        &-menu
+            display: none
+        &__button-search
+            display: none
+@media screen and ( max-width: 768px)
+    .navbar
+        &-top
+            &__contact-us a:first-child
+                display: none

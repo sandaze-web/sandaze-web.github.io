@@ -1,0 +1,58 @@
+.delivery
+    &-inner
+    &-excellence
+        background-color: $text-color
+        padding: 100px 0
+        color: #fff
+    &__description
+        width: 100%
+        max-width: 740px
+    &-excellence .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__title
+        color: #fff
+        font-size: 30px
+        margin-bottom: 41px
+        text-transform: uppercase
+    &__subtitle
+        font-size: 16px
+        letter-spacing: 0.48px
+        line-height: 24px
+    &__button button
+        padding: 21px 31px
+        color: #fff
+        background-color: #a00000
+        text-transform: uppercase
+        border: none
+        border-radius: 25px
+.postwarders
+    padding: 70px 0
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__firm img
+        max-width: 233px
+    &__firm
+        padding: 40px 18px
+        border: 2px solid rgba(186, 0, 0, 0.1)
+        background-color: #f9f9f9
+        flex-basis: 20%
+        &:first-child
+            border: 2px solid #ba0000
+
+@media screen and ( max-width: 1199px )
+    .delivery
+        &-excellence .container
+            flex-direction: column
+            align-items: flex-start
+        &__button
+            margin-top: 20px
+    .postwarders
+        align-items: center
+        &__firm
+            margin-top: 10px
+@media screen and ( max-width: 768px )
+    .postwarders
+        justify-content: center
