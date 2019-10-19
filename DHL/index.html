@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -41,9 +42,16 @@
                             <a href="#" class="navbar-menu__link">Press</a>
                             <a href="#" class="navbar-menu__link">About</a>
                         </nav>
-                        <button class="navbar__button-search">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </button>
+                        <div class="navbar-wrap-buttons">
+                            <input type="text" id="input-search" class="navbar__input-search" placeholder="Search">
+                            <button class="navbar__button-search">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="navbar-burger-menu">
+                            <span class="navbar-burger"></span>
+                        </div>
+                        <!-- /.navbar-burger-menu -->
                     </div>
                 </div>
                 <!-- /.container -->
@@ -406,6 +414,9 @@
         </section>
         <!-- /.footer -->
     </main>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 </html>
