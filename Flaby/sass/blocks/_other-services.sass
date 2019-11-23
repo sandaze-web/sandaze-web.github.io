@@ -1,0 +1,45 @@
+.other-services
+    &-inner
+        padding-top: 54px
+    &__title
+        padding-bottom: 19px
+    &-box
+        display: flex
+        flex-wrap: wrap
+        padding-top: 133px
+        &__item
+            flex-basis: 33.33%
+            display: flex
+            align-self: flex-start
+            margin-bottom: 112px
+        &__img
+            align-self: flex-start
+        &__content
+            max-width: 250px
+            margin-left: 20px
+        &__title
+            color: $bold
+            font-size: 18px
+            font-weight: 400
+            +ralewaySemiBold
+            font-weight: 600
+            padding-bottom: 24px
+        &__subtitle
+            color: $grey
+            font-family: Raleway
+            font-size: 14px
+            font-weight: 600
+            line-height: 26px
+
+@media screen and ( max-width: 768px )
+    .other-services
+        &-box
+            &__item
+                flex-basis: 50%
+@media screen and ( max-width: 516px )
+    .other-services
+        &-box
+            justify-content: center
+            align-items: center
+            &__item
+                flex-basis: 100%

@@ -1,0 +1,64 @@
+.services
+    &-inner
+        text-align: center
+        padding-top: 90px
+    &__title
+        font-size: 18px
+        color: $grey
+        font-family: "Roboto Slab"
+        padding-bottom: 19px
+    &__subtitle
+        color: $bold
+        font-family: "Roboto Slab"
+        font-size: 24px
+        font-weight: bold
+        text-transform: uppercase
+        letter-spacing: 2.4px
+        margin: 0 auto
+        &::after
+            content: ''
+            display: block
+            margin: 0 auto
+            width: 30px
+            height: 2px
+            background-color: #2eb0ec
+            margin-top: 25px
+    &-box
+        display: flex
+        justify-content: space-between
+        padding-top: 109px
+        padding-bottom: 100px
+        &__item
+            margin-right: 10px
+        &__img
+            object-fit: contain
+            width: 105px
+            height: 105px
+        &__title
+            color: $bold
+            padding-bottom: 32px
+            padding-top: 45px
+            +ralewayB
+            font-weight: 700
+        &__subtitle
+            color: #7c7c7c
+            +ralewayB
+            font-size: 14px
+            line-height: 26px
+            font-weight: 500
+            max-width: 300px
+            margin: 0 auto
+@media screen and ( max-width: 768px )
+    .services
+        &-box
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            padding-top: 30px
+            &__item
+                margin-top: 20px
+            &__title
+                padding-top: 20px
+                padding-bottom: 15px
+            &__subtitle
+                max-width: 400px
