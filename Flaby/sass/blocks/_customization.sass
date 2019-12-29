@@ -1,0 +1,67 @@
+.customization
+    &-inner
+        display: flex
+    &-right,&-left
+        flex-basis: 50%
+    &-right
+        &__overtitle
+            color: $bold
+            opacity: 0.4
+            font-size: 22px
+            +ralewayB
+            font-weight: 400
+        &__title
+            color: $bold
+            +ralewayB
+            font-size: 32px
+            font-weight: 400
+            margin-top: 23px
+        &__subtitle
+            color: $grey
+            +ralewayB
+            font-size: 20px
+            font-weight: 500
+            line-height: 32px
+            margin-top: 36px
+    &-listing
+        padding-top: 37px
+        &__point
+            color: $grey
+            +ralewayB
+            margin-top: 25px
+            font-size: 14px
+            font-weight: 500
+            line-height: 30px
+            margin-left: 41px
+            position: relative
+            &::after, &::before
+                content: ''
+                position: absolute
+                left: -25px
+                top: 0
+                transform: translate(-100%,70%)
+                width: 12px
+                height: 12px
+                background-color: #66d4f4
+                border-radius: 50%
+            &::before
+                background-color: #96dbef
+                opacity: 0.5
+                width: 20px
+                height: 20px
+                top: 10px
+                transform: translate(-80%,-30%)
+        &__button
+            margin-top: 50px
+            border: none
+            outline: none
+            padding: 20px 29px
+            box-shadow: 0 10px 16px rgba(102, 212, 244, 0.3)
+            background-color: #66d4f4
+            border-radius: 25px
+            color: #ffffff
+            +ralewayB
+            font-size: 14px
+            font-weight: 700
+            text-transform: uppercase
+

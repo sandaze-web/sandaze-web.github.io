@@ -18,6 +18,38 @@
         position: relative
         background-color: #42a8f6
         overflow: hidden
+    &-burgerMenu
+        background-color: rgba(#007bda, 0.7) 
+        padding: 20px 10px
+        border-radius: 10px
+        cursor: pointer
+        display: none
+        &__line
+            position: relative
+            display: block
+            width: 25px
+            height: 3px
+            background-color: #fff
+            transition: 0.3s
+            &::after, &::before
+                content: ''
+                position: absolute
+                left: 0
+                top: 0
+                width: 25px
+                height: 3px
+                background-color: #fff
+                transition: 0.3s
+            &::before
+                transform: translateY(-8px)
+            &::after
+                transform: translateY(8px)
+        &__line.activeBurger
+            background-color: transparent
+            &::before
+                transform: rotate(-45deg)
+            &::after
+                transform: rotate(45deg)
     &-navbar
         display: flex
         justify-content: space-between
@@ -89,6 +121,8 @@
             position: relative
             display: flex
             justify-content: space-between
+            padding-top: 70px
+            margin-bottom: 20px
             z-index: 3
             &__button
                 width: 240px
@@ -111,7 +145,6 @@
                 &:nth-child(2)
                     color: #fff
                     background-color: #4894ce
-        
     &__place
         position: absolute
         top: 109px
@@ -154,11 +187,14 @@
             &-buttons
                 margin-top: 30px
                 flex-direction: column
+                padding-top: 0
                 &__button
                     margin-bottom: 15px
         &-navbar
             &__menu
                 display: none
+        &-burgerMenu
+            display: block
     .pencils
         display: none
 @media screen and ( max-width: 516px )
