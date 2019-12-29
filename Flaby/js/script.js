@@ -1,12 +1,14 @@
 $(document).ready(function () {
 
-//burgerMenu
+//burgerMenu with mobile menu
 
 {
 
 $('.header-burgerMenu').click(function (e) { 
     e.preventDefault();
     $('.header-burgerMenu__line').toggleClass('activeBurger');
+    $('.header-navbar__menu').toggleClass('activeMenu');
+    $('body').toggleClass('fixed');
 });
 
 }
