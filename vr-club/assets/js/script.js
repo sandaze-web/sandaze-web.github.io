@@ -29,7 +29,7 @@ $(document).ready(function () {
         $('.burger').click(e => { 
             e.preventDefault();
             $('.burger-menu').toggleClass('active');
-            $('.header-nav').toggleClass('active');
+            $('.header-navMob').toggleClass('active');
         });
     }
 });
