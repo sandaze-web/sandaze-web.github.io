@@ -1,0 +1,670 @@
+@import 'color'
+@import 'fonts'
+@import 'mixin'
+*, * p, h1,h2,h3,h4,h5,h6
+    @include resetMP
+body
+    @include resetMP
+    font-family: "InterRegular"
+    overflow-x: hidden
+.header_wrapper
+    background: linear-gradient(264.47deg, #2E43F0 29.39%, #6677FF 93.49%)
+.header
+    &__box
+        padding: 50px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-menu
+        &__item
+            @include resetLink
+            color: rgba(#fff, 0.7)
+            text-decoration: none
+            margin-right: 30px
+        &__active
+            color: #fff
+    &__button
+        @include mainButton
+        padding: 15px 30px
+        font-size: 20px
+.main-content
+    &-wrapper
+        display: flex
+    &__item
+        &:nth-child(1)
+            margin-right: 80px
+    &__title
+        color: #fff
+        text-transform: uppercase
+        font-size: 20px
+        font-weight: 600
+        letter-spacing: 0.1em
+        margin-bottom: 15px
+    &__subtitle
+        font-size: 61px
+        color: #fff
+        line-height: 120%
+        & span
+            font-family: 'InterBold'
+    &__line
+        background-color: #fff
+        height: 1px
+        max-width: 430px
+        margin: 25px 0
+    &__description
+        max-width: 490px
+        line-height: 160%
+        color: rgba(#fff, 0.7)
+        margin-bottom: 45px
+    &-buttonBx
+        & button
+            margin-right: 45px
+            &:nth-child(1)
+                @include mainButton 
+                padding: 15px 30px
+            &:nth-child(2)
+                @include mainButton 
+                background-color: transparent
+                border: 1px solid rgba(#fff, 0.3)
+                padding: 15px 30px
+                border-radius: 4px
+    &__img
+        // max-width: 100%
+        margin-right: -250px
+
+.mob
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background-color: rgba(#000, 0.7)
+    z-index: 20
+    &-menu
+        position: relative
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        transform: scaleX(0)
+        transform-origin: right center
+        animation: fadeIn .6s forwards
+        &__item
+            @include resetLink
+            text-transform: uppercase
+            font-size: 21px
+            &:last-child
+                @include mainButton
+                padding: 15px 30px
+        & i
+            position: absolute
+            right: 20px
+            top: 20px
+            font-size: 30px
+            color: #fff
+.mob.active
+    display: block
+.mob-button
+    display: flex
+    align-items: center
+    color: #fff
+    cursor: pointer
+    display: none
+    & i
+        margin-right: 10px
+        font-size: 18px
+        color: #fff
+.button-mob
+    cursor: pointer
+
+@keyframes fadeIn
+    0%
+        transform: scaleX(0)
+    100%
+        transform: scaleX(1)
+
+
+.sponsors
+    &-wrapper
+        padding-top: 120px
+        padding-bottom: 90px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        max-width: 1124px
+        margin: auto
+    &__item
+        flex-basis: 244px
+        margin: 15px
+        text-align: center
+        padding: 18px 48px
+        box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.08)
+        & img
+
+.transfer
+    padding-bottom: 60px
+    &-wrapper
+        display: flex
+    &-box
+        &:first-child
+            margin-right: 256px
+        &__item
+            position: relative
+            &-img
+                margin-left: calc(64px - 233px)
+            &-form
+                position: absolute
+                bottom: -36px
+        &__subtitle
+            text-transform: uppercase
+            color: rgba($main-button, 0.8)
+            font-family: 'InterBold'
+        &__title
+            font-size: 49px
+            font-family: 'InterBold'
+        &__description
+            margin-top: 20px
+            color: rgba(#05000B, 0.8)
+        &__button
+            @include mainButton
+            margin-top: 30px
+            padding: 15px 30px
+        &-chekBx
+            display: flex
+            &__item
+                display: flex
+                align-items: center
+                margin-right: 35px
+                margin-top: 29px
+                & p
+                    @include resetMP
+                    font-family: 'InterBold'
+                    margin-left: 15px
+
+    &-statistics
+        margin-bottom: 13px
+        margin-left: 100px
+        background-color: #fff
+        display: flex
+        padding: 20px 0
+        align-items: center
+        position: relative
+        width: 280px
+        justify-content: flex-end
+        filter: drop-shadow(15px 20px 30px rgba(3, 7, 37, 0.06))
+        border-radius: 7.69231px
+        & div, & p
+            margin-right: 38px
+        &__circle
+            position: absolute
+            left: 25px
+            padding: 10px
+            border-radius: 50%
+            background-color: #fff
+        &__name
+            color: rgba(60, 60, 67, 0.6)
+            @include resetMP
+        &__percent
+            @include resetMP
+            font-size: 13px
+            color: $main-color
+    &-transaction
+        padding: 27px 40px
+        background-color: #fff
+        box-shadow: 20px 30px 70px rgba(3, 7, 37, 0.06)
+        border-radius: 10px
+        &__title
+            font-size: 20.1118px
+            font-family: 'InterBold'
+            margin-bottom: 15px
+        &-users
+            display: flex
+            align-items: flex-end
+            text-align: center
+            &__item
+                margin-right: 12px
+                &:last-child
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    & i
+                        margin-bottom: 10px
+                        font-size: 24px
+                        color: $main-button
+        &-inputBx
+            display: flex
+            &__item
+                position: relative
+                & span
+                    position: absolute
+                    right: 20px
+                    top: 0
+                    transform: translateY(24%)
+                    color: #C7C7C7
+                    font-size: 20.1118px
+            & input
+                padding: 4px 10px
+                font-size: 23.9789px
+                max-width: 175px
+                font-weight: 300
+                margin-right: 10px
+                border: 1px solid #1F37FF
+                border-radius: 8px
+                outline: none
+            & button
+                @include mainButton
+                font-size: 11.1442px
+                border-radius: 4px
+                padding: 11px 18px
+                position: relative
+                &::after
+                    content: '\f054'
+                    font-family: "Font Awesome 5 Free"
+                    font-weight: 900
+                    margin-left: 6px
+
+.couting
+    &-wrapper
+        padding-top: 50px
+        padding-bottom: 290px
+        background: url("../img/couting/mockup.png")
+        background-repeat: no-repeat
+        background-size: cover
+    &-itemBx
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(256.5px, 256.5px))
+        // display: flex
+        justify-content: center
+        // align-items: center
+        grid-gap: 30px
+        grid-row-gap: 150px
+        &__item
+            width: 261px
+            background-color: #fff
+            box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.04)
+            padding: 95px 0 49px 0
+            text-align: center
+            position: relative
+            &:last-child
+                margin-right: 0
+            &::after
+                position: absolute
+                content: ''
+                background-color: #fff
+                width: 182px
+                height: 182px
+                transform: translate(22%, 50%) rotate(45deg)
+                box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.04)
+                bottom: 0
+                left: 0
+                
+
+        &__numeral
+            font-size: 55px
+            font-family: "InterBold"
+            color: $main-color
+            position: relative
+            z-index: 3
+        &__description
+            font-size: 20px
+            font-family: "InterBold"
+            white-space: nowrap
+            position: relative
+            z-index: 3
+.future
+    &-wrapper
+        background-color: $beige
+        padding: 85px 0 75px 0
+    &-box
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(275px, 360px))
+        grid-gap: 30px
+        justify-content: center
+        &__unique
+            &-subtitle
+                text-transform: uppercase
+                color: $main-button
+                font-size: 20px
+                margin-bottom: 15px
+            &-title
+                font-size: 31px
+                font-family: "InterBold"
+                margin-bottom: 20px
+            &-description
+                color: rgba(#05000B, 0.7)
+        &__item
+            border-radius: 10px
+            padding: 35px 69px 35px 38px
+            border: 2px solid rgba(66, 82, 207, 0.1)
+            background-color: #fff
+            &:nth-child(2)
+                color: #fff
+                background-color: #4252CF
+            &-img
+                margin-bottom: 20px
+            &-title
+
+                font-size: 20px
+                font-weight: bold
+                margin-bottom: 10px
+            &-description
+                line-height: 160%
+
+.reviews
+    &-wrapper
+        padding-top: 106px
+        padding-bottom: 121px
+    &__title
+        font-size: 49px
+        font-family: "InterBold"
+        text-align: center
+        margin-bottom: 25px
+    &__subtitle
+        color: #05000B
+        opacity: 0.7
+        text-align: center
+        max-width: 500px
+        margin: 0 auto
+        margin-bottom: 69px
+    &-box
+        display: flex
+        justify-content: center
+        &-item
+            &:first-child
+                z-index: 3
+            position: relative
+            &__title
+                color: #05000B
+                font-size: 31px
+                font-family: "InterBold"
+                margin-bottom: 74px
+            &__quote
+                position: absolute
+                right: 0
+                top: 0
+                width: 125px
+                height: 125px
+                background-color: #1F37FF
+                border-top-right-radius: 100%
+                border-top-left-radius: 100%
+                border-bottom-right-radius: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 60px
+                color: #fff
+    &-slider
+        max-width: 700px
+        margin-right: -80px
+        &-item
+            position: relative
+            box-shadow: 13px 13px 31px rgba(0, 0, 0, 0.05)
+            background-color: #fff
+        &__nameBx
+            background: #FFFFFF
+            box-shadow: 13px 13px 31px rgba(0, 0, 0, 0.05)
+            max-width: 370px
+            padding: 30px
+            margin-top: -36px
+        &__name
+            font-size: 25px
+            font-family: "InterBold"
+            line-height: 160%
+        &__subname
+            font-size: 20px
+            line-height: 160%
+        &__subtitle
+            padding: 39px 30px
+            font-style: italic
+            color: #05000B
+        &__stars
+            position: absolute
+            right: 30px
+            top: 30px
+        &-buttonBx
+            display: flex
+            justify-content: center
+        &__button
+            width: 45px
+            height: 45px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-right: 11px
+            background-color: $main-button
+            color: #fff
+            cursor: pointer
+        &_left
+            border-top-right-radius: 100%
+            border-top-left-radius: 100%
+            border-bottom-right-radius: 100%
+        &_right
+            border-top-left-radius: 100%
+            border-top-right-radius: 100%
+            border-bottom-left-radius: 100%
+
+.slick-slide
+    margin: 40px
+    margin-left: 20px
+
+.pre-price
+    background-color: #EBEDFF
+    padding-top: 63px
+    padding-bottom: 227px
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__title
+        font-family: "InterBold"
+        font-size: 31px
+        font-weight: bold
+        line-height: 160%
+    &-buttonBx
+        display: flex
+        padding: 15px 25px
+        background-color: #fff
+        &__item
+            margin-right: 28px
+            padding: 12px 34px
+            outline: none
+            border: none
+            font-weight: bold
+            &:first-child
+                background-color: $main-button
+                color: #fff
+            &:last-child
+                color: $main-button
+                background: rgba(255, 90, 5, 0.1);
+                margin-right: 0
+
+.price
+    padding-bottom: 120px
+    &-box
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(300px, 455px))
+        justify-content: center
+        align-items: center
+        grid-gap: 30px
+        margin-top: calc( -150px -  44.5px)
+        &__item
+            padding: 0 64px
+            display: flex
+            flex-direction: column
+            align-items: center
+            background: #FFFFFF
+            border: 1px solid rgba(31, 55, 255, 0.1)
+            border-radius: 10px
+            &-icon
+                position: relative
+                & i, & span
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%, -50%)
+                    font-size: 38px
+                    color: #fff
+            &-title
+                font-size: 31
+                font-family: 'InterBold'
+                margin-top: 27px
+            &-count
+                font-size: 96.3951px
+                color: #1F37FF
+                font-family: 'InterBold'
+                margin: 0
+            &-subtitle
+                font-size: 20px
+                font-weight: 500
+            &-button
+                @include mainButton
+                padding: 14.5px 117px
+                border-radius: 10px
+                margin-top: 58px
+                margin-bottom: 44px
+        &__advantages
+            margin-top: 17px
+            & div
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                padding-bottom: 14px
+            &-check
+                max-width: 100%
+                margin-right: 15px
+            &-title
+                margin: 0
+                font-weight: 500
+    &-offer
+        text-align: center
+        background-color: #FDEEE7
+        border-radius: 30px
+        position: relative
+        padding: 66px 0
+        &_margin
+            margin-top: 180px
+        &__subtitle
+            color: $main_button
+            font-family: "InterBold"
+            text-transform: uppercase
+            margin-bottom: 35px
+        &__title
+            font-family: "InterBold"
+            line-height: 130%
+            margin-bottom: 35px
+        &-inputBx
+            display: flex
+            position: relative
+            align-items: center
+            max-width: 600px
+            margin: 0 auto
+
+        &__email
+            padding: 26px 20px
+            background-color: #FDEEE7
+            outline: none
+            border: none
+            border: 1px solid rgba(5, 0, 11, 0.1)
+            border-radius: 4px
+            align-self: stretch
+            width: 100%
+            &::placeholder
+                color: #A6A6A6
+                font-size: 16px
+        &__button
+            @include mainButton
+            padding: 14px 53px
+            border-radius: 4px
+            position: absolute
+            right: 12px
+        &:after, &:before
+            position: absolute
+            content: ''
+            background: #FDEEE7
+            border-radius: 30px
+            width: 100%
+            height: 100%
+            left: 0
+            top: -10px
+            z-index: -1
+        &:after
+            opacity: 0.4
+            top: -55px
+            transform: scale(0.95)
+        &:before
+            opacity: 0.3
+            top: -100px
+            transform: scale(0.9)
+
+.footer
+    padding-top: 110px
+    padding-bottom: 170px
+    background-color: #000848
+    &-box
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(220px, 300px))
+        grid-gap: 30px
+        justify-content: center
+        &__unique
+            &-logo
+                margin-bottom: 30px
+            &-social
+                display: flex
+                & a i
+                    color: #fff
+                & a
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 40.5px
+                    height: 40.5px
+                    background: rgba(255, 255, 255, 0.29)
+                    color: #fff
+                    margin-right: 15px
+                    font-size: 18px
+                    border-radius: 50%
+                    transition: .4s
+                    text-decoration: none
+                & a:hover
+                    background-color: #fff
+                & a:nth-child(1):hover
+                    color: #3b5998
+                & a:nth-child(2):hover
+                    color: #1DA1F2
+                & a:nth-child(3):hover
+                    color: #E1306C
+                & a:nth-child(4):hover
+                    color: red
+                & a:nth-child(1):hover i
+                    color: #3b5998
+                & a:nth-child(2):hover i
+                    color: #1DA1F2
+                & a:nth-child(3):hover i
+                    color: #E1306C
+                & a:nth-child(4):hover i
+                    color: red
+        &__item
+            display: flex
+            flex-direction: column
+            &-title
+                color: #fff
+                font-size: 20px
+                margin-bottom: 20px
+            &-linkBx
+                display: flex
+                flex-direction: column
+            &-link
+                text-decoration: none
+                color: #fff
+                margin-bottom: 10px
+                transition: .4s
+                &:hover
+                    color: rgba(255, 255, 255, 0.29)
+
+                
+
+@import 'adaptive'

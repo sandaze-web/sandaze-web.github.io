@@ -1,0 +1,120 @@
+// /* Large desktops and laptops */
+// @media (min-width: 1200px) 
+
+
+/* Landscape tablets and medium desktops */
+@media (max-width: 1199px) 
+    .main
+        &-content
+            &__item
+                padding-bottom: 50px
+                &:last-child
+                    display: none
+    .transfer
+        &-wrapper
+
+        &-box
+            &__title
+                font-size: 34px
+            &__subtitle
+            &:first-child
+                margin-right: 40px !important
+            &__item
+                &-img
+                    margin-left: 0px !important
+            &-chekBx
+                &__item p
+                    font-size: 14px
+    .reviews
+        &-box
+            &-item:last-child
+                display: none
+
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) 
+    .desktop
+        display: none
+    .mob-button
+        display: flex
+    .transfer
+        &-wrapper
+            flex-direction: column-reverse
+
+        &-box
+            &:first-child
+                margin-top: 60px
+            &__item
+                &-img img
+                    max-width: 100%
+        &-statistics div, &-statistics p
+            margin-right: 23px
+
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) 
+    .transfer
+        &-statistics
+            width: 250px
+            margin-left: 40px
+        &-statistics div, &-statistics p
+            margin-right: 23px
+        &-transaction
+            width: 283px
+            &-users
+                display: none
+            &-inputBx
+                flex-direction: column
+                & input
+                    max-width: 100%
+                    margin-right: 0
+    .reviews
+        &-slider
+            max-width: 400px
+            &__nameBx
+                margin: 0 auto
+                padding-bottom: 60px
+            &__stars
+                right: 15%
+                top: 35%
+    .slick-slide
+        margin: 0
+    .price
+        &-offer
+            &__title
+                font-size: 21px
+            &__subtitle
+                font-size: 14px
+                margin-bottom: 10px
+            &-inputBx
+                padding: 10px
+
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) 
+    .main-content
+        &__title
+            font-size: 16px
+        &__subtitle
+            font-size: 29px
+        &-buttonBx
+            & button 
+                margin: 5px
+    .reviews
+        &-slider
+            max-width: 290px
+            &__stars
+                    right: 2%
+                    top: 31%
+    .price
+        &-offer
+            &__title
+                padding: 10px
+            &__button
+                padding: 14px 25px
+
+
+// /* Iphone 5 */
+// @media (max-width: 320px) 
+
