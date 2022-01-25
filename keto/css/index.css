@@ -257,6 +257,7 @@ body {
   padding-top: 62px;
   position: relative;
   padding-bottom: 156px;
+  overflow-x: hidden;
 }
 
 .effects__title {
