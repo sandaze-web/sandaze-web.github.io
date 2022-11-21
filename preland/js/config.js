@@ -1,5 +1,5 @@
 //ссылка которая заменит все ссылки на странице
-let link_cross = ''
+let link_cross = 'https://www.google.com/'
 
 $(document).ready(function () {
     let n = $.urlParam('n')
