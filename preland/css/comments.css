@@ -1,0 +1,348 @@
+.comments-mainTitle {
+  width: 100%;
+  text-align: left;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 5px;
+  margin-bottom: 23px;
+}
+
+.like {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  height: 100%;
+}
+
+.like2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-self: flex-end;
+  height: 100%;
+}
+
+.comment-block {
+  margin-top: 21px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.comment-block-last {
+  margin-top: 13px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.comment-block2 {
+  margin-top: 15px;
+  padding-left: 52px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+.comment-block:nth-of-type(1) {
+  margin-top: 15px;
+}
+
+.comment-img {
+  border-radius: 50%;
+  display: block;
+  width: 41px;
+  height: 41px;
+}
+
+.comment-img2 {
+  border-radius: 50%;
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.logo-name-img {
+  margin: 5px 5px 5px 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.comment-mainPart {
+  font-family: 'Proxima Nova';
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: calc(100% - 57px);
+  width: 100%;
+}
+
+.comment-mainPart2 {
+  font-family: 'Proxima Nova';
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: calc(100% - 57px);
+  width: 100%;
+}
+
+.comment-mainPart2_mini {
+  font-family: 'Proxima Nova';
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.comment-mainPart p span {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #cccccc;
+}
+
+.comment-name {
+  font-size: 18px;
+  display: flex;
+  font-weight: 700;
+  font-style: 18px;
+  line-height: 25px;
+  margin-bottom: 5px;
+  color: #000;
+  text-decoration: none;
+}
+
+.comment-time {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(22, 24, 35, 0.5);
+  text-decoration: none;
+}
+
+.brandName-comment {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  text-decoration: none;
+  color: #1D9BF0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-right: 40px;
+  text-align: center;
+  text-decoration: underline;
+  margin-right: 20px;
+}
+
+.brandName-comment-mini {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  text-decoration: none;
+  color: #1D9BF0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-right: 40px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.brandName-comment2 {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  text-decoration: none;
+  color: #1D9BF0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.brandName-comment2-seeAll {
+  text-decoration: none;
+  color: #1D9BF0;
+}
+
+.comment-caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.comment-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-text-mini {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-text1-mini2 {
+  width: 100%;
+  max-width: 612px;
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+
+}
+
+.like-img {
+  margin: auto;
+}
+
+.numberLike {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(22, 24, 35, 0.5);
+  margin-top: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.comment-mainPart .comment-text {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+
+.comment-like {
+  height: 21px;
+  display: flex;
+  align-items: center;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  margin-top: 10px;
+}
+
+.comment-like span {
+  margin: 0 4px;
+  opacity: 0.2;
+  color: #000;
+}
+
+.selected-rew {
+  font: inherit !important;
+  background: inherit;
+  color: #1D9BF0 !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.comment-text .brandName {
+  font-weight: normal;
+}
+
+.comment-text1 {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  margin-bottom: 5px;
+}
+
+.like-img {
+  width: 17.5px;
+  height: 16px;
+}
+
+yo .blue-text {
+  color: var(--blue-color);
+}
+
+.reporter_mob {
+  display: none;
+}
+
+@media all and (max-width: 767px) {
+  .comments-mainTitle {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .like .numberLike {
+    font-size: 12px !important;
+  }
+
+  .comment-mainPart .comment-text {
+    font-size: 13px;
+  }
+
+  .reporter {
+    display: none;
+  }
+
+  .reporter_mob {
+    display: block;
+  }
+
+  .comment-text1 {
+    margin-right: 20px;
+  }
+
+  .like {
+    display: block;
+    justify-content: center;
+  }
+
+  .comment-name {
+    font-size: 16px;
+  }
+
+  .comment-text1 {
+    font-size: 14px;
+  }
+
+  .comment-text1-mini2 {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+
+  }
+
+  .comment-block2 {
+    margin-top: 20px;
+  }
+
+  .comment-block-last {
+    margin-top: 25px;
+  }
+}

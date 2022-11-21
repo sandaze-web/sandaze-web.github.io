@@ -1,0 +1,66 @@
+footer.footer {
+    width: 100%;
+    background: #FFFFFF;
+    border-top: 1px solid var(--main-border-bottom);
+}
+
+.footer-wrapper {
+    max-width: 1080px;
+    padding: 30px 10px;
+    margin: 0 auto;
+}
+
+.footerHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: auto 0;
+}
+
+.footerLogoscontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerLogos {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+footer p.footerLegal {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    color: var(--second-color);
+}
+
+.footerLegalB {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 460px) {
+    .footerHead{padding-bottom: 20px;}
+    .footerLogos {
+        justify-content: space-evenly;
+    }
+    .footerLogoscontainer {
+        align-items: center;
+    }
+    .footerLogo {
+        width: 135px;
+    }
+}
