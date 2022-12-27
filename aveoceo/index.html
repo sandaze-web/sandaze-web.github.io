@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <!--==========   STYLESHEET   ==========-->
+    <link rel="stylesheet" href="css/index.css?v=1.5"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <title>Aveoceo</title>
+    <!--==========   SCRIPTS   ==========-->
+
+    <script defer src="plugins/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" defer></script>
+    <script defer src="js/index.js?v=1.6"></script>
+    <title>Aveoceo</title>
+</head>
+
+<body>
+
+<main class="main main-index">
+    <div class="change-theme">
+        <svg class="change-theme__button" width="22" height="30" viewBox="0 0 22 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.59688 19.05H16.3969M8.29688 28.5H13.6969H8.29688ZM1.54688 10.95C1.54688 8.4437 2.5425 6.04006 4.31472 4.26784C6.08694 2.49562 8.49058 1.5 10.9969 1.5C13.5032 1.5 15.9068 2.49562 17.679 4.26784C19.4513 6.04006 20.4469 8.4437 20.4469 10.95C20.4478 12.4715 20.0798 13.9706 19.3744 15.3188C18.669 16.667 17.6474 17.8241 16.3969 18.6909L15.6652 22.155C15.5683 22.7935 15.2458 23.3761 14.7561 23.7972C14.2664 24.2183 13.642 24.4499 12.9962 24.45H8.99753C8.35171 24.4499 7.72733 24.2183 7.23765 23.7972C6.74798 23.3761 6.42545 22.7935 6.32858 22.155L5.59688 18.7058C4.34598 17.8358 3.32425 16.6761 2.61898 15.3255C1.91371 13.9749 1.54587 12.4736 1.54688 10.95V10.95Z" stroke="white" stroke-width="2.3625" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="change-circle">
+
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header-box">
+                <div class="header-imgBx">
+                    <svg width="164" height="20" viewBox="0 0 164 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.9491 20H15.9593V17.0857L12.5394 20H3.98982C2.88787 20 1.93791 19.619 1.13995 18.8571C0.379983 18.0571 0 17.1048 0 16V12C0 10.8952 0.379983 9.9619 1.13995 9.2C1.93791 8.4 2.88787 8 3.98982 8H15.3893L11.9695 11.3714H3.98982V16.5714H15.9593V3.42857H0L3.41984 0H15.9593C17.0612 0 17.9922 0.400001 18.7521 1.2C19.5501 1.96191 19.9491 2.89524 19.9491 4V20Z"
+                              fill="white"/>
+                        <path d="M45.2907 0L37.539 20H31.7253L24.2016 0H28.7614L34.1762 16.6857H35.3161L40.7309 0H45.2907Z"
+                              fill="white"/>
+                        <path d="M69.5101 20H53.5508C52.4489 20 51.4989 19.619 50.701 18.8571C49.941 18.0571 49.561 17.1048 49.561 16V4C49.561 2.89524 49.941 1.96191 50.701 1.2C51.4989 0.400001 52.4489 0 53.5508 0H65.5203C66.6222 0 67.5532 0.400001 68.3132 1.2C69.1111 1.96191 69.5101 2.89524 69.5101 4V8L65.5203 12H54.1208L57.5407 8.57143H65.5203V3.42857H53.5508V16.5714H69.5101V20Z"
+                              fill="white"/>
+                        <path d="M94.0168 16C94.0168 17.1048 93.6178 18.0571 92.8198 18.8571C92.0599 19.619 91.1289 20 90.027 20H78.0575C76.9556 20 76.0056 19.619 75.2076 18.8571C74.4477 18.0571 74.0677 17.1048 74.0677 16V4C74.0677 2.89524 74.4477 1.96191 75.2076 1.2C76.0056 0.400001 76.9556 0 78.0575 0H90.027C91.1289 0 92.0599 0.400001 92.8198 1.2C93.6178 1.96191 94.0168 2.89524 94.0168 4V16ZM90.027 16.5714V3.42857H78.0575V16.5714H90.027Z"
+                              fill="white"/>
+                        <path d="M115.689 0L112.212 3.42857H102.58V16.5714H114.549V20H102.58C101.478 20 100.528 19.619 99.7299 18.8571C98.9699 18.0571 98.5899 17.1048 98.5899 16V4C98.5899 2.89524 98.9699 1.96191 99.7299 1.2C100.528 0.400001 101.478 0 102.58 0H115.689Z"
+                              fill="white"/>
+                        <path d="M139.065 20H123.105C122.004 20 121.054 19.619 120.256 18.8571C119.496 18.0571 119.116 17.1048 119.116 16V4C119.116 2.89524 119.496 1.96191 120.256 1.2C121.054 0.400001 122.004 0 123.105 0H135.075C136.177 0 137.108 0.400001 137.868 1.2C138.666 1.96191 139.065 2.89524 139.065 4V8L135.075 12H123.675L127.095 8.57143H135.075V3.42857H123.105V16.5714H139.065V20Z"
+                              fill="white"/>
+                        <path d="M163.571 16C163.571 17.1048 163.172 18.0571 162.374 18.8571C161.615 19.619 160.684 20 159.582 20H147.612C146.51 20 145.56 19.619 144.762 18.8571C144.002 18.0571 143.622 17.1048 143.622 16V4C143.622 2.89524 144.002 1.96191 144.762 1.2C145.56 0.400001 146.51 0 147.612 0H159.582C160.684 0 161.615 0.400001 162.374 1.2C163.172 1.96191 163.571 2.89524 163.571 4V16ZM159.582 16.5714V3.42857H147.612V16.5714H159.582Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+                <nav class="header-navBx">
+                    <ul class="header-nav">
+                        <li class="header-nav__item"><a href="#services">Services</a></li>
+                        <li class="header-nav__item"><a href="#advantages">Advantages</a></li>
+                        <li class="header-nav__item"><a href="#cases">Cases</a></li>
+                        <li class="header-nav__item"><a href="#about">About Us</a></li>
+                        <li class="header-nav__item"><a href="#team">Team</a></li>
+                        <li class="header-nav__item"><a href="./contacts.html">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="header-socialBx">
+                    <a href="#" class="header-socialBx__item">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.0733 4.41117C16.9215 4.33922 16.7736 4.26035 16.6304 4.17484C16.2138 3.92238 15.8318 3.62491 15.4927 3.28883C14.6443 2.39895 14.3274 1.49617 14.2107 0.864102H14.2154C14.1179 0.339453 14.1582 0 14.1643 0H10.2999V13.6976C10.2999 13.8815 10.2999 14.0632 10.2915 14.2429C10.2915 14.2652 10.2891 14.2858 10.2877 14.3099C10.2877 14.3198 10.2877 14.3301 10.2854 14.3404C10.2854 14.343 10.2854 14.3455 10.2854 14.3481C10.2446 14.8396 10.0728 15.3144 9.78489 15.7306C9.49701 16.1469 9.10194 16.492 8.63443 16.7355C8.14718 16.9896 7.5961 17.1229 7.03552 17.1222C5.23505 17.1222 3.77583 15.7764 3.77583 14.1144C3.77583 12.4523 5.23505 11.1066 7.03552 11.1066C7.37634 11.1063 7.71506 11.1554 8.03912 11.2522L8.0438 7.64543C7.06007 7.52895 6.06067 7.60061 5.10866 7.85591C4.15666 8.1112 3.2727 8.54458 2.51255 9.12871C1.84649 9.6592 1.28653 10.2922 0.857865 10.9991C0.69474 11.257 0.0792712 12.2929 0.00473994 13.9743C-0.0421351 14.9286 0.270521 15.9173 0.419584 16.326V16.3346C0.513334 16.5752 0.876615 17.3963 1.46865 18.0886C1.94604 18.6438 2.51006 19.1316 3.14255 19.5362V19.5276L3.15193 19.5362C5.02271 20.7015 7.09693 20.625 7.09693 20.625C7.45599 20.6117 8.6588 20.625 10.0247 20.0316C11.5397 19.3738 12.4022 18.3936 12.4022 18.3936C12.9532 17.808 13.3914 17.1406 13.6979 16.4201C14.0476 15.5775 14.1643 14.5668 14.1643 14.1629V6.89605C14.2111 6.92184 14.8355 7.30039 14.8355 7.30039C14.8355 7.30039 15.7351 7.82891 17.1385 8.17309C18.1454 8.41801 19.5019 8.46957 19.5019 8.46957V4.95301C19.0266 5.00027 18.0615 4.86277 17.0733 4.41117Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="https://telegram.me/aveoceo" class="header-socialBx__item">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.6514 2.13541L15.0108 14.5885C14.8114 15.4673 14.292 15.686 13.5539 15.2723L9.53015 12.3073L7.5889 14.1748C7.3739 14.3898 7.19452 14.5692 6.78015 14.5692L7.06952 10.4717L14.5264 3.73353C14.8508 3.44478 14.4558 3.28416 14.0226 3.57353L4.8039 9.37853L0.835148 8.13603C-0.0279767 7.86666 -0.0436016 7.27291 1.01515 6.85853L16.5383 0.877906C17.257 0.608531 17.8858 1.03728 17.6514 2.13541Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/agency.aveoceo" class="header-socialBx__item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.70084 6.16546C7.14006 6.16546 5.86635 7.4392 5.86635 9C5.86635 10.5608 7.14006 11.8345 8.70084 11.8345C10.2616 11.8345 11.5353 10.5608 11.5353 9C11.5353 7.4392 10.2616 6.16546 8.70084 6.16546ZM17.2022 9C17.2022 7.82621 17.2128 6.66305 17.1469 5.49138C17.081 4.13046 16.7705 2.92264 15.7754 1.92747C14.7781 0.930173 13.5724 0.621839 12.2115 0.55592C11.0378 0.49 9.87461 0.500632 8.70297 0.500632C7.52919 0.500632 6.36606 0.49 5.19441 0.55592C3.83352 0.621839 2.62572 0.932299 1.63057 1.92747C0.63329 2.92477 0.324962 4.13046 0.259044 5.49138C0.193125 6.66517 0.203757 7.82833 0.203757 9C0.203757 10.1717 0.193125 11.337 0.259044 12.5086C0.324962 13.8695 0.635416 15.0774 1.63057 16.0725C2.62785 17.0698 3.83352 17.3782 5.19441 17.4441C6.36818 17.51 7.53132 17.4994 8.70297 17.4994C9.87674 17.4994 11.0399 17.51 12.2115 17.4441C13.5724 17.3782 14.7802 17.0677 15.7754 16.0725C16.7726 15.0752 17.081 13.8695 17.1469 12.5086C17.2149 11.337 17.2022 10.1738 17.2022 9ZM8.70084 13.3613C6.28738 13.3613 4.3396 11.4135 4.3396 9C4.3396 6.58649 6.28738 4.63868 8.70084 4.63868C11.1143 4.63868 13.0621 6.58649 13.0621 9C13.0621 11.4135 11.1143 13.3613 8.70084 13.3613ZM13.2407 5.47862C12.6772 5.47862 12.2222 5.02356 12.2222 4.46006C12.2222 3.89655 12.6772 3.44149 13.2407 3.44149C13.8042 3.44149 14.2592 3.89655 14.2592 4.46006C14.2594 4.59386 14.2332 4.72639 14.1821 4.85004C14.1309 4.9737 14.0559 5.08605 13.9613 5.18067C13.8667 5.27528 13.7543 5.3503 13.6307 5.40143C13.507 5.45256 13.3745 5.47879 13.2407 5.47862Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="header-socialBx__item">
+                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.18812 10.125L9.68819 6.86761H6.56238V4.75374C6.56238 3.86274 6.99887 2.99367 8.39894 2.99367H9.81981V0.220548C9.81981 0.220548 8.53056 0.000610352 7.29756 0.000610352C4.72356 0.000610352 3.04112 1.56099 3.04112 4.3853V6.86817H0.179688V10.1256H3.04112V18.0006H6.56238V10.1256L9.18812 10.125Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header-burgerBx">
+                    <svg class="header-burger" width="22" height="12" viewBox="0 0 22 12" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 12H22V10H21V12ZM1 10H0V12H1V10ZM21 10H1V12H21V10Z" fill="#1A1A1A"/>
+                        <path d="M21 2H22V0H21V2ZM1 0H0V2H1V0ZM21 0H1V2H21V0Z" fill="#1A1A1A"/>
+                        <path d="M21 7H22V5H21V7ZM1 5H0V7H1V5ZM21 5H1V7H21V5Z" fill="#1A1A1A"/>
+                    </svg>
+                </div>
+            </div>
+            <!-- /.header-box -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+
+    <section class="content">
+        <div class="content-mobile-imgBx"><img src="./images/content/main-mobile.png" alt="" class="content__img-mobile"></div>
+        <div class="container">
+            <div class="content-box">
+                <div class="content__item">
+                    <p class="content__pre-title">Affiliate company</p>
+                    <h1 class="content__title">We convert traffic into your leads</h1>
+                    <p class="content__subtitle">We at Aveoceo provide opportunities for global advertisers, brands and publishers of all sizes and verticals to grow their businesses online.</p>
+                    <a href="#contacts" class="content__button">
+                        discuss
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="content__item">
+                    <img src="./images/content/main.png" alt="" class="content__img">
+                </div>
+            </div>
+            <!-- /.content-box -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.content -->
+
+    <section class="services" id="services">
+        <div class="container">
+            <p class="services__pre-title pre-title">What we offer</p>
+            <!-- /.services__pre-title -->
+            <h2 class="services__title primary-title">Services</h2>
+            <!-- /.services__title -->
+            <div class="services-box">
+                <div class="services-box__item">
+                    <h3 class="services-box__title">Advertising on Facebook</h3>
+                    <p class="services-box__subtitle">We are convinced that there is no business whose clients are not on social networks. Advertising to Facebook's multi-million audience will allow you to acquire new clients, increase sales tenfold and grow your business. </p>
+                    <svg preserveAspectRatio="none" class="services-box__svg" width="102" height="207"
+                         viewBox="0 0 102 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.0382 207V109.87H0V74.898H26.0382V45.0277C26.0382 21.5553 41.4191 0 76.86 0C91.2094 0 101.82 1.35688 101.82 1.35688L100.984 34.0144C100.984 34.0144 90.1628 33.9105 78.3542 33.9105C65.5737 33.9105 63.5261 39.72 63.5261 49.3623V74.898H102L100.326 109.87H63.5261V207H26.0382Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+                <div class="services-box__item">
+                    <h3 class="services-box__title">Advertising on TikTok</h3>
+                    <p class="services-box__subtitle">The fastest growing and most popular network of 2022. TikTok has been called the second Google. Now your customers aren't turning to standard searchers to find the product they want. They're looking for it on TikTok.</p>
+                    <svg preserveAspectRatio="none" class="services-box__svg" width="165" height="193"
+                         viewBox="0 0 165 193" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M144.457 41.0881C143.172 40.4173 141.921 39.6821 140.709 38.8851C137.187 36.5346 133.957 33.7653 131.089 30.6368C123.906 22.3457 121.224 13.9351 120.242 8.05197H120.276C119.456 3.15931 119.794 0 119.853 0H87.1524V127.593C87.1524 129.301 87.1524 131 87.0847 132.674C87.0847 132.879 87.0593 133.067 87.0509 133.297C87.0509 133.383 87.0509 133.485 87.0255 133.579V133.656C86.6821 138.233 85.2293 142.654 82.795 146.532C80.3606 150.409 77.0194 153.623 73.0652 155.891C68.94 158.259 64.2741 159.501 59.528 159.494C44.2986 159.494 31.9458 146.959 31.9458 131.479C31.9458 115.989 44.2986 103.455 59.528 103.455C62.4131 103.455 65.2813 103.916 68.0226 104.821L68.0649 71.2125C59.7396 70.1286 51.282 70.7981 43.2261 73.179C35.1701 75.5598 27.6907 79.6002 21.2599 85.0452C15.6238 89.9852 10.8852 95.8799 7.25731 102.464C5.8782 104.863 0.666365 114.521 0.0402677 130.181C-0.357389 139.061 2.29083 148.283 3.55149 152.082V152.168C4.33834 154.405 7.41806 162.055 12.4268 168.502C16.466 173.677 21.2383 178.222 26.5902 181.993V181.908L26.6663 181.993C42.488 192.837 60.0441 192.129 60.0441 192.129C63.0815 192.001 73.2598 192.129 84.8172 186.604C97.6353 180.473 104.928 171.346 104.928 171.346C109.591 165.89 113.299 159.674 115.894 152.962C118.855 145.106 119.836 135.697 119.836 131.94V64.2364C120.234 64.4755 125.522 68.002 125.522 68.002C125.522 68.002 133.137 72.9288 145.007 76.1308C153.519 78.4106 165 78.8973 165 78.8973V46.1345C160.981 46.5785 152.816 45.2977 144.449 41.0966L144.457 41.0881Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+                <div class="services-box__item">
+                    <h3 class="services-box__title">Advertising on Google</h3>
+                    <p class="services-box__subtitle">One of the advantages of Google Ads is the ability to show ads to an audience that is ready to buy, which means the conversion rate of such ads is high. The advertising platform covers the entire search and media network on the Internet.</p>
+                    <svg preserveAspectRatio="none" class="services-box__svg" width="194" height="199"
+                         viewBox="0 0 194 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M192.089 80.8412C193.326 87.5022 194 94.4664 194 101.734C194 158.579 156.151 199 98.9859 199C85.9858 199.004 73.1123 196.433 61.101 191.434C49.0897 186.435 38.176 179.106 28.9835 169.866C19.791 160.626 12.4999 149.655 7.52679 137.582C2.55368 125.508 -0.00395906 112.568 4.59989e-06 99.5C-0.00395906 86.4324 2.55368 73.492 7.52679 61.4183C12.4999 49.3446 19.791 38.3742 28.9835 29.134C38.176 19.8938 49.0897 12.5648 61.101 7.56588C73.1123 2.56694 85.9858 -0.00397962 98.9859 4.62378e-06C125.713 4.62378e-06 148.047 9.88532 165.181 25.9363L137.277 53.9851V53.9144C126.89 43.9684 113.707 38.864 98.9859 38.864C66.3258 38.864 39.7794 66.5995 39.7794 99.4394C39.7794 132.269 66.3258 160.065 98.9859 160.065C128.619 160.065 148.791 143.034 152.934 119.645H98.9859V80.8412H192.1H192.089Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <!-- /.services-box -->
+        </div>
+        <!-- /.container -->
+        <div class="services-bannerBx slider1">
+            <img src="./images/services/banner.svg" alt="">
+            <img src="./images/services/banner.svg" alt="">
+        </div>
+    </section>
+    <!-- /.services -->
+
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <p class="advantages__pre-title pre-title">our skills</p>
+            <h2 class="advantages__title primary-title">Advantages</h2>
+            <div class="advantages-box">
+                <div class="advantages__item">
+                    <div class="advantages-box__imgBx"><img src="./images/advantages/1.svg" alt=""></div>
+                    <!-- /.advantages-box__imgBx -->
+                    <h3 class="advantages-box__title">Knowledge</h3>
+                    <!-- /.advantages-box__title -->
+                    <p class="advantages-box__subtitle">We've been in business in a variety of industries and know how advertising works in any vertical.</p>
+                    <!-- /.advantages-box__subtitle -->
+                </div>
+                <!-- /.advantages__item -->
+                <div class="advantages__item">
+                    <div class="advantages-box__imgBx"><img src="./images/advantages/2.svg" alt=""></div>
+                    <!-- /.advantages-box__imgBx -->
+                    <h3 class="advantages-box__title">Expertise</h3>
+                    <!-- /.advantages-box__title -->
+                    <p class="advantages-box__subtitle">We specialize in bringing in leads for your business at minimal cost.</p>
+                    <!-- /.advantages-box__subtitle -->
+                </div>
+                <!-- /.advantages__item -->
+                <div class="advantages__item">
+                    <div class="advantages-box__imgBx"><img src="./images/advantages/3.svg" alt=""></div>
+                    <!-- /.advantages-box__imgBx -->
+                    <h3 class="advantages-box__title">Flexibility</h3>
+                    <!-- /.advantages-box__title -->
+                    <p class="advantages-box__subtitle">We take into consideration the needs, adapt and provide the most suitable solution depending on the product.</p>
+                    <!-- /.advantages-box__subtitle -->
+                </div>
+                <!-- /.advantages__item -->
+                <div class="advantages__item">
+                    <div class="advantages-box__imgBx"><img src="./images/advantages/4.svg" alt=""></div>
+                    <!-- /.advantages-box__imgBx -->
+                    <h3 class="advantages-box__title">Hands on</h3>
+                    <!-- /.advantages-box__title -->
+                    <p class="advantages-box__subtitle">We are involved in our work and focused on results.</p>
+                    <!-- /.advantages-box__subtitle -->
+                </div>
+                <!-- /.advantages__item -->
+                <div class="advantages__item">
+                    <div class="advantages-box__imgBx"><img src="./images/advantages/5.svg" alt=""></div>
+                    <!-- /.advantages-box__imgBx -->
+                    <h3 class="advantages-box__title">Experience</h3>
+                    <!-- /.advantages-box__title -->
+                    <p class="advantages-box__subtitle">Our team has been doing affiliate marketing for years and helping absolutely any kind of business grow..</p>
+                    <!-- /.advantages-box__subtitle -->
+                </div>
+                <!-- /.advantages__item -->
+                <div class="advantages__item">
+                    <div class="advantages-box__imgBx"><img src="./images/advantages/6.svg" alt=""></div>
+                    <!-- /.advantages-box__imgBx -->
+                    <h3 class="advantages-box__title">Independence</h3>
+                    <!-- /.advantages-box__title -->
+                    <p class="advantages-box__subtitle">We ourselves develop a strategy to promote your business and bring you customers. You don't have to do anything.</p>
+                    <!-- /.advantages-box__subtitle -->
+                </div>
+                <!-- /.advantages__item -->
+            </div>
+        </div>
+    </section>
+    <!-- /.advantages -->
+
+    <section class="cases" id="cases">
+        <div class="container">
+            <p class="cases__pre-title pre-title">Portfolio</p>
+            <h2 class="cases__title primary-title">Cases</h2>
+            <!-- /.cases__title -->
+            <div class="cases-box">
+                <div class="cases__item">
+                    <div class="cases-content">
+                        <p class="cases-content__title">iShop market</p>
+                        <ul class="cases-content-lists">
+                            <li class="cases-content-lists__item">Increased sales by <span>6,700%</span></li>
+                            <li class="cases-content-lists__item">Increased traffic by <span>901%</span></li>
+                            <li class="cases-content-lists__item">Return on ad spendby <span>x4.2</span></li>
+                        </ul>
+                        <div class="cases-content-conversion">
+                            <p>+48%</p>
+                            <p>Conversion</p>
+                        </div>
+                        <div class="cases-content__logo">
+                            <svg width="99" height="12" viewBox="0 0 99 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9695 12H9.57557V10.2514L7.52366 12H2.39389C1.73272 12 1.16275 11.7714 0.683969 11.3143C0.22799 10.8343 0 10.2629 0 9.6V7.2C0 6.53714 0.22799 5.97714 0.683969 5.52C1.16275 5.04 1.73272 4.8 2.39389 4.8H9.23358L7.18167 6.82286H2.39389V9.94286H9.57557V2.05714H0L2.05191 0H9.57557C10.2367 0 10.7953 0.24 11.2513 0.72C11.7301 1.17714 11.9695 1.73714 11.9695 2.4V12Z"
+                                      fill="white"/>
+                                <path d="M27.1744 0L22.5234 12H19.0352L14.521 0H17.2569L20.5057 10.0114H21.1897L24.4385 0H27.1744Z"
+                                      fill="white"/>
+                                <path d="M41.7061 12H32.1305C31.4693 12 30.8994 11.7714 30.4206 11.3143C29.9646 10.8343 29.7366 10.2629 29.7366 9.6V2.4C29.7366 1.73714 29.9646 1.17714 30.4206 0.72C30.8994 0.24 31.4693 0 32.1305 0H39.3122C39.9734 0 40.5319 0.24 40.9879 0.72C41.4667 1.17714 41.7061 1.73714 41.7061 2.4V4.8L39.3122 7.2H32.4725L34.5244 5.14286H39.3122V2.05714H32.1305V9.94286H41.7061V12Z"
+                                      fill="white"/>
+                                <path d="M56.4101 9.6C56.4101 10.2629 56.1707 10.8343 55.6919 11.3143C55.2359 11.7714 54.6774 12 54.0162 12H46.8345C46.1733 12 45.6034 11.7714 45.1246 11.3143C44.6686 10.8343 44.4406 10.2629 44.4406 9.6V2.4C44.4406 1.73714 44.6686 1.17714 45.1246 0.72C45.6034 0.24 46.1733 0 46.8345 0H54.0162C54.6774 0 55.2359 0.24 55.6919 0.72C56.1707 1.17714 56.4101 1.73714 56.4101 2.4V9.6ZM54.0162 9.94286V2.05714H46.8345V9.94286H54.0162Z"
+                                      fill="white"/>
+                                <path d="M69.4135 0L67.3274 2.05714H61.5479V9.94286H68.7295V12H61.5479C60.8867 12 60.3167 11.7714 59.8379 11.3143C59.382 10.8343 59.154 10.2629 59.154 9.6V2.4C59.154 1.73714 59.382 1.17714 59.8379 0.72C60.3167 0.24 60.8867 0 61.5479 0H69.4135Z"
+                                      fill="white"/>
+                                <path d="M83.4389 12H73.8633C73.2021 12 72.6322 11.7714 72.1534 11.3143C71.6974 10.8343 71.4694 10.2629 71.4694 9.6V2.4C71.4694 1.73714 71.6974 1.17714 72.1534 0.72C72.6322 0.24 73.2021 0 73.8633 0H81.045C81.7061 0 82.2647 0.24 82.7207 0.72C83.1995 1.17714 83.4389 1.73714 83.4389 2.4V4.8L81.045 7.2H74.2053L76.2572 5.14286H81.045V2.05714H73.8633V9.94286H83.4389V12Z"
+                                      fill="white"/>
+                                <path d="M98.1429 9.6C98.1429 10.2629 97.9035 10.8343 97.4247 11.3143C96.9687 11.7714 96.4101 12 95.749 12H88.5673C87.9061 12 87.3362 11.7714 86.8574 11.3143C86.4014 10.8343 86.1734 10.2629 86.1734 9.6V2.4C86.1734 1.73714 86.4014 1.17714 86.8574 0.72C87.3362 0.24 87.9061 0 88.5673 0H95.749C96.4101 0 96.9687 0.24 97.4247 0.72C97.9035 1.17714 98.1429 1.73714 98.1429 2.4V9.6ZM95.749 9.94286V2.05714H88.5673V9.94286H95.749Z"
+                                      fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="cases-imgBx">
+                        <img src="./images/cases/1.png" alt="">
+                        <img class="mobile" src="./images/cases/1-mobile.png" alt="">
+                    </div>
+                </div>
+                <div class="cases__item">
+                    <div class="cases-content">
+                        <p class="cases-content__title">Spa/beauty salon</p>
+                        <ul class="cases-content-lists">
+                            <li class="cases-content-lists__item">Increased sales by <span>6,900%</span></li>
+                            <li class="cases-content-lists__item">Increased traffic by <span>955%</span></li>
+                            <li class="cases-content-lists__item">Return on ad spendby <span>x5</span></li>
+                        </ul>
+                        <div class="cases-content-conversion">
+                            <p>+57%</p>
+                            <p>Conversion</p>
+                        </div>
+                        <div class="cases-content__logo">
+                            <svg width="99" height="12" viewBox="0 0 99 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9695 12H9.57557V10.2514L7.52366 12H2.39389C1.73272 12 1.16275 11.7714 0.683969 11.3143C0.22799 10.8343 0 10.2629 0 9.6V7.2C0 6.53714 0.22799 5.97714 0.683969 5.52C1.16275 5.04 1.73272 4.8 2.39389 4.8H9.23358L7.18167 6.82286H2.39389V9.94286H9.57557V2.05714H0L2.05191 0H9.57557C10.2367 0 10.7953 0.24 11.2513 0.72C11.7301 1.17714 11.9695 1.73714 11.9695 2.4V12Z"
+                                      fill="white"/>
+                                <path d="M27.1744 0L22.5234 12H19.0352L14.521 0H17.2569L20.5057 10.0114H21.1897L24.4385 0H27.1744Z"
+                                      fill="white"/>
+                                <path d="M41.7061 12H32.1305C31.4693 12 30.8994 11.7714 30.4206 11.3143C29.9646 10.8343 29.7366 10.2629 29.7366 9.6V2.4C29.7366 1.73714 29.9646 1.17714 30.4206 0.72C30.8994 0.24 31.4693 0 32.1305 0H39.3122C39.9734 0 40.5319 0.24 40.9879 0.72C41.4667 1.17714 41.7061 1.73714 41.7061 2.4V4.8L39.3122 7.2H32.4725L34.5244 5.14286H39.3122V2.05714H32.1305V9.94286H41.7061V12Z"
+                                      fill="white"/>
+                                <path d="M56.4101 9.6C56.4101 10.2629 56.1707 10.8343 55.6919 11.3143C55.2359 11.7714 54.6774 12 54.0162 12H46.8345C46.1733 12 45.6034 11.7714 45.1246 11.3143C44.6686 10.8343 44.4406 10.2629 44.4406 9.6V2.4C44.4406 1.73714 44.6686 1.17714 45.1246 0.72C45.6034 0.24 46.1733 0 46.8345 0H54.0162C54.6774 0 55.2359 0.24 55.6919 0.72C56.1707 1.17714 56.4101 1.73714 56.4101 2.4V9.6ZM54.0162 9.94286V2.05714H46.8345V9.94286H54.0162Z"
+                                      fill="white"/>
+                                <path d="M69.4135 0L67.3274 2.05714H61.5479V9.94286H68.7295V12H61.5479C60.8867 12 60.3167 11.7714 59.8379 11.3143C59.382 10.8343 59.154 10.2629 59.154 9.6V2.4C59.154 1.73714 59.382 1.17714 59.8379 0.72C60.3167 0.24 60.8867 0 61.5479 0H69.4135Z"
+                                      fill="white"/>
+                                <path d="M83.4389 12H73.8633C73.2021 12 72.6322 11.7714 72.1534 11.3143C71.6974 10.8343 71.4694 10.2629 71.4694 9.6V2.4C71.4694 1.73714 71.6974 1.17714 72.1534 0.72C72.6322 0.24 73.2021 0 73.8633 0H81.045C81.7061 0 82.2647 0.24 82.7207 0.72C83.1995 1.17714 83.4389 1.73714 83.4389 2.4V4.8L81.045 7.2H74.2053L76.2572 5.14286H81.045V2.05714H73.8633V9.94286H83.4389V12Z"
+                                      fill="white"/>
+                                <path d="M98.1429 9.6C98.1429 10.2629 97.9035 10.8343 97.4247 11.3143C96.9687 11.7714 96.4101 12 95.749 12H88.5673C87.9061 12 87.3362 11.7714 86.8574 11.3143C86.4014 10.8343 86.1734 10.2629 86.1734 9.6V2.4C86.1734 1.73714 86.4014 1.17714 86.8574 0.72C87.3362 0.24 87.9061 0 88.5673 0H95.749C96.4101 0 96.9687 0.24 97.4247 0.72C97.9035 1.17714 98.1429 1.73714 98.1429 2.4V9.6ZM95.749 9.94286V2.05714H88.5673V9.94286H95.749Z"
+                                      fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="cases-imgBx">
+                        <img src="./images/cases/2.png" alt="">
+                        <img class="mobile" src="./images/cases/2-mobile.png" alt="">
+                    </div>
+                </div>
+                <div class="cases__item">
+                    <div class="cases-content">
+                        <p class="cases-content__title">Pizza bar</p>
+                        <ul class="cases-content-lists">
+                            <li class="cases-content-lists__item">Increased sales by <span>6,600%</span></li>
+                            <li class="cases-content-lists__item">Increased traffic by <span>800%</span></li>
+                            <li class="cases-content-lists__item">Return on ad spendby <span>x4.1</span></li>
+                        </ul>
+                        <div class="cases-content-conversion">
+                            <p>+44%</p>
+                            <p>Conversion</p>
+                        </div>
+                        <div class="cases-content__logo">
+                            <svg width="99" height="12" viewBox="0 0 99 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9695 12H9.57557V10.2514L7.52366 12H2.39389C1.73272 12 1.16275 11.7714 0.683969 11.3143C0.22799 10.8343 0 10.2629 0 9.6V7.2C0 6.53714 0.22799 5.97714 0.683969 5.52C1.16275 5.04 1.73272 4.8 2.39389 4.8H9.23358L7.18167 6.82286H2.39389V9.94286H9.57557V2.05714H0L2.05191 0H9.57557C10.2367 0 10.7953 0.24 11.2513 0.72C11.7301 1.17714 11.9695 1.73714 11.9695 2.4V12Z"
+                                      fill="white"/>
+                                <path d="M27.1744 0L22.5234 12H19.0352L14.521 0H17.2569L20.5057 10.0114H21.1897L24.4385 0H27.1744Z"
+                                      fill="white"/>
+                                <path d="M41.7061 12H32.1305C31.4693 12 30.8994 11.7714 30.4206 11.3143C29.9646 10.8343 29.7366 10.2629 29.7366 9.6V2.4C29.7366 1.73714 29.9646 1.17714 30.4206 0.72C30.8994 0.24 31.4693 0 32.1305 0H39.3122C39.9734 0 40.5319 0.24 40.9879 0.72C41.4667 1.17714 41.7061 1.73714 41.7061 2.4V4.8L39.3122 7.2H32.4725L34.5244 5.14286H39.3122V2.05714H32.1305V9.94286H41.7061V12Z"
+                                      fill="white"/>
+                                <path d="M56.4101 9.6C56.4101 10.2629 56.1707 10.8343 55.6919 11.3143C55.2359 11.7714 54.6774 12 54.0162 12H46.8345C46.1733 12 45.6034 11.7714 45.1246 11.3143C44.6686 10.8343 44.4406 10.2629 44.4406 9.6V2.4C44.4406 1.73714 44.6686 1.17714 45.1246 0.72C45.6034 0.24 46.1733 0 46.8345 0H54.0162C54.6774 0 55.2359 0.24 55.6919 0.72C56.1707 1.17714 56.4101 1.73714 56.4101 2.4V9.6ZM54.0162 9.94286V2.05714H46.8345V9.94286H54.0162Z"
+                                      fill="white"/>
+                                <path d="M69.4135 0L67.3274 2.05714H61.5479V9.94286H68.7295V12H61.5479C60.8867 12 60.3167 11.7714 59.8379 11.3143C59.382 10.8343 59.154 10.2629 59.154 9.6V2.4C59.154 1.73714 59.382 1.17714 59.8379 0.72C60.3167 0.24 60.8867 0 61.5479 0H69.4135Z"
+                                      fill="white"/>
+                                <path d="M83.4389 12H73.8633C73.2021 12 72.6322 11.7714 72.1534 11.3143C71.6974 10.8343 71.4694 10.2629 71.4694 9.6V2.4C71.4694 1.73714 71.6974 1.17714 72.1534 0.72C72.6322 0.24 73.2021 0 73.8633 0H81.045C81.7061 0 82.2647 0.24 82.7207 0.72C83.1995 1.17714 83.4389 1.73714 83.4389 2.4V4.8L81.045 7.2H74.2053L76.2572 5.14286H81.045V2.05714H73.8633V9.94286H83.4389V12Z"
+                                      fill="white"/>
+                                <path d="M98.1429 9.6C98.1429 10.2629 97.9035 10.8343 97.4247 11.3143C96.9687 11.7714 96.4101 12 95.749 12H88.5673C87.9061 12 87.3362 11.7714 86.8574 11.3143C86.4014 10.8343 86.1734 10.2629 86.1734 9.6V2.4C86.1734 1.73714 86.4014 1.17714 86.8574 0.72C87.3362 0.24 87.9061 0 88.5673 0H95.749C96.4101 0 96.9687 0.24 97.4247 0.72C97.9035 1.17714 98.1429 1.73714 98.1429 2.4V9.6ZM95.749 9.94286V2.05714H88.5673V9.94286H95.749Z"
+                                      fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="cases-imgBx">
+                        <img src="./images/cases/3.png" alt="">
+                        <img class="mobile" src="./images/cases/3-mobile.png" alt="">
+                    </div>
+                </div>
+                <div class="cases__item">
+                    <div class="cases-content">
+                        <p class="cases-content__title">Clothes shop</p>
+                        <ul class="cases-content-lists">
+                            <li class="cases-content-lists__item">Increased sales by <span>6,500%</span></li>
+                            <li class="cases-content-lists__item">Increased traffic by <span>921%</span></li>
+                            <li class="cases-content-lists__item">Return on ad spendby <span>x3.9</span></li>
+                        </ul>
+                        <div class="cases-content-conversion">
+                            <p>+51%</p>
+                            <p>Conversion</p>
+                        </div>
+                        <div class="cases-content__logo">
+                            <svg width="99" height="12" viewBox="0 0 99 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9695 12H9.57557V10.2514L7.52366 12H2.39389C1.73272 12 1.16275 11.7714 0.683969 11.3143C0.22799 10.8343 0 10.2629 0 9.6V7.2C0 6.53714 0.22799 5.97714 0.683969 5.52C1.16275 5.04 1.73272 4.8 2.39389 4.8H9.23358L7.18167 6.82286H2.39389V9.94286H9.57557V2.05714H0L2.05191 0H9.57557C10.2367 0 10.7953 0.24 11.2513 0.72C11.7301 1.17714 11.9695 1.73714 11.9695 2.4V12Z"
+                                      fill="white"/>
+                                <path d="M27.1744 0L22.5234 12H19.0352L14.521 0H17.2569L20.5057 10.0114H21.1897L24.4385 0H27.1744Z"
+                                      fill="white"/>
+                                <path d="M41.7061 12H32.1305C31.4693 12 30.8994 11.7714 30.4206 11.3143C29.9646 10.8343 29.7366 10.2629 29.7366 9.6V2.4C29.7366 1.73714 29.9646 1.17714 30.4206 0.72C30.8994 0.24 31.4693 0 32.1305 0H39.3122C39.9734 0 40.5319 0.24 40.9879 0.72C41.4667 1.17714 41.7061 1.73714 41.7061 2.4V4.8L39.3122 7.2H32.4725L34.5244 5.14286H39.3122V2.05714H32.1305V9.94286H41.7061V12Z"
+                                      fill="white"/>
+                                <path d="M56.4101 9.6C56.4101 10.2629 56.1707 10.8343 55.6919 11.3143C55.2359 11.7714 54.6774 12 54.0162 12H46.8345C46.1733 12 45.6034 11.7714 45.1246 11.3143C44.6686 10.8343 44.4406 10.2629 44.4406 9.6V2.4C44.4406 1.73714 44.6686 1.17714 45.1246 0.72C45.6034 0.24 46.1733 0 46.8345 0H54.0162C54.6774 0 55.2359 0.24 55.6919 0.72C56.1707 1.17714 56.4101 1.73714 56.4101 2.4V9.6ZM54.0162 9.94286V2.05714H46.8345V9.94286H54.0162Z"
+                                      fill="white"/>
+                                <path d="M69.4135 0L67.3274 2.05714H61.5479V9.94286H68.7295V12H61.5479C60.8867 12 60.3167 11.7714 59.8379 11.3143C59.382 10.8343 59.154 10.2629 59.154 9.6V2.4C59.154 1.73714 59.382 1.17714 59.8379 0.72C60.3167 0.24 60.8867 0 61.5479 0H69.4135Z"
+                                      fill="white"/>
+                                <path d="M83.4389 12H73.8633C73.2021 12 72.6322 11.7714 72.1534 11.3143C71.6974 10.8343 71.4694 10.2629 71.4694 9.6V2.4C71.4694 1.73714 71.6974 1.17714 72.1534 0.72C72.6322 0.24 73.2021 0 73.8633 0H81.045C81.7061 0 82.2647 0.24 82.7207 0.72C83.1995 1.17714 83.4389 1.73714 83.4389 2.4V4.8L81.045 7.2H74.2053L76.2572 5.14286H81.045V2.05714H73.8633V9.94286H83.4389V12Z"
+                                      fill="white"/>
+                                <path d="M98.1429 9.6C98.1429 10.2629 97.9035 10.8343 97.4247 11.3143C96.9687 11.7714 96.4101 12 95.749 12H88.5673C87.9061 12 87.3362 11.7714 86.8574 11.3143C86.4014 10.8343 86.1734 10.2629 86.1734 9.6V2.4C86.1734 1.73714 86.4014 1.17714 86.8574 0.72C87.3362 0.24 87.9061 0 88.5673 0H95.749C96.4101 0 96.9687 0.24 97.4247 0.72C97.9035 1.17714 98.1429 1.73714 98.1429 2.4V9.6ZM95.749 9.94286V2.05714H88.5673V9.94286H95.749Z"
+                                      fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="cases-imgBx">
+                        <img src="./images/cases/4.png" alt="">
+                        <img class="mobile" src="./images/cases/4-mobile.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- /.cases-box -->
+            <div class="cases-more">
+                <button class="cases-more__button">
+                    See more
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 9L5 5L1 1" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.cases -->
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-box">
+                <div class="about__item">
+                    <p class="about__pre-title pre-title">WHO WE are</p>
+                    <h2 class="about__title primary-title">About Us</h2>
+                    <p class="about__desc">We are innovators. In our work, we do not meet with routine because we always act based on the specific situation and the wishes of customers. With this approach, we are changing the rules of the game. Therefore, we feel proud of every campaign that we have put our efforts into. We are AveoCeo.</p>
+                </div>
+                <div class="about-imgBx"><img src="./images/about/main.png" alt=""></div>
+            </div>
+        </div>
+        <!-- /.container -->
+
+        <div class="services-bannerBx about-bannerBx slider2">
+            <img src="./images/services/banner.svg" alt="">
+            <img src="./images/services/banner.svg" alt="">
+        </div>
+    </section>
+    <!-- /.about -->
+
+    <section class="team" id="team">
+        <div class="container">
+            <p class="team__pre-title pre-title">meet the staff</p>
+            <h2 class="team__title primary-title">Team</h2>
+            <div class="team-box">
+                <div class="team__item">
+                    <div class="team__item-imgBx"><img src="./images/team/1.png" alt="" class="team__item-img"></div>
+                    <h3 class="team__item-title">Artem</h3>
+                    <p class="team__item-subtitle">Director</p>
+                </div>
+                <div class="team__item">
+                    <div class="team__item-imgBx"><img src="./images/team/2.png" alt="" class="team__item-img"></div>
+                    <h3 class="team__item-title">ARS</h3>
+                    <p class="team__item-subtitle">Traffic Team Leader</p>
+                </div>
+                <div class="team__item">
+                    <div class="team__item-imgBx"><img src="./images/team/3.png" alt="" class="team__item-img"></div>
+                    <h3 class="team__item-title">Roman</h3>
+                    <p class="team__item-subtitle">Biz Dev Manager</p>
+                </div>
+                <div class="team__item">
+                    <div class="team__item-imgBx"><img src="./images/team/4.png" alt="" class="team__item-img"></div>
+                    <h3 class="team__item-title">Antonina</h3>
+                    <p class="team__item-subtitle">CTO</p>
+                </div>
+            </div>
+            <!-- /.team-box -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.team -->
+
+    <section class="contact" id="contacts">
+        <div class="container">
+            <div class="contact-box">
+                <img src="./images/contact/main-mobile.png" alt="" class="contact__img mobile">
+                <div class="contact__item">
+                    <h2 class="contact__title">Contact us</h2>
+                    <div class="contact-formBx">
+                        <form action="mail.php" method="POST" class="contact-form">
+                            <input type="hidden" name="page" value="Главная">
+                            <div class="contact-inputBx"><input name="name" type="text" placeholder="Name" required></div>
+                            <div class="contact-inputBx"><input name="phone" type="tel" placeholder="Phone" required></div>
+                            <div class="contact-inputBx">
+                                <textarea name="message" id="" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LeFKyIiAAAAAPD45teWOPte3xzv__AXetxid2Co"></div>
+                            <button class="contact__button primary-button">
+                                SEND message
+                                <span></span><span></span><span></span><span></span><span></span>
+                            </button>
+                        </form>
+                        <img src="./images/contact/main.png" alt="" class="contact__img">
+                    </div>
+                </div>
+                <div class="contact__item">
+                    <div class="contact-data">
+                        <div class="contact-data__item">
+                            <h2 class="contact-data__item-title">Phone</h2>
+                            <a href="">+971 585 113 98 8</a>
+                        </div>
+                        <div class="contact-data__item">
+                            <h2 class="contact-data__item-title">Email</h2>
+                            <a href="mailto: contact@aveoceo.com">contact@aveoceo.com</a>
+                        </div>
+                        <div class="contact-data__item contact-data__social">
+                            <h2 class="contact-data__item-title">Social media</h2>
+                            <div class="contact-socialBx">
+                                <a href="#">
+                                    <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.4483 1.3356L14.8076 13.7887C14.6083 14.6675 14.0889 14.8862 13.3508 14.4725L9.32702 11.5075L7.38577 13.375C7.17077 13.59 6.9914 13.7694 6.57702 13.7694L6.8664 9.67185L14.3233 2.93373C14.6476 2.64498 14.2526 2.48435 13.8195 2.77373L4.60077 8.57873L0.632023 7.33623C-0.231102 7.06685 -0.246727 6.4731 0.812023 6.05873L16.3351 0.0781012C17.0539 -0.191274 17.6826 0.237476 17.4483 1.3356Z"
+                                              fill="white"/>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.49771 5.66546C6.93694 5.66546 5.66323 6.9392 5.66323 8.5C5.66323 10.0608 6.93694 11.3345 8.49771 11.3345C10.0585 11.3345 11.3322 10.0608 11.3322 8.5C11.3322 6.9392 10.0585 5.66546 8.49771 5.66546ZM16.9991 8.5C16.9991 7.32621 17.0097 6.16305 16.9438 4.99138C16.8778 3.63046 16.5674 2.42264 15.5722 1.42747C14.575 0.430173 13.3693 0.121839 12.0084 0.0559198C10.8346 -0.00999972 9.67149 0.000632496 8.49984 0.000632496C7.32607 0.000632496 6.16293 -0.00999972 4.99129 0.0559198C3.63039 0.121839 2.4226 0.432299 1.42745 1.42747C0.430165 2.42477 0.121837 3.63046 0.0559188 4.99138C-0.00999953 6.16517 0.000632484 7.32833 0.000632484 8.5C0.000632484 9.67167 -0.00999953 10.837 0.0559188 12.0086C0.121837 13.3695 0.432291 14.5774 1.42745 15.5725C2.42473 16.5698 3.63039 16.8782 4.99129 16.9441C6.16506 17.01 7.3282 16.9994 8.49984 16.9994C9.67361 16.9994 10.8368 17.01 12.0084 16.9441C13.3693 16.8782 14.5771 16.5677 15.5722 15.5725C16.5695 14.5752 16.8778 13.3695 16.9438 12.0086C17.0118 10.837 16.9991 9.67379 16.9991 8.5ZM8.49771 12.8613C6.08425 12.8613 4.13648 10.9135 4.13648 8.5C4.13648 6.08649 6.08425 4.13868 8.49771 4.13868C10.9112 4.13868 12.859 6.08649 12.859 8.5C12.859 10.9135 10.9112 12.8613 8.49771 12.8613ZM13.0376 4.97862C12.4741 4.97862 12.019 4.52356 12.019 3.96006C12.019 3.39655 12.4741 2.94149 13.0376 2.94149C13.6011 2.94149 14.0561 3.39655 14.0561 3.96006C14.0563 4.09386 14.0301 4.22639 13.9789 4.35004C13.9278 4.4737 13.8528 4.58605 13.7582 4.68067C13.6636 4.77528 13.5512 4.8503 13.4276 4.90143C13.3039 4.95256 13.1714 4.97879 13.0376 4.97862Z"
+                                              fill="white"/>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.18812 10.1254L9.68819 6.86798H6.56238V4.7541C6.56238 3.8631 6.99887 2.99404 8.39894 2.99404H9.81981V0.220914C9.81981 0.220914 8.53056 0.000976562 7.29756 0.000976562C4.72356 0.000976562 3.04112 1.56135 3.04112 4.38566V6.86854H0.179688V10.126H3.04112V18.001H6.56238V10.126L9.18812 10.1254Z"
+                                              fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socialBx2">
+                <div class="footer-socialBx2__item">
+                    <p>Email:</p>
+                    <div>
+                        <a href="mailto: contact@aveoceo.com">contact@aveoceo.com</a>
+                    </div>
+                </div>
+                <div class="footer-socialBx2__item">
+                    <p>Phone:</p>
+                    <div>
+                        <a href="tel: +971 585 113 98 8">+971 585 113 98 8</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-box">
+                <div class="footer-imgBx">
+                    <svg width="167" height="23" viewBox="0 0 167 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.9491 21.3125H16.9593V18.3982L13.5394 21.3125H4.98982C3.88787 21.3125 2.93791 20.9315 2.13995 20.1696C1.37998 19.3696 1 18.4173 1 17.3125V13.3125C1 12.2077 1.37998 11.2744 2.13995 10.5125C2.93791 9.7125 3.88787 9.3125 4.98982 9.3125H16.3893L12.9695 12.6839H4.98982V17.8839H16.9593V4.74107H1L4.41984 1.3125H16.9593C18.0612 1.3125 18.9922 1.7125 19.7521 2.5125C20.5501 3.27441 20.9491 4.20774 20.9491 5.3125V21.3125Z"
+                              fill="white"/>
+                        <path d="M46.2907 1.3125L38.539 21.3125H32.7253L25.2016 1.3125H29.7614L35.1762 17.9982H36.3161L41.7309 1.3125H46.2907Z"
+                              fill="white"/>
+                        <path d="M70.5101 21.3125H54.5508C53.4489 21.3125 52.4989 20.9315 51.701 20.1696C50.941 19.3696 50.561 18.4173 50.561 17.3125V5.3125C50.561 4.20774 50.941 3.27441 51.701 2.5125C52.4989 1.7125 53.4489 1.3125 54.5508 1.3125H66.5203C67.6222 1.3125 68.5532 1.7125 69.3132 2.5125C70.1111 3.27441 70.5101 4.20774 70.5101 5.3125V9.3125L66.5203 13.3125H55.1208L58.5407 9.88393H66.5203V4.74107H54.5508V17.8839H70.5101V21.3125Z"
+                              fill="white"/>
+                        <path d="M95.0168 17.3125C95.0168 18.4173 94.6178 19.3696 93.8198 20.1696C93.0599 20.9315 92.1289 21.3125 91.027 21.3125H79.0575C77.9556 21.3125 77.0056 20.9315 76.2076 20.1696C75.4477 19.3696 75.0677 18.4173 75.0677 17.3125V5.3125C75.0677 4.20774 75.4477 3.27441 76.2076 2.5125C77.0056 1.7125 77.9556 1.3125 79.0575 1.3125H91.027C92.1289 1.3125 93.0599 1.7125 93.8198 2.5125C94.6178 3.27441 95.0168 4.20774 95.0168 5.3125V17.3125ZM91.027 17.8839V4.74107H79.0575V17.8839H91.027Z"
+                              fill="white"/>
+                        <path d="M116.689 1.3125L113.212 4.74107H103.58V17.8839H115.549V21.3125H103.58C102.478 21.3125 101.528 20.9315 100.73 20.1696C99.9699 19.3696 99.5899 18.4173 99.5899 17.3125V5.3125C99.5899 4.20774 99.9699 3.27441 100.73 2.5125C101.528 1.7125 102.478 1.3125 103.58 1.3125H116.689Z"
+                              fill="white"/>
+                        <path d="M140.065 21.3125H124.105C123.004 21.3125 122.054 20.9315 121.256 20.1696C120.496 19.3696 120.116 18.4173 120.116 17.3125V5.3125C120.116 4.20774 120.496 3.27441 121.256 2.5125C122.054 1.7125 123.004 1.3125 124.105 1.3125H136.075C137.177 1.3125 138.108 1.7125 138.868 2.5125C139.666 3.27441 140.065 4.20774 140.065 5.3125V9.3125L136.075 13.3125H124.675L128.095 9.88393H136.075V4.74107H124.105V17.8839H140.065V21.3125Z"
+                              fill="white"/>
+                        <path d="M164.571 17.3125C164.571 18.4173 164.172 19.3696 163.374 20.1696C162.615 20.9315 161.684 21.3125 160.582 21.3125H148.612C147.51 21.3125 146.56 20.9315 145.762 20.1696C145.002 19.3696 144.622 18.4173 144.622 17.3125V5.3125C144.622 4.20774 145.002 3.27441 145.762 2.5125C146.56 1.7125 147.51 1.3125 148.612 1.3125H160.582C161.684 1.3125 162.615 1.7125 163.374 2.5125C164.172 3.27441 164.571 4.20774 164.571 5.3125V17.3125ZM160.582 17.8839V4.74107H148.612V17.8839H160.582Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+                <p class="footer-copyright">© 2022 Aveoceo. All Rights Reserved.</p>
+                <div class="footer-socialBx header-socialBx">
+                    <a href="#" class="header-socialBx__item">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.0733 4.41117C16.9215 4.33922 16.7736 4.26035 16.6304 4.17484C16.2138 3.92238 15.8318 3.62491 15.4927 3.28883C14.6443 2.39895 14.3274 1.49617 14.2107 0.864102H14.2154C14.1179 0.339453 14.1582 0 14.1643 0H10.2999V13.6976C10.2999 13.8815 10.2999 14.0632 10.2915 14.2429C10.2915 14.2652 10.2891 14.2858 10.2877 14.3099C10.2877 14.3198 10.2877 14.3301 10.2854 14.3404C10.2854 14.343 10.2854 14.3455 10.2854 14.3481C10.2446 14.8396 10.0728 15.3144 9.78489 15.7306C9.49701 16.1469 9.10194 16.492 8.63443 16.7355C8.14718 16.9896 7.5961 17.1229 7.03552 17.1222C5.23505 17.1222 3.77583 15.7764 3.77583 14.1144C3.77583 12.4523 5.23505 11.1066 7.03552 11.1066C7.37634 11.1063 7.71506 11.1554 8.03912 11.2522L8.0438 7.64543C7.06007 7.52895 6.06067 7.60061 5.10866 7.85591C4.15666 8.1112 3.2727 8.54458 2.51255 9.12871C1.84649 9.6592 1.28653 10.2922 0.857865 10.9991C0.69474 11.257 0.0792712 12.2929 0.00473994 13.9743C-0.0421351 14.9286 0.270521 15.9173 0.419584 16.326V16.3346C0.513334 16.5752 0.876615 17.3963 1.46865 18.0886C1.94604 18.6438 2.51006 19.1316 3.14255 19.5362V19.5276L3.15193 19.5362C5.02271 20.7015 7.09693 20.625 7.09693 20.625C7.45599 20.6117 8.6588 20.625 10.0247 20.0316C11.5397 19.3738 12.4022 18.3936 12.4022 18.3936C12.9532 17.808 13.3914 17.1406 13.6979 16.4201C14.0476 15.5775 14.1643 14.5668 14.1643 14.1629V6.89605C14.2111 6.92184 14.8355 7.30039 14.8355 7.30039C14.8355 7.30039 15.7351 7.82891 17.1385 8.17309C18.1454 8.41801 19.5019 8.46957 19.5019 8.46957V4.95301C19.0266 5.00027 18.0615 4.86277 17.0733 4.41117Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="https://telegram.me/aveoceo" class="header-socialBx__item">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.6514 2.13541L15.0108 14.5885C14.8114 15.4673 14.292 15.686 13.5539 15.2723L9.53015 12.3073L7.5889 14.1748C7.3739 14.3898 7.19452 14.5692 6.78015 14.5692L7.06952 10.4717L14.5264 3.73353C14.8508 3.44478 14.4558 3.28416 14.0226 3.57353L4.8039 9.37853L0.835148 8.13603C-0.0279767 7.86666 -0.0436016 7.27291 1.01515 6.85853L16.5383 0.877906C17.257 0.608531 17.8858 1.03728 17.6514 2.13541Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/agency.aveoceo" class="header-socialBx__item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.70084 6.16546C7.14006 6.16546 5.86635 7.4392 5.86635 9C5.86635 10.5608 7.14006 11.8345 8.70084 11.8345C10.2616 11.8345 11.5353 10.5608 11.5353 9C11.5353 7.4392 10.2616 6.16546 8.70084 6.16546ZM17.2022 9C17.2022 7.82621 17.2128 6.66305 17.1469 5.49138C17.081 4.13046 16.7705 2.92264 15.7754 1.92747C14.7781 0.930173 13.5724 0.621839 12.2115 0.55592C11.0378 0.49 9.87461 0.500632 8.70297 0.500632C7.52919 0.500632 6.36606 0.49 5.19441 0.55592C3.83352 0.621839 2.62572 0.932299 1.63057 1.92747C0.63329 2.92477 0.324962 4.13046 0.259044 5.49138C0.193125 6.66517 0.203757 7.82833 0.203757 9C0.203757 10.1717 0.193125 11.337 0.259044 12.5086C0.324962 13.8695 0.635416 15.0774 1.63057 16.0725C2.62785 17.0698 3.83352 17.3782 5.19441 17.4441C6.36818 17.51 7.53132 17.4994 8.70297 17.4994C9.87674 17.4994 11.0399 17.51 12.2115 17.4441C13.5724 17.3782 14.7802 17.0677 15.7754 16.0725C16.7726 15.0752 17.081 13.8695 17.1469 12.5086C17.2149 11.337 17.2022 10.1738 17.2022 9ZM8.70084 13.3613C6.28738 13.3613 4.3396 11.4135 4.3396 9C4.3396 6.58649 6.28738 4.63868 8.70084 4.63868C11.1143 4.63868 13.0621 6.58649 13.0621 9C13.0621 11.4135 11.1143 13.3613 8.70084 13.3613ZM13.2407 5.47862C12.6772 5.47862 12.2222 5.02356 12.2222 4.46006C12.2222 3.89655 12.6772 3.44149 13.2407 3.44149C13.8042 3.44149 14.2592 3.89655 14.2592 4.46006C14.2594 4.59386 14.2332 4.72639 14.1821 4.85004C14.1309 4.9737 14.0559 5.08605 13.9613 5.18067C13.8667 5.27528 13.7543 5.3503 13.6307 5.40143C13.507 5.45256 13.3745 5.47879 13.2407 5.47862Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="header-socialBx__item">
+                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.18812 10.125L9.68819 6.86761H6.56238V4.75374C6.56238 3.86274 6.99887 2.99367 8.39894 2.99367H9.81981V0.220548C9.81981 0.220548 8.53056 0.000610352 7.29756 0.000610352C4.72356 0.000610352 3.04112 1.56099 3.04112 4.3853V6.86817H0.179688V10.1256H3.04112V18.0006H6.56238V10.1256L9.18812 10.125Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- /.footer-box -->
+            <p class="footer-copyright mobile">© 2022 Aveoceo. All Rights Reserved.</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+</main>
+
+
+</body>
+</html>
