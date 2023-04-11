@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./static/css/color.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="./static/css/all.css">
+
+  <!-- ========== FAVICONS ========== -->
+  <link rel="apple-touch-icon" sizes="76x76" href="./static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+  <title>Главная</title>
+</head>
+<body>
+<div class="blackout"></div>
+
+<div class="_overlay-bg modal modal-form" data-popup="form">
+    <div class="modal-formBx">
+        <p class="modal-form__title">Наш менеджер перезвонит вам в течение 5 минут</p>
+        <!-- /.modal-form__title -->
+        <p class="modal-form__subtitle">Закажите срочный ремонт в нашем сервисном центре через сайт и получите скидку 25%</p>
+        <!-- /.modal-form__subtitle -->
+        <form action="" id="applicationForm">
+            <div class="modal-form-inputBx"><div class="inputBx"><input type="text" placeholder="Ваше имя и фамилия"><span class="border-input"></span></div></div>
+            <div class="modal-form-inputBx"><div class="inputBx"><input type="text" placeholder="Номер телефона" class="input-mask"><span class="border-input"></span></div></div>
+            <button class="fb modal-form__button">Отправить заявку</button>
+            <!-- /.modal-form__button -->
+            <p class="modal-form__notice">Нажимая на кнопку вы соглашаетесь с <a href="">политикой обработки данных</a></p>
+            <!-- /.modal-form__notice -->
+        </form>
+        <svg class="button-close modal__cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="#A7A8AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L18 18" stroke="#A7A8AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <!-- /.modal-formBx -->
+</div>
+<div class="_overlay-bg modal" id="successPopup">
+    <div class="modal-formBx">
+        <p class="modal-form__title">Заявка отправлена</p>
+        <!-- /.modal-form__title -->
+        <p class="modal-form__subtitle">Наш менеджер перезвонит Вам в течение 5 минут</p>
+        <!-- /.modal-form__subtitle -->
+        <button class="button-close fb modal-form__button mt-50">Отлично</button>
+        <svg class="button-close modal__cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="#A7A8AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L18 18" stroke="#A7A8AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <!-- /.modal-formBx -->
+</div>
+
+<div class="_overlay-bg modal politics" data-popup="politics">
+    <div class="modal-box">
+        <div class="modal-titleBx">
+            <h3 class="modal__title">Политика персональных данных</h3>
+            <!-- /.modal__title -->
+            <div class="button-close modal-closeBx">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Закрыть</span>
+            </div>
+            <!-- /.modal-closeBx -->
+        </div>
+        <!-- /.modal-titleBx -->
+        <div class="modal-politics">
+            <h3 class="modal-politics__title">Политика в отношении обработки персональных данных</h3>
+            <!-- /.modal-politics__title -->
+            <h4 class="modal-politics__subtitle">1. Общие положения</h4>
+            <!-- /.modal-politics__subtitle -->
+            <p class="modal-politics__desc">Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных сайта pro-remdom.ru (далее – Оператор)</p>
+            <!-- /.modal-politics__desc -->
+            <ul class="modal-politics-lists">
+                <li>Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</li>
+                <li>Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну</li>
+            </ul>
+            <!-- /.modal-politics-lists -->
+            <h4 class="modal-politics__subtitle">2. Основные понятия, используемые в Политике</h4>
+            <ul class="modal-politics-lists">
+                <li>Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники;</li>
+                <li>Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных);</li>
+                <li>Веб-сайт – совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу ;</li>
+                <li>Информационная система персональных данных — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их обработку информационных технологий и технических средств;</li>
+                <li>Любая информация на сайте не является публичной офертой.</li>
+                <li>Бесплатная диагностика, является предложением по акции и действует только при продолжении ремонта. В случае отказа от ремонта Заказчик оплачивает стоимость диагностики в размере от пятисот до двух тысяч рублей. Стоимость диагностики определяется инженером после ее проведения.</li>
+                <li>Обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных;</li>
+                <li>Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;</li>
+                <li>Оператор – государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными;</li>
+                <li>Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб-сайта</li>
+                <li>Пользователь – любой посетитель веб-сайта ;</li>
+                <li>Предоставление персональных данных – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц;</li>
+                <li>Распространение персональных данных – любые действия, направленные на раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации, размещение в информационно-телекоммуникационных сетях или предоставление доступа к персональным данным каким-либо иным способом;</li>
+                <li>Трансграничная передача персональных данных – передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу;</li>
+                <li>Уничтожение персональных данных – любые действия, в результате которых персональные данные уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания персональных данных в информационной системе персональных данных и (или) результате которых уничтожаются материальные носители персональных данных.</li>
+            </ul>
+            <h4 class="modal-politics__subtitle">3. Оператор может обрабатывать следующие персональные данные Пользователя</h4>
+            <ul class="modal-politics-lists">
+                <li>Год, месяц, дата и место рождения;</li>
+                <li>Фотографии;</li>
+                <li>Также на сайте происходит сбор и обработка обезличенных данных о посетителях (в т.ч. файлов «cookie») с помощью сервисов интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).</li>
+                <li>Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.</li>
+            </ul>
+            <h4 class="modal-politics__subtitle">4. Цели обработки персональных данных</h4>
+            <ul class="modal-politics-lists">
+                <li>Цель обработки персональных данных Пользователя — информирование Пользователя посредством отправки электронных писем; предоставление доступа Пользователю к сервисам, информации и/или материалам, содержащимся на веб-сайте.</li>
+                <li>Также Оператор имеет право направлять Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь всегда может отказаться от получения информационных сообщений, направив Оператору письмо на адрес электронной почты info@ с пометкой «Отказ от уведомлениях о новых продуктах и услугах и специальных предложениях».</li>
+                <li>Обезличенные данные Пользователей, собираемые с помощью сервисов интернет-статистики, служат для сбора информации о действиях Пользователей на сайте, улучшения качества сайта и его содержания.</li>
+            </ul>
+
+            <h4 class="modal-politics__subtitle">5. Правовые основания обработки персональных данных</h4>
+
+            <ul class="modal-politics-lists">
+                <li>Оператор обрабатывает персональные данные Пользователя только в случае их заполнения и/или отправки Пользователем самостоятельно через специальные формы, расположенные на сайте . Заполняя соответствующие формы и/или отправляя свои персональные данные Оператору, Пользователь выражает свое согласие с данной Политикой.</li>
+                <li>Оператор обрабатывает обезличенные данные о Пользователе в случае, если это разрешено в настройках браузера Пользователя (включено сохранение файлов «cookie» и использование технологии JavaScript).</li>
+            </ul>
+
+            <h4 class="modal-politics__subtitle">6. Порядок сбора, хранения, передачи и других видов обработки персональных данных</h4>
+            <p class="modal-politics__desc">Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований действующего законодательства в области защиты персональных данных.</p>
+
+            <ul class="modal-politics-lists">
+                <li>Оператор обеспечивает сохранность персональных данных и принимает все возможные меры, исключающие доступ к персональным данным неуполномоченных лиц.</li>
+                <li>Персональные данные Пользователя никогда, ни при каких условиях не будут переданы третьим лицам, за исключением случаев, связанных с исполнением действующего законодательства.</li>
+                <li>В случае выявления неточностей в персональных данных, Пользователь может актуализировать их самостоятельно, путем направления Оператору уведомление на адрес электронной почты Оператора info@ с пометкой «Актуализация персональных данных».</li>
+                <li>Срок обработки персональных данных является неограниченным. Пользователь может в любой момент отозвать свое согласие на обработку персональных данных, направив Оператору уведомление посредством электронной почты на электронный адрес Оператора info@ с пометкой «Отзыв согласия на обработку персональных данных».</li>
+            </ul>
+            <h4 class="modal-politics__subtitle">7. Трансграничная передача персональных данных</h4>
+            <ul class="modal-politics-lists">
+                <li>Оператор до начала осуществления трансграничной передачи персональных данных обязан убедиться в том, что иностранным государством, на территорию которого предполагается осуществлять передачу персональных данных, обеспечивается надежная защита прав субъектов персональных данных.</li>
+                <li>Трансграничная передача персональных данных на территории иностранных государств, не отвечающих вышеуказанным требованиям, может осуществляться только в случае наличия согласия в письменной форме субъекта персональных данных на трансграничную передачу его персональных данных и/или исполнения договора, стороной которого является субъект персональных данных.</li>
+            </ul>
+            <h4 class="modal-politics__subtitle">8. Трансграничная передача персональных данных</h4>
+            <ul class="modal-politics-lists">
+                <li>Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты info@.</li>
+                <li>В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией.</li>
+            </ul>
+        </div>
+        <!-- /.modal-politics -->
+    </div>
+    <!-- /.modal-box -->
+</div>
+<!-- /.modal -->
+
+<header class="header">
+    <div class="header__container">
+      <div class="header-inner">
+          <div class="header-logoBx">
+              <a href="./" class="header-imgBx">
+                  <img src="./images/logo.svg" alt="">
+              </a>
+              <!-- /.header-imgBx -->
+              <p class="header__title">Профессиональный ремонт техники</p>
+              <!-- /.header__title -->
+          </div>
+          <!-- /.header-logoBx -->
+          <nav class="header-nav">
+              <ul>
+                  <li class="header-nav__item"><a href="" class="header-nav__link">Виды техники</a></li>
+                  <li class="header-nav__item"><a href="" class="header-nav__link">Этапы работы</a></li>
+                  <li class="header-nav__item"><a href="" class="header-nav__link">Почему мы</a></li>
+                  <li class="header-nav__item"><a href="" class="header-nav__link">Контакты</a></li>
+              </ul>
+          </nav>
+          <!-- /.header-nav -->
+          <div class="header-phoneBx">
+              <a href="tel: 8 (495) 489-16-90" class="header__phone">8 (495) 489-16-90</a>
+              <!-- /.header__phone -->
+              <p class="header-phoneBx__text">Горячая линия 24/7</p>
+              <!-- /.header-phoneBx__text -->
+          </div>
+          <!-- /.header-phoneBx -->
+
+          <div class="header-burger">
+              <span></span>
+          </div>
+          <!-- /.header-burger -->
+      </div>
+      <!-- /.header-inner -->
+    </div>
+</header>
+<main class="main">
+    <section class="content">
+        <div class="content__container">
+            <div class="content-inner">
+                <div class="content-searchBx">
+                    <input type="text" id="search-technic" data-list=".search-list" class="content__search" placeholder="Поиск...">
+                    <!-- /.nav-mobile -->
+                    <div class="content-box">
+                        <div class="content-technics">
+                            <p class="content-box__title">Обслуживаемая техника <span class="content-box__title-count">10</span></p>
+                            <!-- /.content-box__title -->
+                            <div class="content-accordion content-technics-listsBx">
+                                <ul class="search-list content-technics-lists">
+                                    <li class="content-technics-lists__item">
+                                        <a href="" class="content-technics-lists__link">
+                                            <div class="content-technics-lists-svgBx">
+                                                <img class="svg" src="./images/svgs/1.svg" alt="">
+                                            </div>
+                                            <p>Микроволновые печи</p>
+                                        </a></li>
+                                    <li class="content-technics-lists__item">
+                                        <a href="" class="content-technics-lists__link">
+                                            <div class="content-technics-lists-svgBx">
+                                                <img class="svg" src="./images/svgs/2.svg" alt="">
+                                            </div>
+                                            <p>Ноутбуки</p>
+                                        </a></li>
+                                    <li class="content-technics-lists__item active">
+                                        <a href="" class="content-technics-lists__link">
+                                            <div class="content-technics-lists-svgBx">
+                                                <img class="svg" src="./images/svgs/3.svg" alt="">
+                                            </div>
+                                            <p>Мониторы</p>
+                                        </a></li>
+                                    <li class="content-technics-lists__item">
+                                        <a href="" class="content-technics-lists__link">
+                                            <div class="content-technics-lists-svgBx">
+                                                <img class="svg" src="./images/svgs/4.svg" alt="">
+                                            </div>
+                                            <p>Планшеты</p>
+                                        </a></li>
+                                    <li class="content-technics-lists__item">
+                                        <a href="" class="content-technics-lists__link">
+                                            <div class="content-technics-lists-svgBx">
+                                                <img class="svg" src="./images/svgs/5.svg" alt="">
+                                            </div>
+                                            <p>Пылесосы</p>
+                                        </a></li>
+                                    <li class="content-technics-lists__item">
+                                        <a href="" class="content-technics-lists__link">
+                                            <div class="content-technics-lists-svgBx">
+                                                <img class="svg" src="./images/svgs/6.svg" alt="">
+                                            </div>
+                                            <p>Смарт-часы</p>
+                                        </a></li>
+                                </ul>
+                                <!-- /.content-technics-lists -->
+                            </div>
+                            <!-- /.content-technics-lists -->
+                        </div>
+                        <!-- /.content-technics -->
+                        <div class="content-brands">
+                            <p class="content-box__title">Обслуживаемые бренды <span class="content-box__title-count">13</span></p>
+                            <!-- /.content-box__title -->
+                            <div class="content-accordion content-brands-listsBx">
+                                <ul class="search-list content-brands-lists">
+                                    <li class="content-brands-lists__item">
+                                        <a href="" class="content-brands-lists__link">AEG</a>
+                                    </li>
+                                    <li class="content-brands-lists__item">
+                                        <a href="" class="content-brands-lists__link">Ariston</a>
+                                    </li>
+                                    <li class="content-brands-lists__item">
+                                        <a href="" class="content-brands-lists__link">Beko</a>
+                                    </li>
+                                    <li class="content-brands-lists__item">
+                                        <a href="" class="content-brands-lists__link">Candy</a>
+                                    </li>
+                                    <li class="content-brands-lists__item">
+                                        <a href="" class="content-brands-lists__link">Elecrtolux</a>
+                                    </li>
+                                    <li class="content-brands-lists__item">
+                                        <a href="" class="content-brands-lists__link">Hansa</a>
+                                    </li>
+                                </ul>
+                                <!-- /.content-technics-lists -->
+                            </div>
+                            <!-- /.content-technics-lists -->
+                        </div>
+                        <!-- /.content-technics -->
+                    </div>
+                    <!-- /.content-box -->
+                    <nav class="nav-mobile">
+                        <ul>
+                            <li class="nav-mobile__item"><a href="" class="nav-mobile__link">Виды техники</a></li>
+                            <li class="nav-mobile__item"><a href="" class="nav-mobile__link">Этапы работы</a></li>
+                            <li class="nav-mobile__item"><a href="" class="nav-mobile__link">Почему мы</a></li>
+                            <li class="nav-mobile__item"><a href="" class="nav-mobile__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.content-searchBx -->
+                <div class="content-helper">
+                    <div class="content-wrapper">
+                        <div class="content-about">
+                            <h1 class="content__title">Ремонт мониторов в сервисном центре</h1>
+                            <!-- /.content__title -->
+                            <ul class="content-lists">
+                                <li class="content-lists__item">Гарантия на услуги 5 лет</li>
+                                <li class="content-lists__item">Ремонт и настройка от 25 минут</li>
+                                <li class="content-lists__item">Выезд мастера или доставка</li>
+                                <li class="content-lists__item">Диагностика от 25 минут</li>
+                            </ul>
+                            <!-- /.content-lists -->
+                            <div class="content-buttonBx">
+                                <button class="fb content__button" data-type="form">Заказать ремонт</button>
+                                <a href="#next" class="tb white content__button">Узнать больше</a>
+                            </div>
+                        </div>
+                        <!-- /.content-about -->
+                        <div class="content-wrapper-imgBx">
+                            <img class="content__main" src="./images/technics/1.png" alt="">
+                            <img class="content__svg top" src="./images/content/svg-top.svg" alt="">
+                            <img class="content__svg mobile top" src="./images/content/svg-top-mobile.svg" alt="">
+                            <img class="bottom content__svg" src="./images/content/svg-bottom.svg" alt="">
+                            <img class="bottom content__svg mobile" src="./images/content/svg-bottom-mobile.svg" alt="">
+                        </div>
+                        <!-- /.content-wrapper-imgBx -->
+                    </div>
+                    <!-- /.content-wrapper -->
+                    <div class="content-formBx">
+                        <h2 class="content-formBx__title">Получите скидку и сэкономьте
+                            25% при обращении</h2>
+                        <!-- /.content-formBx__title -->
+                        <form action="" class="content-form">
+                            <div class="inputBx"><input type="text" class="content-form__input" placeholder="Ваше имя" required><span class="border-input"></span></div>
+                            <div class="inputBx"><input type="text" class="input-mask content-form__input" placeholder="Номер телефона" required><span class="border-input"></span></div>
+                            <button class="tb content-form__button" type="submit">Получить скидку</button>
+                            <!-- /.content-form__button tb -->
+                        </form>
+                        <!-- /.content-form -->
+                        <img class="content-formBx__img" src="./images/content/offer-svg.svg" alt="">
+                    </div>
+                    <!-- /.content-formBx -->
+                </div>
+            </div>
+            <!-- /.content-inner -->
+        </div>
+        <!-- /.content__container -->
+    </section>
+    <!-- /.content -->
+
+    <section class="price" id="next">
+        <div class="price__container">
+            <h2 class="title price__title">Прайс на ремонт мониторов</h2>
+            <!-- /.price__title title -->
+            <div class="price-inner">
+<!--                <div class="price-box">-->
+                    <div class="price__item" data-type="form">
+                        <p>Диагностика</p>
+                        <p>Бесплатно<span></span></p>
+                    </div>
+                    <!-- /.price__item -->
+                    <div class="price__item" data-type="form">
+                        <p>Замена подшибника</p>
+                        <p><span>от</span> 3 650₽</p>
+                    </div>
+                    <!-- /.price__item -->
+                    <div class="price__item" data-type="form">
+                        <p>Замена ТЭНа</p>
+                        <p><span>от</span> 1 650₽</p>
+                    </div>
+                    <!-- /.price__item -->
+                    <div class="price__item" data-type="form">
+                        <p>Замена армотизаторов</p>
+                        <p><span>от</span> 2 350₽</p>
+                    </div>
+                    <!-- /.price__item -->
+                    <div class="price__item" data-type="form">
+                        <p>Замена люка</p>
+                        <p><span>от</span> 1 400₽</p>
+                    </div>
+                    <!-- /.price__item -->
+                    <div class="price__item" data-type="form">
+                        <p>Чистка фильтров</p>
+                        <p><span>от</span> 1 400₽</p>
+                    </div>
+                    <!-- /.price__item -->
+                    <div class="price__item" data-type="form">
+                        <p>Замена ремней</p>
+                        <p><span>от</span> 900₽</p>
+                    </div>
+                    <!-- /.price__item -->
+                    <div class="price__item" data-type="form">
+                        <p>Замена барабана</p>
+                        <p><span>от</span> 5 000₽</p>
+                    </div>
+                    <!-- /.price__item -->
+<!--                </div>-->
+                <!-- /.price-box -->
+<!--                <div class="price-box">-->
+                    <div class="price__item" data-type="form">
+                        <p>Диагностика</p>
+                        <p>Бесплатно<span></span></p>
+                    </div>
+                    <!-- /.price__item -->
+                    <div class="price__item" data-type="form">
+                        <p>Замена подшибника</p>
+                        <p><span>от</span> 3 650₽</p>
+                    </div>
+                    <!-- /.price__item -->
+                    <div class="price__item" data-type="form">
+                        <p>Замена ТЭНа</p>
+                        <p><span>от</span> 1 650₽</p>
+                    </div>
+                    <!-- /.price__item -->
+                    <div class="price__item" data-type="form">
+                        <p>Замена армотизаторов</p>
+                        <p><span>от</span> 2 350₽</p>
+                    </div>
+                    <!-- /.price__item -->
+                    <div class="price__item" data-type="form">
+                        <p>Замена люка</p>
+                        <p><span>от</span> 1 400₽</p>
+                    </div>
+                    <!-- /.price__item -->
+                    <div class="price__item" data-type="form">
+                        <p>Чистка фильтров</p>
+                        <p><span>от</span> 1 400₽</p>
+                    </div>
+                    <!-- /.price__item -->
+                    <div class="price__item" data-type="form">
+                        <p>Замена ремней</p>
+                        <p><span>от</span> 900₽</p>
+                    </div>
+                    <!-- /.price__item -->
+                    <div class="price__item" data-type="form">
+                        <p>Замена барабана</p>
+                        <p><span>от</span> 5 000₽</p>
+                    </div>
+                    <!-- /.price__item -->
+<!--                </div>-->
+                <!-- /.price-box -->
+            </div>
+            <!-- /.price-inner -->
+            <button class="price__button">Показать ещё</button>
+            <!-- /.price__button -->
+        </div>
+        <!-- /.price__container -->
+    </section>
+    <!-- /.price -->
+
+    <section class="offer">
+        <div class="offer__container">
+            <div class="offer-inner">
+                <div class="offer-formBx">
+                    <h2 class="offer__title">Получите скидку и сэкономьте
+                        25% при обращении</h2>
+                    <!-- /.offer__title -->
+                    <form action="" class="offer-form">
+                        <div class="offer-inputBx">
+                            <div class="inputBx"><input type="text" placeholder="Ваше имя" required><span class="border-input"></span></div>
+                            <div class="inputBx"><input type="text" class="input-mask" placeholder="Номер телефона" required><span class="border-input"></span></div>
+                        </div>
+                        <button class="tb offer__button" type="submit">Получить скидку</button>
+                    </form>
+                    <!-- /.offer-form -->
+                    <p class="offer__notice">
+                        Нажимая кнопку «Отправить», я даю свое согласие на <a href="#">обработку моих персональных
+                        данных</a>
+                    </p>
+                    <!-- /.offer__notice -->
+                </div>
+                <!-- /.offer-formBx -->
+                <div class="offer-imgBx">
+                    <img src="./images/offer/main.png" alt="">
+                </div>
+                <!-- /.offer-imgBx -->
+                <img src="./images/offer/svg-top.svg" alt="" class="offer-svg top">
+                <img src="./images/offer/svg-bottom.svg" alt="" class="bottom offer-svg">
+                <img src="./images/offer/svg-bottom-mobile.svg" alt="" class="bottom mobile offer-svg">
+            </div>
+            <!-- /.offer-inner -->
+        </div>
+        <!-- /.offer__container -->
+    </section>
+    <!-- /.offer -->
+
+    <section class="stages">
+        <div class="stages__container">
+            <h2 class="title stages__title">Этапы работы с нами</h2>
+            <!-- /.stages__title title -->
+            <div class="stages-box">
+                <div class="stages__item">
+                    <div class="stages__item-svgBx">
+                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.46682 0.0837078C2.96327 0.58989 0.890662 2.52569 0.186111 5.00872L0.0287845 5.55595L0.00826364 11.9653C-0.0122573 19.0997 -0.0327781 18.744 0.452883 19.7085C0.924864 20.6456 1.98511 21.487 3.04536 21.7606C3.58574 21.8974 4.63231 21.9043 5.15901 21.7675C5.68571 21.6306 5.91828 21.5075 8.14138 20.2215L10.0225 19.1339H14.3045C17.7041 19.1339 18.6891 19.1134 19.0927 19.0382C21.8288 18.5115 23.9972 16.3431 24.5239 13.607C24.6607 12.8751 24.6607 6.23998 24.5239 5.50806C24.0382 2.97715 22.1024 0.884024 19.592 0.172632L19.0448 0.0153046L12.4781 0.00162506C7.25898 -0.00521469 5.82252 0.00846481 5.46682 0.0837078ZM18.9764 2.93611C20.3308 3.40125 21.3432 4.47518 21.7262 5.8706C21.8357 6.2605 21.8493 6.65723 21.8493 9.55752C21.8493 12.4578 21.8357 12.8545 21.7262 13.2444C21.3432 14.6399 20.3308 15.7206 18.9764 16.1721L18.4292 16.3568L13.7436 16.3978L9.05798 16.432L8.23715 16.904C4.37922 19.1339 4.50918 19.0655 4.11928 19.0655C3.5447 19.0655 3.17532 18.833 2.89487 18.3131C2.77174 18.0874 2.7649 17.8069 2.7649 12.1568V6.23998L2.92223 5.72695C3.13428 5.06344 3.40789 4.58462 3.87303 4.08528C4.53654 3.36705 5.43262 2.90191 6.35606 2.78563C6.60231 2.75826 9.42052 2.73774 12.6149 2.74459L18.4292 2.75142L18.9764 2.93611Z" fill="#285FE0"/>
+                            <path d="M6.10246 8.36745C5.67836 8.62054 5.46631 9.01728 5.46631 9.55766C5.46631 10.399 5.99301 10.9257 6.83437 10.9257C7.67573 10.9257 8.20243 10.399 8.20243 9.55766C8.20243 8.7163 7.67573 8.1896 6.82753 8.1896C6.47867 8.1896 6.32819 8.2238 6.10246 8.36745Z" fill="#285FE0"/>
+                            <path d="M11.5756 8.36745C11.1515 8.62054 10.9395 9.01728 10.9395 9.55766C10.9395 10.399 11.4662 10.9257 12.3075 10.9257C13.1489 10.9257 13.6756 10.399 13.6756 9.55766C13.6756 8.7163 13.1489 8.1896 12.3007 8.1896C11.9518 8.1896 11.8013 8.2238 11.5756 8.36745Z" fill="#285FE0"/>
+                            <path d="M17.0468 8.36745C16.6227 8.62054 16.4106 9.01728 16.4106 9.55766C16.4106 10.399 16.9373 10.9257 17.7787 10.9257C18.6201 10.9257 19.1468 10.399 19.1468 9.55766C19.1468 8.7163 18.6201 8.1896 17.7719 8.1896C17.423 8.1896 17.2725 8.2238 17.0468 8.36745Z" fill="#285FE0"/>
+                            <path d="M27.4454 13.2854C27.0213 13.5453 26.8093 13.9421 26.8093 14.4825C26.8093 15.3512 27.295 15.8026 28.3142 15.8916C30.1952 16.042 31.6317 17.2117 32.1242 19.0039C32.2405 19.4075 32.2473 19.9 32.2473 25.3243V31.207L32.1037 31.4806C31.8369 31.9663 31.4539 32.1988 30.893 32.1988C30.4962 32.1988 30.7904 32.3562 26.9803 30.1536L25.9543 29.5653L21.2687 29.5311L16.5831 29.4969L16.0427 29.3054C15.3518 29.0591 14.9893 28.8471 14.4899 28.3819C13.9632 27.8963 13.5802 27.2943 13.3544 26.624C13.1903 26.0973 13.1766 25.9947 13.1492 24.1615C13.115 22.2872 13.115 22.2394 12.9509 21.9589C12.7046 21.5348 12.3079 21.3228 11.7606 21.3228C11.2066 21.3228 10.8167 21.5348 10.5636 21.9726L10.3857 22.2736L10.4063 24.483C10.4405 27.0276 10.4747 27.2533 11.0766 28.4777C12.0206 30.3862 13.8264 31.7679 15.9195 32.1715C16.3231 32.2467 17.3081 32.2672 20.7078 32.2672H24.9829L26.8709 33.3548C29.1008 34.6408 29.3539 34.7639 29.8669 34.9008C30.3799 35.0376 31.4333 35.0307 31.96 34.8939C33.3828 34.5245 34.5388 33.3685 34.9082 31.9457C35.004 31.5832 35.0177 30.7418 35.0177 25.338C35.0177 20.2967 34.9971 19.0518 34.9219 18.6414C34.5183 16.5482 33.1366 14.7424 31.2281 13.7984C30.291 13.3401 29.6412 13.176 28.5878 13.1349C27.7601 13.1076 27.7259 13.1144 27.4454 13.2854Z" fill="#285FE0"/>
+                        </svg>
+                    </div>
+                    <!-- /.stages__item-svgBx -->
+                    <p class="stages__item-title">1. Заявка</p>
+                    <!-- /.stages__item-title -->
+                    <p class="stages__item-subtitle">Используем запчасти высокого качества, предоставляем гарантию</p>
+                    <!-- /.stages__item-subtitle -->
+                </div>
+                <!-- /.stages__item -->
+                <div class="stages__item">
+                    <div class="stages__item-svgBx">
+                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.4078 0.100712C14.876 0.249157 14.2581 0.592922 13.867 0.952316C13.6715 1.13201 13.0849 1.77267 12.5687 2.37426C11.3642 3.78058 11.0358 4.11654 10.7777 4.25717C10.6291 4.3353 9.87821 4.42124 8.5486 4.52281C5.82682 4.73376 5.31844 4.89783 4.37207 5.84319C3.80112 6.41353 3.51173 6.93699 3.30838 7.75735C3.18324 8.273 3.18324 8.40582 3.30838 10.1403C3.48045 12.4763 3.48045 12.781 3.29274 13.0779C3.21453 13.2029 2.58101 13.9686 1.88492 14.7811C0.250279 16.6797 0 17.1797 0 18.5001C0 19.2579 0.117318 19.7658 0.422346 20.3674C0.703911 20.9221 1.07933 21.3205 2.38547 22.4378C3.7933 23.641 4.12961 23.9691 4.27039 24.2269C4.3486 24.3754 4.43464 25.1254 4.53631 26.4536C4.70056 28.524 4.79441 29.024 5.13855 29.7116C5.44358 30.3132 6.21788 31.0398 6.89832 31.3601C7.82123 31.7976 8.19665 31.8367 10.2849 31.6726C12.5531 31.5007 12.733 31.5007 13.0223 31.657C13.1553 31.7273 13.9374 32.3602 14.7665 33.0711C15.5955 33.7821 16.4402 34.454 16.6436 34.5556C17.8246 35.1494 19.248 35.1494 20.4369 34.5478C20.9531 34.2899 21.3676 33.8915 22.4704 32.6102C23.6827 31.2038 24.0034 30.8679 24.2693 30.7273C24.4101 30.6491 25.1453 30.5632 26.4983 30.4538C27.6168 30.3757 28.6961 30.2507 28.9385 30.1804C30.495 29.7272 31.6134 28.4068 31.7933 26.8052C31.8246 26.563 31.7933 25.6176 31.7229 24.7113C31.5587 22.6487 31.5587 22.2503 31.6838 22.0003C31.7464 21.8909 32.3408 21.1643 33.0056 20.383C34.914 18.1485 35 17.9844 35 16.4375C35 15.4296 35 15.4218 34.7106 14.8202C34.3587 14.0858 34.0536 13.742 32.6536 12.5466C31.2458 11.3435 30.9095 11.0153 30.7687 10.7575C30.6905 10.6091 30.6045 9.85901 30.5028 8.53082C30.2994 5.92131 30.143 5.39004 29.3296 4.49937C28.6492 3.75714 27.7966 3.32743 26.7955 3.22587C26.5374 3.20243 25.6223 3.23368 24.7777 3.304C22.7441 3.46807 22.2905 3.47588 22.0089 3.32743C21.8838 3.25712 21.1017 2.62428 20.2726 1.9133C18.7475 0.600735 18.3642 0.342911 17.6056 0.116337C17.0972 -0.0321083 15.924 -0.0399208 15.4078 0.100712ZM16.9955 2.7571C17.1363 2.81179 17.7933 3.33525 18.4581 3.90559C20.1944 5.40566 20.3274 5.50723 20.8905 5.76506C21.743 6.16352 22.2123 6.19477 24.4726 6.02288C25.8257 5.92131 26.5374 5.89006 26.7251 5.94475C27.0771 6.03851 27.4994 6.42134 27.6011 6.73386C27.648 6.87449 27.7575 7.88235 27.8358 8.98397C28.086 12.1951 28.0704 12.1638 31.1207 14.8046C31.6134 15.2343 32.0827 15.6718 32.1687 15.7812C32.3721 16.0625 32.4268 16.6094 32.2782 16.9453C32.2156 17.0938 31.676 17.7813 31.0816 18.4688C29.6346 20.1408 29.5251 20.2892 29.2514 20.8674C28.8525 21.719 28.8212 22.18 29.0011 24.4379C29.1028 25.7895 29.1341 26.5083 29.0793 26.688C28.9855 27.0396 28.6022 27.4615 28.2894 27.563C28.1486 27.6099 27.1318 27.7193 26.0212 27.8052C22.8223 28.0552 22.8458 28.0396 20.3899 30.8679C19.8425 31.5007 19.3028 32.0789 19.2011 32.1492C18.9196 32.3367 18.3877 32.3758 18.067 32.2351C17.9184 32.1726 17.105 31.5242 16.2603 30.7976C13.914 28.7818 13.7184 28.7193 10.5665 28.9615C9.21341 29.0631 8.50168 29.0944 8.31397 29.0397C7.96201 28.9459 7.53967 28.5631 7.43799 28.2506C7.39106 28.1099 7.28156 27.1021 7.20335 26.0005C6.95307 22.7894 6.96872 22.8206 3.91844 20.1798C3.4257 19.7501 2.95642 19.3126 2.87039 19.2032C2.66704 18.922 2.61229 18.3751 2.76089 18.0391C2.82346 17.8907 3.36313 17.2031 3.95754 16.5156C5.40447 14.8436 5.51397 14.6952 5.78771 14.117C6.18659 13.2654 6.21788 12.8045 6.03799 10.5465C5.93631 9.19492 5.90503 8.47613 5.95978 8.29643C6.05363 7.94485 6.43687 7.52296 6.74972 7.42139C6.8905 7.37451 7.90726 7.26513 9.01788 7.17919C12.2089 6.92918 12.1933 6.93699 14.6492 4.10872C15.2045 3.47588 15.7676 2.8821 15.9006 2.80397C16.1899 2.62428 16.6358 2.60084 16.9955 2.7571Z" fill="#285FE0"/>
+                            <path d="M15.9544 9.78865C13.0684 10.3981 10.6751 12.6325 9.92424 15.4217C9.71306 16.2187 9.63485 17.9375 9.77563 18.7969C10.2918 22.0236 12.8963 24.6488 16.1421 25.2191C16.7443 25.3285 18.2929 25.3285 18.8952 25.2191C22.0784 24.6566 24.6203 22.1565 25.2304 18.9922C25.3712 18.25 25.3712 16.7343 25.2304 15.9921C24.6751 13.1013 22.4226 10.6715 19.5913 9.90584C18.7935 9.6949 16.7443 9.62458 15.9544 9.78865ZM19.122 12.6013C20.7097 13.1482 21.8594 14.2889 22.4226 15.8905C22.6103 16.4452 22.6337 16.6249 22.6337 17.4922C22.6337 18.3594 22.6103 18.5391 22.4226 19.0938C21.8594 20.6954 20.7254 21.8283 19.122 22.3908C18.5667 22.5784 18.3868 22.6018 17.5186 22.6018C16.6505 22.6018 16.4706 22.5784 15.9153 22.3908C13.8349 21.6564 12.4818 19.8829 12.3723 17.7265C12.2706 15.6874 13.4516 13.7185 15.2974 12.8435C16.4862 12.281 17.9097 12.1872 19.122 12.6013Z" fill="#285FE0"/>
+                        </svg>
+                    </div>
+                    <!-- /.stages__item-svgBx -->
+                    <p class="stages__item-title">2. Диагностика</p>
+                    <!-- /.stages__item-title -->
+                    <p class="stages__item-subtitle">Детальная диагностика
+                        будет точной и не займет
+                        много времени</p>
+                    <!-- /.stages__item-subtitle -->
+                </div>
+                <!-- /.stages__item -->
+                <div class="stages__item">
+                    <div class="stages__item-svgBx">
+                        <svg width="32" height="35" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1544 0.624728C18.7646 0.890407 19.1267 1.52638 19.0439 2.18673L17.6999 12.9H30C30.5825 12.9 31.1124 13.2373 31.359 13.765C31.6056 14.2927 31.5244 14.9155 31.1507 15.3623L15.5951 33.9623C15.1681 34.4728 14.4559 34.641 13.8457 34.3753C13.2355 34.1096 12.8733 33.4737 12.9561 32.8133L14.3001 22.1H2.00002C1.41751 22.1 0.887683 21.7628 0.641075 21.2351C0.394467 20.7073 0.475682 20.0846 0.849379 19.6377L16.4049 1.03772C16.8319 0.5272 17.5442 0.359049 18.1544 0.624728ZM5.20993 19.1H16C16.4304 19.1 16.84 19.2849 17.1248 19.6076C17.4095 19.9303 17.5419 20.3597 17.4884 20.7867L16.5681 28.1226L26.7901 15.9H16C15.5697 15.9 15.16 15.7152 14.8753 15.3925C14.5905 15.0698 14.4581 14.6403 14.5117 14.2133L15.432 6.8774L5.20993 19.1Z" fill="#285FE0"/>
+                        </svg>
+                    </div>
+                    <!-- /.stages__item-svgBx -->
+                    <p class="stages__item-title">3. Оптимизация</p>
+                    <!-- /.stages__item-title -->
+                    <p class="stages__item-subtitle">Специалист предложит вам
+                        оптимальный вариант работ</p>
+                    <!-- /.stages__item-subtitle -->
+                </div>
+                <!-- /.stages__item -->
+                <div class="stages__item">
+                    <div class="stages__item-svgBx">
+                        <svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9944 0.79633C14.2066 0.312081 14.68 0 15.2024 0C16.7802 0 18.2933 0.635746 19.4089 1.76738C20.5245 2.89902 21.1512 4.43384 21.1512 6.03421V10.951H28.5517C29.1877 10.9449 29.8175 11.0785 30.3978 11.3427C30.9806 11.608 31.4995 11.9986 31.9187 12.4876C32.3378 12.9765 32.6472 13.5521 32.8253 14.1743C33.0034 14.7966 33.046 15.4507 32.9501 16.0913L30.8218 30.171C30.8218 30.1711 30.8218 30.1709 30.8218 30.171C30.6624 31.2367 30.1286 32.2084 29.319 32.9065C28.5113 33.6029 27.4833 33.9805 26.4234 33.9704H4.40651C3.23783 33.9704 2.11702 33.4995 1.29064 32.6612C0.464255 31.823 0 30.6861 0 29.5006V18.5496C0 17.3642 0.464255 16.2273 1.29064 15.389C2.11702 14.5508 3.23783 14.0798 4.40651 14.0798H8.17424L13.9944 0.79633ZM7.71139 16.7617H4.40651C3.93904 16.7617 3.49071 16.9501 3.16016 17.2854C2.82961 17.6207 2.6439 18.0754 2.6439 18.5496V29.5006C2.6439 29.9748 2.82961 30.4295 3.16016 30.7648C3.49071 31.1001 3.93904 31.2885 4.40651 31.2885H7.71139V16.7617ZM10.3553 31.2885H26.4452C26.8702 31.2934 27.2827 31.1424 27.6066 30.8631C27.9305 30.5838 28.144 30.1952 28.2078 29.7689L28.2081 29.7667L30.3361 15.6889C30.3361 15.6891 30.3362 15.6886 30.3361 15.6889C30.3743 15.4328 30.3574 15.1708 30.2862 14.9221C30.215 14.6732 30.0912 14.443 29.9236 14.2474C29.7559 14.0518 29.5483 13.8955 29.3152 13.7894C29.0821 13.6833 28.829 13.6298 28.5735 13.6328L28.5586 13.6329H19.8293C19.0992 13.6329 18.5073 13.0325 18.5073 12.2919V6.03421C18.5073 5.14512 18.1591 4.29244 17.5393 3.66375C17.1153 3.23361 16.5879 2.93243 16.0163 2.7851L10.3553 15.7053V31.2885Z" fill="#285FE0"/>
+                        </svg>
+                    </div>
+                    <!-- /.stages__item-svgBx -->
+                    <p class="stages__item-title">4. Результат</p>
+                    <!-- /.stages__item-title -->
+                    <p class="stages__item-subtitle">В итоге вы получаете
+                        именно тот результат,
+                        который ожидали</p>
+                    <!-- /.stages__item-subtitle -->
+                </div>
+                <!-- /.stages__item -->
+            </div>
+            <!-- /.stages-box -->
+            <button class="fb stages__button" data-type="form">Записаться на консультацию</button>
+        </div>
+        <!-- /.stages__container -->
+    </section>
+    <!-- /.stages -->
+
+    <section class="why">
+        <div class="why__container">
+            <h2 class="title why__title">Почему именно мы</h2>
+            <div class="why-box">
+                <div class="stages__item why__item">
+                    <div class="why__item-countBx">1</div>
+                    <!-- /.why__item-countBx -->
+                    <p class="stages__item-title">Высокое качество</p>
+                    <!-- /.stages__item-title -->
+                    <p class="stages__item-subtitle why__item-subtitle">Мы уверены, что делаем свою работу хорошо.
+                        Именно поэтому наша гарантия - целых 5 лет</p>
+                    <!-- /.stages__item-subtitle -->
+                </div>
+                <!-- /.why__item stages__item -->
+                <div class="stages__item why__item">
+                    <div class="why__item-countBx">2</div>
+                    <!-- /.why__item-countBx -->
+                    <p class="stages__item-title">Опыт 12 лет</p>
+                    <!-- /.stages__item-title -->
+                    <p class="stages__item-subtitle why__item-subtitle">Мы изучили все схемы и микросхемы.
+                        Знаем по имени каждый винтик и лампочку</p>
+                    <!-- /.stages__item-subtitle -->
+                </div>
+                <!-- /.why__item stages__item -->
+                <div class="stages__item why__item">
+                    <div class="why__item-countBx">3</div>
+                    <!-- /.why__item-countBx -->
+                    <p class="stages__item-title">Скидки до 25%</p>
+                    <!-- /.stages__item-title -->
+                    <p class="stages__item-subtitle why__item-subtitle">Мы научились не только хорошо работать, но и
+                        экономить ваши деньги</p>
+                    <!-- /.stages__item-subtitle -->
+                </div>
+                <!-- /.why__item stages__item -->
+            </div>
+            <!-- /.why-box -->
+        </div>
+        <!-- /.why__container -->
+    </section>
+    <!-- /.why -->
+</main>
+<footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer__container">
+          <div class="footer-inner">
+            <div class="footer-contacts">
+              <h2 class="footer__title">Контакты</h2>
+              <!-- /.footer__title -->
+              <div class="footer-contacts__item">
+                <div class="footer-contacts-svgBx">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5543 5.80884C17.7286 6.03794 18.8077 6.61223 19.6537 7.4582C20.4997 8.30417 21.074 9.38333 21.3031 10.5576M16.5543 1C18.994 1.27102 21.2689 2.36352 23.0057 4.09811C24.7425 5.83269 25.8378 8.10628 26.1119 10.5455M24.9097 20.1392V23.7458C24.9111 24.0806 24.8425 24.412 24.7083 24.7188C24.5742 25.0256 24.3775 25.301 24.1308 25.5273C23.884 25.7537 23.5928 25.926 23.2756 26.0333C22.9584 26.1405 22.6223 26.1804 22.2889 26.1502C18.5895 25.7483 15.0359 24.4842 11.9138 22.4595C9.00906 20.6137 6.54634 18.1509 4.70054 15.2462C2.66878 12.1099 1.40438 8.53905 1.00976 4.82303C0.979715 4.49058 1.01923 4.15551 1.12577 3.83917C1.23232 3.52282 1.40357 3.23213 1.62861 2.9856C1.85366 2.73906 2.12758 2.54209 2.43292 2.40721C2.73827 2.27234 3.06835 2.20252 3.40216 2.20221H7.00879C7.59223 2.19647 8.15785 2.40307 8.60023 2.78352C9.0426 3.16396 9.33155 3.69229 9.41321 4.27001C9.56544 5.42421 9.84775 6.55749 10.2548 7.64822C10.4165 8.07852 10.4515 8.54617 10.3556 8.99576C10.2597 9.44534 10.037 9.85802 9.71376 10.1849L8.18695 11.7117C9.89837 14.7215 12.3904 17.2135 15.4002 18.925L16.927 17.3981C17.2539 17.0749 17.6666 16.8522 18.1162 16.7563C18.5657 16.6604 19.0334 16.6954 19.4637 16.8572C20.5544 17.2642 21.6877 17.5465 22.8419 17.6987C23.4259 17.7811 23.9592 18.0752 24.3405 18.5252C24.7218 18.9752 24.9243 19.5496 24.9097 20.1392Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <!-- /.footer-contacts-svgBx -->
+                <div class="footer-contacts-phoneBx">
+                  <a href="tel: 8 (495) 489-16-90">8 (495) 489-16-90</a>
+                  <p>Горячая линия 24/7</p>
+                </div>
+                <!-- /.footer-contacts-phoneBx -->
+              </div>
+              <!-- /.footer-contacts__item -->
+              <div class="footer-contacts__item">
+                <div class="footer-contacts-svgBx">
+                  <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.5 1H23.5C24.875 1 26 2.125 26 3.5V18.5C26 19.875 24.875 21 23.5 21H3.5C2.125 21 1 19.875 1 18.5V3.5C1 2.125 2.125 1 3.5 1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26 3.5L13.5 12.25L1 3.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <!-- /.footer-contacts-svgBx -->
+                <a href="mailto: info@betacentre.ru" class="footer-contacts__title">info@betacentre.ru</a>
+                <!-- /.footer-contacts__title -->
+              </div>
+              <!-- /.footer-contacts__item -->
+              <div class="footer-contacts__item">
+                <div class="footer-contacts-svgBx">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.25 12.5C26.25 21.25 15 28.75 15 28.75C15 28.75 3.75 21.25 3.75 12.5C3.75 9.51631 4.93526 6.65483 7.04505 4.54505C9.15483 2.43526 12.0163 1.25 15 1.25C17.9837 1.25 20.8452 2.43526 22.955 4.54505C25.0647 6.65483 26.25 9.51631 26.25 12.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 16.25C17.0711 16.25 18.75 14.5711 18.75 12.5C18.75 10.4289 17.0711 8.75 15 8.75C12.9289 8.75 11.25 10.4289 11.25 12.5C11.25 14.5711 12.9289 16.25 15 16.25Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <!-- /.footer-contacts-svgBx -->
+                <p class="footer-contacts__title">Москва, улица Дыбенко, 7/1</p>
+                <!-- /.footer-contacts__title -->
+              </div>
+              <!-- /.footer-contacts__item -->
+              <div class="footer-contacts__item">
+                <div class="footer-contacts-svgBx">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 7.5V15L20 17.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <!-- /.footer-contacts-svgBx -->
+                <p class="footer-contacts__title">Режим работы: Пн-вс 7:00-22:00</p>
+                <!-- /.footer-contacts__title -->
+              </div>
+              <!-- /.footer-contacts__item -->
+            </div>
+            <!-- /.footer-contacts -->
+            <div class="footer-map">
+              <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_dybenko_7_1/Z04YcgBpSEQCQFtvfXR2eXlgYg==/?indoorLevel=1&ll=37.479115%2C55.878536&utm_medium=mapframe&utm_source=maps&z=17.08" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Дыбенко, 7/1 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.479115%2C55.878536&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozMjA5MTcwMjg3EjrQoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0YPQu9C40YbQsCDQlNGL0LHQtdC90LrQviwgNy8xIgoNnuoVQhWeg19C&z=17.08" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </div>
+            <!-- /.footer-map -->
+          </div>
+          <!-- /.footer-inner -->
+      </div>
+    </div>
+    <!-- /.footer-inner -->
+    <div class="footer__container">
+      <div class="footer-bottom">
+        <div class="footer-box">
+          <p class="footer-box__title">Помощь</p>
+          <!-- /.footer-box__title -->
+          <ul class="footer-pages">
+            <li class="footer-pages__item"><a href="" class="footer-pages__link">Задать вопрос</a></li>
+            <li class="footer-pages__item"><a href="" class="footer-pages__link">Заказать звонок</a></li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <p class="footer-box__title">Ещё</p>
+          <!-- /.footer-box__title -->
+          <ul class="footer-pages">
+            <li class="footer-pages__item"><a href="" class="footer-pages__link">Политика конфиденциальности</a></li>
+            <li class="footer-pages__item"><div data-type="politics" class="footer-pages__link">Политика обработки данных</div></li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <p class="footer-box__title">Бесплатная консультация</p>
+          <form action="#" class="footer-form">
+            <div class="inputBx"><input class="input-mask" type="text" placeholder="Номер телефона" required><span class="border-input"></span></div>
+            <button class="tb white footer__button" type="submit">Отправить</button>
+          </form>
+          <!-- /.footer-form -->
+        </div>
+      </div>
+      <!-- /.footer-bottom -->
+    </div>
+    <!-- /.footer__container -->
+</footer>
+<script defer="defer" src="./static/plugins/jquery.min.js"></script>
+<script defer="defer" src="./static/plugins/jquery.hideseek.min.js"></script>
+<script defer="defer" src="./static/plugins/jquery.maskedinput.min.js"></script>
+<script defer="defer" src="./static/plugins/slick.min.js"></script>
+<script defer="defer" src="js/app.js"></script>
+</body>
+</html> 

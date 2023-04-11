@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="static/css/color.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="robots" content="noindex,nofollow">
+
+  <link rel="stylesheet" href="static/css/all.css">
+
+  <!-- ========== FAVICONS ========== -->
+  <link rel="apple-touch-icon" sizes="76x76" href="static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <title>Главная</title>
+</head>
+<body>
+
+<div class="_overlay-bg modal" data-popup="repair">
+    <div class="modal-box" data-swipe-threshold="20" data-swipe-unit="px" data-swipe-ignore="false">
+        <div class="modal-titleBx">
+            <h3 class="modal__title">Запишитесь на ремонт</h3>
+            <!-- /.modal__title -->
+            <div class="button-close modal-closeBx">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Закрыть</span>
+            </div>
+            <!-- /.modal-closeBx -->
+        </div>
+        <!-- /.modal-titleBx -->
+        <p class="modal__subtitle">Оставьте заявку и наш менеджер свяжется с Вами в ближайшее время</p>
+        <!-- /.modal__subtitle -->
+        <form action="" class="modal-form">
+            <div class="modal-form-inputBx">
+                <label for="phone">Введите номер телефона</label>
+                <div class="border-input">
+                    <input type="text" class="phone-mask" id="phone" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _" required>
+                    <span></span>
+                </div>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <div class="modal-form-inputBx">
+                <label for="name">Введите имя</label>
+                <div class="border-input">
+                    <input type="text" id="name" placeholder="Ваше имя" required>
+                    <span></span>
+                </div>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <div class="modal-form-inputBx select">
+                <label for="type-device">Выберите тип устройства</label>
+                <select name="type-device" id="type-device" required>
+                    <option value="" selected="selected" disabled="disabled">Выберите</option>
+                    <option value="">Планшет</option>
+                    <option value="">Телефон</option>
+                    <option value="">Моноблок</option>
+                    <option value="">Смарт-часы</option>
+                </select>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <button class="pb modal__button">Оставить заявку</button>
+            <!-- /.modal__button pb -->
+            <p class="modal__notice">
+                Нажимая кнопку «Оставить заявку», вы подтверждаете свое согласие на обработку
+                <span>персональных данных</span>
+            </p>
+            <!-- /.modal__notice -->
+        </form>
+        <!-- /.modal-form -->
+    </div>
+    <!-- /.modal-box -->
+</div>
+<!-- /.modal -->
+
+<div class="_overlay-bg modal" data-popup="promocode">
+    <div class="modal-box">
+        <div class="modal-titleBx">
+            <h3 class="modal__title">Получите промокод на 1000 ₽</h3>
+            <!-- /.modal__title -->
+            <div class="button-close modal-closeBx">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Закрыть</span>
+            </div>
+            <!-- /.modal-closeBx -->
+        </div>
+        <!-- /.modal-titleBx -->
+        <p class="modal__subtitle">Вы сможете оплатить им до 15% стоимости заказа</p>
+        <!-- /.modal__subtitle -->
+        <form action="" class="modal-form">
+            <div class="modal-form-inputBx">
+                <label for="phone1">Введите номер телефона</label>
+                <div class="border-input">
+                    <input type="text" class="phone-mask" id="phone1" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _" required>
+                    <span></span>
+                </div>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <div class="modal-form-inputBx">
+                <label for="name1">Введите имя</label>
+                <div class="border-input">
+                    <input type="text" id="name1" placeholder="Ваше имя" required>
+                    <span></span>
+                </div>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <div class="modal-form-inputBx select">
+                <label for="type-device1">Выберите тип устройства</label>
+                <select name="type-device4" id="type-device1" required>
+                    <option value="" selected="selected" disabled="disabled">Выберите</option>
+                    <option value="">Планшет</option>
+                    <option value="">Телефон</option>
+                    <option value="">Моноблок</option>
+                    <option value="">Смарт-часы</option>
+                </select>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <button class="pb modal__button">Получить промокод</button>
+            <!-- /.modal__button pb -->
+            <p class="modal__notice">
+                *промокод будет привязан к указанному номеру телефона
+            </p>
+            <!-- /.modal__notice -->
+        </form>
+        <!-- /.modal-form -->
+    </div>
+    <!-- /.modal-box -->
+</div>
+<!-- /.modal -->
+
+<div class="_overlay-bg modal" data-popup="question">
+    <div class="modal-box">
+        <div class="modal-titleBx">
+            <h3 class="modal__title">Задайте вопрос эксперту</h3>
+            <!-- /.modal__title -->
+            <div class="button-close modal-closeBx">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Закрыть</span>
+            </div>
+            <!-- /.modal-closeBx -->
+        </div>
+        <!-- /.modal-titleBx -->
+        <p class="modal__subtitle">Задайте вопрос и мы свяжемся с вами в течении 3-х минут</p>
+        <!-- /.modal__subtitle -->
+        <form action="" class="modal-form">
+            <div class="modal-form-inputBx">
+                <label for="phone2">Введите номер телефона</label>
+                <div class="border-input">
+                    <input type="text" class="phone-mask" id="phone2" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _" required>
+                    <span></span>
+                </div>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <div class="modal-form-inputBx">
+                <label for="name2">Введите имя</label>
+                <div class="border-input">
+                    <input type="text" id="name2" placeholder="Ваше имя" required>
+                    <span></span>
+                </div>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <div class="modal-form-inputBx">
+                <label for="question">Задайте вопрос</label>
+                <div class="border-input">
+                    <textarea name="" id="question" cols="30" rows="3" placeholder="Ваш вопрос"></textarea>
+                    <span></span>
+                </div>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <button class="pb modal__button">Задать вопрос</button>
+            <!-- /.modal__button pb -->
+            <p class="modal__notice">
+                Нажимая кнопку «Задать вопрос», вы подтверждаете свое согласие на обработку
+                <span>персональных данных</span>
+            </p>
+            <!-- /.modal__notice -->
+        </form>
+        <!-- /.modal-form -->
+    </div>
+    <!-- /.modal-box -->
+</div>
+<!-- /.modal -->
+
+<div class="_overlay-bg modal" data-popup="promocode-sms">
+    <div class="modal-box">
+        <div class="modal-titleBx">
+            <h3 class="modal__title">Получите код по SMS на 1000 ₽</h3>
+            <!-- /.modal__title -->
+            <div class="button-close modal-closeBx">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Закрыть</span>
+            </div>
+            <!-- /.modal-closeBx -->
+        </div>
+        <!-- /.modal-titleBx -->
+        <p class="modal__subtitle">Вы сможете оплатить им до 15% стоимости заказа</p>
+        <!-- /.modal__subtitle -->
+        <form action="" class="modal-form">
+            <div class="modal-form-inputBx">
+                <label for="phone3">Введите номер телефона</label>
+                <div class="border-input">
+                    <input type="text" class="phone-mask" id="phone3" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _" required>
+                    <span></span>
+                </div>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <div class="modal-form-inputBx">
+                <label for="name3">Введите имя</label>
+                <div class="border-input">
+                    <input type="text" id="name3" placeholder="Ваше имя" required>
+                    <span></span>
+                </div>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <div class="modal-form-inputBx select">
+                <label for="type-device3">Выберите тип устройства</label>
+                <select name="type-device" id="type-device3" required>
+                    <option value="" selected="selected" disabled="disabled">Выберите</option>
+                    <option value="">Планшет</option>
+                    <option value="">Телефон</option>
+                    <option value="">Моноблок</option>
+                    <option value="">Смарт-часы</option>
+                </select>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <button class="pb modal__button">Получить промокод по SMS</button>
+            <!-- /.modal__button pb -->
+            <p class="modal__notice">
+                *промокод будет привязан к указанному номеру телефона
+            </p>
+            <!-- /.modal__notice -->
+        </form>
+        <!-- /.modal-form -->
+    </div>
+    <!-- /.modal-box -->
+</div>
+<!-- /.modal -->
+
+
+<div class="_overlay-bg modal" data-popup="courier">
+    <div class="modal-box">
+        <div class="modal-titleBx">
+            <h3 class="modal__title">Вызовите курьера на дом</h3>
+            <!-- /.modal__title -->
+            <div class="button-close modal-closeBx">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Закрыть</span>
+            </div>
+            <!-- /.modal-closeBx -->
+        </div>
+        <!-- /.modal-titleBx -->
+        <p class="modal__subtitle">Это бесплатно в пределах МКАД. Перезвоним за 3 мин</p>
+        <!-- /.modal__subtitle -->
+        <form action="" class="modal-form">
+            <div class="modal-form-inputBx">
+                <label for="phone4">Введите номер телефона</label>
+                <div class="border-input">
+                    <input type="text" class="phone-mask" id="phone4" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _" required>
+                    <span></span>
+                </div>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <div class="modal-form-inputBx">
+                <label for="name4">Введите имя</label>
+                <div class="border-input">
+                    <input type="text" id="name4" placeholder="Ваше имя" required>
+                    <span></span>
+                </div>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <div class="modal-form-inputBx">
+                <label for="question4">Ваш адрес</label>
+                <div class="border-input">
+                    <textarea name="" id="question4" cols="30" rows="3" placeholder="Ваш адрес"></textarea>
+                    <span></span>
+                </div>
+            </div>
+            <!-- /.modal-form-inputBx -->
+            <button class="pb modal__button">Вызвать курьера</button>
+            <!-- /.modal__button pb -->
+            <p class="modal__notice">
+                Нажимая кнопку «Вызвать курьера», вы подтверждаете свое согласие на обработку
+                <span>персональных данных</span>
+            </p>
+            <!-- /.modal__notice -->
+        </form>
+        <!-- /.modal-form -->
+    </div>
+    <!-- /.modal-box -->
+</div>
+<!-- /.modal -->
+
+<div class="_overlay-bg modal politics">
+    <div class="modal-box">
+        <div class="modal-titleBx">
+            <h3 class="modal__title">Политика персональных данных</h3>
+            <!-- /.modal__title -->
+            <div class="button-close modal-closeBx">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Закрыть</span>
+            </div>
+            <!-- /.modal-closeBx -->
+        </div>
+        <!-- /.modal-titleBx -->
+        <div class="modal-politics">
+            <h3 class="modal-politics__title">Политика в отношении обработки персональных данных</h3>
+            <!-- /.modal-politics__title -->
+            <h4 class="modal-politics__subtitle">1. Общие положения</h4>
+            <!-- /.modal-politics__subtitle -->
+            <p class="modal-politics__desc">Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных сайта pro-remdom.ru (далее – Оператор)</p>
+            <!-- /.modal-politics__desc -->
+            <ul class="modal-politics-lists">
+                <li>Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</li>
+                <li>Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну</li>
+            </ul>
+            <!-- /.modal-politics-lists -->
+            <h4 class="modal-politics__subtitle">2. Основные понятия, используемые в Политике</h4>
+            <ul class="modal-politics-lists">
+                <li>Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники;</li>
+                <li>Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных);</li>
+                <li>Веб-сайт – совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу ;</li>
+                <li>Информационная система персональных данных — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их обработку информационных технологий и технических средств;</li>
+                <li>Любая информация на сайте не является публичной офертой.</li>
+                <li>Бесплатная диагностика, является предложением по акции и действует только при продолжении ремонта. В случае отказа от ремонта Заказчик оплачивает стоимость диагностики в размере от пятисот до двух тысяч рублей. Стоимость диагностики определяется инженером после ее проведения.</li>
+                <li>Обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных;</li>
+                <li>Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;</li>
+                <li>Оператор – государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными;</li>
+                <li>Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб-сайта</li>
+                <li>Пользователь – любой посетитель веб-сайта ;</li>
+                <li>Предоставление персональных данных – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц;</li>
+                <li>Распространение персональных данных – любые действия, направленные на раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации, размещение в информационно-телекоммуникационных сетях или предоставление доступа к персональным данным каким-либо иным способом;</li>
+                <li>Трансграничная передача персональных данных – передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу;</li>
+                <li>Уничтожение персональных данных – любые действия, в результате которых персональные данные уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания персональных данных в информационной системе персональных данных и (или) результате которых уничтожаются материальные носители персональных данных.</li>
+            </ul>
+            <h4 class="modal-politics__subtitle">3. Оператор может обрабатывать следующие персональные данные Пользователя</h4>
+            <ul class="modal-politics-lists">
+                <li>Год, месяц, дата и место рождения;</li>
+                <li>Фотографии;</li>
+                <li>Также на сайте происходит сбор и обработка обезличенных данных о посетителях (в т.ч. файлов «cookie») с помощью сервисов интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).</li>
+                <li>Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.</li>
+            </ul>
+            <h4 class="modal-politics__subtitle">4. Цели обработки персональных данных</h4>
+            <ul class="modal-politics-lists">
+                <li>Цель обработки персональных данных Пользователя — информирование Пользователя посредством отправки электронных писем; предоставление доступа Пользователю к сервисам, информации и/или материалам, содержащимся на веб-сайте.</li>
+                <li>Также Оператор имеет право направлять Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь всегда может отказаться от получения информационных сообщений, направив Оператору письмо на адрес электронной почты info@ с пометкой «Отказ от уведомлениях о новых продуктах и услугах и специальных предложениях».</li>
+                <li>Обезличенные данные Пользователей, собираемые с помощью сервисов интернет-статистики, служат для сбора информации о действиях Пользователей на сайте, улучшения качества сайта и его содержания.</li>
+            </ul>
+
+            <h4 class="modal-politics__subtitle">5. Правовые основания обработки персональных данных</h4>
+
+            <ul class="modal-politics-lists">
+                <li>Оператор обрабатывает персональные данные Пользователя только в случае их заполнения и/или отправки Пользователем самостоятельно через специальные формы, расположенные на сайте . Заполняя соответствующие формы и/или отправляя свои персональные данные Оператору, Пользователь выражает свое согласие с данной Политикой.</li>
+                <li>Оператор обрабатывает обезличенные данные о Пользователе в случае, если это разрешено в настройках браузера Пользователя (включено сохранение файлов «cookie» и использование технологии JavaScript).</li>
+            </ul>
+
+            <h4 class="modal-politics__subtitle">6. Порядок сбора, хранения, передачи и других видов обработки персональных данных</h4>
+            <p class="modal-politics__desc">Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований действующего законодательства в области защиты персональных данных.</p>
+
+            <ul class="modal-politics-lists">
+                <li>Оператор обеспечивает сохранность персональных данных и принимает все возможные меры, исключающие доступ к персональным данным неуполномоченных лиц.</li>
+                <li>Персональные данные Пользователя никогда, ни при каких условиях не будут переданы третьим лицам, за исключением случаев, связанных с исполнением действующего законодательства.</li>
+                <li>В случае выявления неточностей в персональных данных, Пользователь может актуализировать их самостоятельно, путем направления Оператору уведомление на адрес электронной почты Оператора info@ с пометкой «Актуализация персональных данных».</li>
+                <li>Срок обработки персональных данных является неограниченным. Пользователь может в любой момент отозвать свое согласие на обработку персональных данных, направив Оператору уведомление посредством электронной почты на электронный адрес Оператора info@ с пометкой «Отзыв согласия на обработку персональных данных».</li>
+            </ul>
+            <h4 class="modal-politics__subtitle">7. Трансграничная передача персональных данных</h4>
+            <ul class="modal-politics-lists">
+                <li>Оператор до начала осуществления трансграничной передачи персональных данных обязан убедиться в том, что иностранным государством, на территорию которого предполагается осуществлять передачу персональных данных, обеспечивается надежная защита прав субъектов персональных данных.</li>
+                <li>Трансграничная передача персональных данных на территории иностранных государств, не отвечающих вышеуказанным требованиям, может осуществляться только в случае наличия согласия в письменной форме субъекта персональных данных на трансграничную передачу его персональных данных и/или исполнения договора, стороной которого является субъект персональных данных.</li>
+            </ul>
+            <h4 class="modal-politics__subtitle">8. Трансграничная передача персональных данных</h4>
+            <ul class="modal-politics-lists">
+                <li>Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты info@.</li>
+                <li>В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией.</li>
+            </ul>
+        </div>
+        <!-- /.modal-politics -->
+    </div>
+    <!-- /.modal-box -->
+</div>
+<!-- /.modal -->
+
+<div class="_overlay-bg modal thanks">
+    <div class="modal-box">
+        <div class="modal-arrow-success">
+            <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.73321 15.4332C7.55543 15.4332 7.38877 15.4054 7.23321 15.3499C7.07766 15.2943 6.93321 15.1999 6.79988 15.0665L1.06654 9.3332C0.822101 9.08876 0.705434 8.77209 0.716545 8.3832C0.727656 7.99431 0.855434 7.67765 1.09988 7.4332C1.34432 7.18876 1.65543 7.06654 2.03321 7.06654C2.41099 7.06654 2.7221 7.18876 2.96655 7.4332L7.73321 12.1999L19.0332 0.89987C19.2777 0.655425 19.5943 0.533203 19.9832 0.533203C20.3721 0.533203 20.6888 0.655425 20.9332 0.89987C21.1777 1.14431 21.2999 1.46098 21.2999 1.84987C21.2999 2.23876 21.1777 2.55543 20.9332 2.79987L8.66655 15.0665C8.53321 15.1999 8.38877 15.2943 8.23321 15.3499C8.07766 15.4054 7.91099 15.4332 7.73321 15.4332Z" fill="white"/>
+            </svg>
+        </div>
+        <!-- /.modal-arrow-success -->
+        <p class="modal__title">Заявка отправлена</p>
+        <!-- /.modal__title -->
+        <p class="modal__subtitle">
+            Наш менеджер перезвонит вам в ближайшее время
+        </p>
+        <!-- /.modal__subtitle -->
+        <button class="pb modal__button button-close">Закрыть</button>
+        <!-- /.modal__button pb -->
+
+        <div class="button-close modal-closeBx">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#2D16D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Закрыть</span>
+        </div>
+        <!-- /.modal-closeBx -->
+    </div>
+    <!-- /.modal-box -->
+</div>
+<!-- /.modal -->
+
+
+
+
+<header class="header">
+  <div class="header__container">
+    <div class="header-inner">
+      <div class="header-logoBx">
+        <a href="/" class="header-imgBx">
+          <img src="images/header/logo.svg" alt="">
+        </a>
+        <!-- /.header-imgBx -->
+        <p class="header__title">Сервисный центр Apple в Москве</p>
+      </div>
+      <!-- /.header-logoBx -->
+      <div class="header-phoneBx">
+        <a href="tel: +7 (969) 999-42-80" class="header__phone">+7 (969) 999-42-80</a>
+        <p class="header__time">Eжедневно с 9.00 до 21.00</p>
+      </div>
+      <!-- /.header-phoneBx -->
+    </div>
+    <!-- /.header-inner -->
+  </div>
+  <!-- /.header__container -->
+</header>
+
+<main class="main">
+    <section class="content">
+        <div class="content__container">
+            <div class="content-inner">
+                <div class="content-item">
+                    <h1 class="content__title" id="content__title">
+                        <div class="">Качественный ремонт техники Apple</div>
+                    </h1>
+                    <!-- /.content__title -->
+                    <ul class="content-lists">
+                        <li class="content-lists__item">Ремонт от 15 минут</li>
+                        <li class="content-lists__item">Гарантия до 3 лет</li>
+                        <li class="content-lists__item">Сервис в центре города</li>
+                        <li class="content-lists__item">Бесплатный курьер по Москве</li>
+                    </ul>
+                    <div class="content-buttonBx">
+                        <button class="pb content__button" data-type="repair">Записаться на ремонт</button>
+                        <!-- /.content__button pb -->
+                        <p class="content__sale" data-type="promocode"><span>Получить скидку</span> <span>1 000 ₽</span>
+                        </p>
+                        <!-- /.content__sale -->
+                    </div>
+                    <!-- /.content-buttonBx -->
+                </div>
+                <!-- /.content-item -->
+                <div class="content-imgBx">
+                    <img src="images/content/main.png" alt="">
+                </div>
+                <!-- /.content-imgBx -->
+            </div>
+            <!-- /.content-inner -->
+        </div>
+        <!-- /.content__container -->
+        <img class="content__pattern" src="images/content/pattern.svg" alt="">
+    </section>
+    <!-- /.content -->
+
+    <section class="technics">
+        <div class="technics__container">
+            <h2 class="technics__title"><span class="animate-title">Техника, которую мы ремонтируем</span></h2>
+            <div class="technics-photos">
+                <div class="first technics-box">
+                    <div class="technics__item" data-type="repair">
+                        <img src="images/technics/1.png" alt="" class="technics__item-img">
+                        <p class="technics__item-title">Смартфон</p>
+                        <p class="technics__item-subtitle">от 700 ₽</p>
+                        <svg class="technics__item-svg" width="278" height="269" viewBox="0 0 278 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="test" opacity="0.12" d="M338.558 83.678C280 95.7385 132.96 94.7976 13.2715 -5.45044" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M370.897 45.0687C312.338 57.1293 165.298 56.1883 45.6096 -44.0597" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M306.22 122.287C247.662 134.348 100.622 133.407 -19.0667 33.1587" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M273.882 160.896C215.323 172.957 68.2836 172.016 -51.4048 71.7678" stroke="#2D16D4"/>
+                        </svg>
+                    </div>
+                    <div class="technics__item" data-type="repair">
+                        <img src="images/technics/2.png" alt="" class="technics__item-img">
+                        <p class="technics__item-title">Ноутбук</p>
+                        <p class="technics__item-subtitle">от 600 ₽</p>
+                        <svg class="technics__item-svg" width="278" height="269" viewBox="0 0 278 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="test" opacity="0.12" d="M338.558 83.678C280 95.7385 132.96 94.7976 13.2715 -5.45044" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M370.897 45.0687C312.338 57.1293 165.298 56.1883 45.6096 -44.0597" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M306.22 122.287C247.662 134.348 100.622 133.407 -19.0667 33.1587" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M273.882 160.896C215.323 172.957 68.2836 172.016 -51.4048 71.7678" stroke="#2D16D4"/>
+                        </svg>
+                    </div>
+                    <div class="technics__item" data-type="repair">
+                        <img src="images/technics/3.png" alt="" class="technics__item-img">
+                        <p class="technics__item-title">Планшет</p>
+                        <p class="technics__item-subtitle">от 700 ₽</p>
+                        <svg class="technics__item-svg" width="278" height="269" viewBox="0 0 278 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="test" opacity="0.12" d="M338.558 83.678C280 95.7385 132.96 94.7976 13.2715 -5.45044" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M370.897 45.0687C312.338 57.1293 165.298 56.1883 45.6096 -44.0597" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M306.22 122.287C247.662 134.348 100.622 133.407 -19.0667 33.1587" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M273.882 160.896C215.323 172.957 68.2836 172.016 -51.4048 71.7678" stroke="#2D16D4"/>
+                        </svg>
+                    </div>
+                    <div class="technics__item" data-type="repair">
+                        <img src="images/technics/4.png" alt="" class="technics__item-img">
+                        <p class="technics__item-title">Наушники</p>
+                        <p class="technics__item-subtitle">от 600 ₽</p>
+                        <svg class="technics__item-svg" width="278" height="269" viewBox="0 0 278 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="test" opacity="0.12" d="M338.558 83.678C280 95.7385 132.96 94.7976 13.2715 -5.45044" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M370.897 45.0687C312.338 57.1293 165.298 56.1883 45.6096 -44.0597" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M306.22 122.287C247.662 134.348 100.622 133.407 -19.0667 33.1587" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M273.882 160.896C215.323 172.957 68.2836 172.016 -51.4048 71.7678" stroke="#2D16D4"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="last technics-box">
+                    <div class="technics__item" data-type="repair">
+                        <img src="images/technics/5.png" alt="" class="technics__item-img">
+                        <p class="technics__item-title">Компьютер</p>
+                        <p class="technics__item-subtitle">от 200 ₽</p>
+                        <svg class="technics__item-svg" width="278" height="269" viewBox="0 0 278 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="test" opacity="0.12" d="M338.558 83.678C280 95.7385 132.96 94.7976 13.2715 -5.45044" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M370.897 45.0687C312.338 57.1293 165.298 56.1883 45.6096 -44.0597" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M306.22 122.287C247.662 134.348 100.622 133.407 -19.0667 33.1587" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M273.882 160.896C215.323 172.957 68.2836 172.016 -51.4048 71.7678" stroke="#2D16D4"/>
+                        </svg>
+                    </div>
+                    <div class="technics__item" data-type="repair">
+                        <img src="images/technics/6.png" alt="" class="technics__item-img">
+                        <p class="technics__item-title">Смарт-часы</p>
+                        <p class="technics__item-subtitle">от 300 ₽</p>
+                        <svg class="technics__item-svg" width="278" height="269" viewBox="0 0 278 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="test" opacity="0.12" d="M338.558 83.678C280 95.7385 132.96 94.7976 13.2715 -5.45044" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M370.897 45.0687C312.338 57.1293 165.298 56.1883 45.6096 -44.0597" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M306.22 122.287C247.662 134.348 100.622 133.407 -19.0667 33.1587" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M273.882 160.896C215.323 172.957 68.2836 172.016 -51.4048 71.7678" stroke="#2D16D4"/>
+                        </svg>
+                    </div>
+                    <div class="technics__item" data-type="repair">
+                        <img src="images/technics/7.png" alt="" class="technics__item-img">
+                        <p class="technics__item-title">Моноблок</p>
+                        <p class="technics__item-subtitle">от 1 100 ₽</p>
+                        <svg class="technics__item-svg" width="278" height="269" viewBox="0 0 278 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="test" opacity="0.12" d="M338.558 83.678C280 95.7385 132.96 94.7976 13.2715 -5.45044" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M370.897 45.0687C312.338 57.1293 165.298 56.1883 45.6096 -44.0597" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M306.22 122.287C247.662 134.348 100.622 133.407 -19.0667 33.1587" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M273.882 160.896C215.323 172.957 68.2836 172.016 -51.4048 71.7678" stroke="#2D16D4"/>
+                        </svg>
+                    </div>
+                    <div class="technics__item" data-type="repair">
+                        <img src="images/technics/8.png" alt="" class="technics__item-img">
+                        <p class="technics__item-title">Монитор</p>
+                        <p class="technics__item-subtitle">от 800 ₽</p>
+                        <svg class="technics__item-svg" width="278" height="269" viewBox="0 0 278 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="test" opacity="0.12" d="M338.558 83.678C280 95.7385 132.96 94.7976 13.2715 -5.45044" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M370.897 45.0687C312.338 57.1293 165.298 56.1883 45.6096 -44.0597" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M306.22 122.287C247.662 134.348 100.622 133.407 -19.0667 33.1587" stroke="#2D16D4"/>
+                            <path opacity="0.12" d="M273.882 160.896C215.323 172.957 68.2836 172.016 -51.4048 71.7678" stroke="#2D16D4"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="equipment-more">
+                <div data-type="repair" class="equipment-more__item">Микроволновые печи</div>
+                <div data-type="repair" class="equipment-more__item">Холодильники</div>
+                <div data-type="repair" class="equipment-more__item">Стиральные машины</div>
+                <div data-type="repair" class="equipment-more__item">Моечные машины</div>
+                <div data-type="repair" class="equipment-more__item">Вытяжки</div>
+                <div data-type="repair" class="equipment-more__item">Чайники</div>
+                <div data-type="repair" class="equipment-more__item">Принтеры и МФУ</div>
+                <div data-type="repair" class="equipment-more__item">Квадрокоптеры</div>
+                <div data-type="repair" class="equipment-more__item">Гироскутеры</div>
+                <div data-type="repair" class="equipment-more__item">Фотоаппарат</div>
+                <div data-type="repair" class="equipment-more__item">Электросамокаты</div>
+                <div data-type="repair" class="equipment-more__item">Колонки</div>
+                <div data-type="repair" class="equipment-more__item">Проекторы</div>
+                <div data-type="repair" class="equipment-more__item">Домашний кинотеатр</div>
+                <div data-type="repair" class="equipment-more__item">Наушники</div>
+                <div data-type="repair" class="equipment-more__item">Игровые приставки</div>
+                <div data-type="repair" class="equipment-more__item">Посудомойки</div>
+                <div data-type="repair" class="equipment-more__item">Вытяжки</div>
+                <div data-type="repair" class="equipment-more__item">Блендеры</div>
+                <div data-type="repair" class="equipment-more__item">Миксеры</div>
+            </div>
+            <!-- /.equipment-more -->
+        </div>
+        <img src="images/technics/lines.svg" alt="" class="technics__pattern">
+    </section>
+
+    <section class="question" id="question-block">
+        <div class="question__container">
+            <div class="question-lineBx">
+                <span class="question__line"></span>
+            </div>
+            <div class="question-inner">
+                <div class="question-imgBx">
+                    <img src="images/question/photo.png" alt="" class="question__img">
+
+                    <div class="animate-box question-commBx mobile">
+                        <button class="pb question-commBx__button" data-type="question">Задайте вопрос</button>
+                        <p class="question-commBx__or">или</p>
+                        <div class="question-phoneBx">
+                            <p class="question-phoneBx__call">Позвоните на номер</p>
+                            <a href="tel: +7 (969) 999-42-80" class="question-phoneBx__phone">+7 (969) 999-42-80</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-box">
+                    <h2 class="animate-title question__title"><span>Задайте вопрос эксперту Apple прямо сейчас!</span></h2>
+                    <p class="animate-subtitle question__subtitle">Мы на связи с нашими пользователями 24 часа в сутки, 7 дней в неделю,
+                        365
+                        дней в году. И мы приложим все усилия, чтобы помочь вам наслаждаться вашим устройством каждую
+                        секунду</p>
+                    <div class="animate-box question-commBx">
+                        <button class="pb question-commBx__button" data-type="question">Задайте вопрос</button>
+                        <p class="question-commBx__or">или</p>
+                        <div class="question-phoneBx">
+                            <p class="question-phoneBx__call">Позвоните на номер</p>
+                            <a href="tel: +7 (969) 999-42-80" class="question-phoneBx__phone">+7 (969) 999-42-80</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.questions -->
+
+    <section class="advantages">
+        <div class="advantages__container">
+            <h2 class="animate-title title advantages__title">Преимущества нашего сервисного цетра</h2>
+            <!-- /.advantages__title title -->
+            <div class="advantages-box">
+                <div class="advantages-helper first">
+                    <div class="advantages__item">
+                        <div class="advantages__item-svgBx">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.4167 33.6667L11.75 28.3334C11.3889 28.1945 11.0489 28.0278 10.73 27.8334C10.41 27.6389 10.0972 27.4306 9.79167 27.2084L4.83333 29.2917L0.25 21.375L4.54167 18.125C4.51389 17.9306 4.5 17.7428 4.5 17.5617V16.4367C4.5 16.2567 4.51389 16.0695 4.54167 15.875L0.25 12.625L4.83333 4.70837L9.79167 6.79171C10.0972 6.56949 10.4167 6.36115 10.75 6.16671C11.0833 5.97226 11.4167 5.8056 11.75 5.66671L12.4167 0.333374H21.5833L22.25 5.66671C22.6111 5.8056 22.9517 5.97226 23.2717 6.16671C23.5906 6.36115 23.9028 6.56949 24.2083 6.79171L29.1667 4.70837L33.75 12.625L29.4583 15.875C29.4861 16.0695 29.5 16.2567 29.5 16.4367V17.5617C29.5 17.7428 29.4722 17.9306 29.4167 18.125L33.7083 21.375L29.125 29.2917L24.2083 27.2084C23.9028 27.4306 23.5833 27.6389 23.25 27.8334C22.9167 28.0278 22.5833 28.1945 22.25 28.3334L21.5833 33.6667H12.4167ZM15.3333 30.3334H18.625L19.2083 25.9167C20.0694 25.6945 20.8683 25.3678 21.605 24.9367C22.3406 24.5067 23.0139 23.9862 23.625 23.375L27.75 25.0834L29.375 22.25L25.7917 19.5417C25.9306 19.1528 26.0278 18.7428 26.0833 18.3117C26.1389 17.8817 26.1667 17.4445 26.1667 17C26.1667 16.5556 26.1389 16.1178 26.0833 15.6867C26.0278 15.2567 25.9306 14.8473 25.7917 14.4584L29.375 11.75L27.75 8.91671L23.625 10.6667C23.0139 10.0278 22.3406 9.49282 21.605 9.06171C20.8683 8.63171 20.0694 8.3056 19.2083 8.08337L18.6667 3.66671H15.375L14.7917 8.08337C13.9306 8.3056 13.1322 8.63171 12.3967 9.06171C11.66 9.49282 10.9861 10.0139 10.375 10.625L6.25 8.91671L4.625 11.75L8.20833 14.4167C8.06944 14.8334 7.97222 15.25 7.91667 15.6667C7.86111 16.0834 7.83333 16.5278 7.83333 17C7.83333 17.4445 7.86111 17.875 7.91667 18.2917C7.97222 18.7084 8.06944 19.125 8.20833 19.5417L4.625 22.25L6.25 25.0834L10.375 23.3334C10.9861 23.9723 11.66 24.5067 12.3967 24.9367C13.1322 25.3678 13.9306 25.6945 14.7917 25.9167L15.3333 30.3334ZM17 23.6667C17.4722 23.6667 17.8683 23.5067 18.1883 23.1867C18.5072 22.8678 18.6667 22.4723 18.6667 22C18.6667 21.5278 18.5072 21.1317 18.1883 20.8117C17.8683 20.4928 17.4722 20.3334 17 20.3334C16.5278 20.3334 16.1322 20.4928 15.8133 20.8117C15.4933 21.1317 15.3333 21.5278 15.3333 22C15.3333 22.4723 15.4933 22.8678 15.8133 23.1867C16.1322 23.5067 16.5278 23.6667 17 23.6667ZM15.3333 18.6667H18.6667V10.3334H15.3333V18.6667Z" fill="#2D16D4"/>
+                            </svg>
+                        </div>
+                        <!-- /.advantages__item-svgBx -->
+                        <h4 class="advantages__item-title">Экспресс диагностика</h4>
+                        <!-- /.advantages__item-title -->
+                        <p class="advantages__item-subtitle">Инженеры проводят полную диагностику устройства: аппаратную
+                            и
+                            техническую. Процедура занимает всего 30 минут</p>
+                        <!-- /.advantages__item-subtitle -->
+                    </div>
+                    <!-- /.advantages__item -->
+                    <div class="advantages__item">
+                        <div class="advantages__item-svgBx">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.33333 30C2.41667 30 1.63167 29.6739 0.978333 29.0217C0.326111 28.3683 0 27.5833 0 26.6667V3.33333C0 2.41667 0.326111 1.63167 0.978333 0.978333C1.63167 0.326111 2.41667 0 3.33333 0H26.6667C27.5833 0 28.3683 0.326111 29.0217 0.978333C29.6739 1.63167 30 2.41667 30 3.33333V26.6667C30 27.5833 29.6739 28.3683 29.0217 29.0217C28.3683 29.6739 27.5833 30 26.6667 30H3.33333ZM3.33333 26.6667H26.6667V3.33333H3.33333V26.6667ZM14 23.3333H16C16.1944 23.3333 16.3611 23.2706 16.5 23.145C16.6389 23.0206 16.7361 22.8611 16.7917 22.6667L17.1667 20.8333C17.5 20.6944 17.8128 20.5489 18.105 20.3967C18.3961 20.2433 18.6944 20.0556 19 19.8333L20.7917 20.375C20.9861 20.4306 21.1667 20.4239 21.3333 20.355C21.5 20.285 21.6389 20.1667 21.75 20L22.75 18.3333C22.8611 18.1667 22.8889 17.9861 22.8333 17.7917C22.7778 17.5972 22.6806 17.4306 22.5417 17.2917L21.1667 16.0833C21.2222 15.6944 21.25 15.3333 21.25 15C21.25 14.6667 21.2222 14.3056 21.1667 13.9167L22.5417 12.7083C22.6806 12.5694 22.7778 12.4028 22.8333 12.2083C22.8889 12.0139 22.8611 11.8333 22.75 11.6667L21.75 10C21.6389 9.83333 21.5 9.715 21.3333 9.645C21.1667 9.57611 20.9861 9.56944 20.7917 9.625L19 10.1667C18.6944 9.94444 18.3961 9.75667 18.105 9.60333C17.8128 9.45111 17.5 9.30556 17.1667 9.16667L16.7917 7.33333C16.7361 7.13889 16.6389 6.97889 16.5 6.85333C16.3611 6.72889 16.1944 6.66667 16 6.66667H14C13.8056 6.66667 13.6389 6.72889 13.5 6.85333C13.3611 6.97889 13.2639 7.13889 13.2083 7.33333L12.8333 9.16667C12.5 9.30556 12.1872 9.45111 11.895 9.60333C11.6039 9.75667 11.3056 9.94444 11 10.1667L9.20833 9.625C9.01389 9.56944 8.83333 9.57611 8.66667 9.645C8.5 9.715 8.36111 9.83333 8.25 10L7.25 11.6667C7.13889 11.8333 7.11111 12.0139 7.16667 12.2083C7.22222 12.4028 7.31944 12.5694 7.45833 12.7083L8.83333 13.9167C8.77778 14.3056 8.75 14.6667 8.75 15C8.75 15.3333 8.77778 15.6944 8.83333 16.0833L7.45833 17.2917C7.31944 17.4306 7.22222 17.5972 7.16667 17.7917C7.11111 17.9861 7.13889 18.1667 7.25 18.3333L8.25 20C8.36111 20.1667 8.5 20.285 8.66667 20.355C8.83333 20.4239 9.01389 20.4306 9.20833 20.375L11 19.8333C11.3056 20.0556 11.6039 20.2433 11.895 20.3967C12.1872 20.5489 12.5 20.6944 12.8333 20.8333L13.2083 22.6667C13.2639 22.8611 13.3611 23.0206 13.5 23.145C13.6389 23.2706 13.8056 23.3333 14 23.3333ZM15 18.3333C14.0833 18.3333 13.2989 18.0067 12.6467 17.3533C11.9933 16.7011 11.6667 15.9167 11.6667 15C11.6667 14.0833 11.9933 13.2983 12.6467 12.645C13.2989 11.9928 14.0833 11.6667 15 11.6667C15.9167 11.6667 16.7017 11.9928 17.355 12.645C18.0072 13.2983 18.3333 14.0833 18.3333 15C18.3333 15.9167 18.0072 16.7011 17.355 17.3533C16.7017 18.0067 15.9167 18.3333 15 18.3333Z" fill="#2D16D4"/>
+                            </svg>
+                        </div>
+                        <!-- /.advantages__item-svgBx -->
+                        <h4 class="advantages__item-title">Качественные комплектующие</h4>
+                        <!-- /.advantages__item-title -->
+                        <p class="advantages__item-subtitle">Мы используем как оригинальные детали, так и аналоги от
+                            проверенных
+                            производителей, в зависимости от решения клиента</p>
+                        <!-- /.advantages__item-subtitle -->
+                    </div>
+                    <!-- /.advantages__item -->
+                </div>
+                <div class="advantages-helper last">
+                    <div class="advantages__item">
+                        <div class="advantages__item-svgBx">
+                            <svg width="24" height="34" viewBox="0 0 24 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.58332 27.3332L18.2083 16.9999H11.5416L12.75 7.54155L5.04165 18.6665H10.8333L9.58332 27.3332ZM6.99998 21.9999H1.83332C1.16665 21.9999 0.673872 21.701 0.354983 21.1032C0.0349829 20.5065 0.069427 19.9304 0.458316 19.3749L12.9166 1.45822C13.1944 1.06933 13.5555 0.798217 14 0.644884C14.4444 0.492662 14.9028 0.499884 15.375 0.666551C15.8472 0.833217 16.1944 1.12488 16.4166 1.54155C16.6389 1.95822 16.7222 2.40266 16.6666 2.87488L15.3333 13.6665H21.7916C22.5139 13.6665 23.0211 13.986 23.3133 14.6249C23.6044 15.2638 23.5139 15.861 23.0416 16.4165L9.33331 32.8332C9.02776 33.1943 8.65276 33.4304 8.20832 33.5415C7.76387 33.6527 7.33332 33.611 6.91665 33.4165C6.49998 33.2221 6.17387 32.9232 5.93832 32.5199C5.70165 32.1177 5.61109 31.6804 5.66665 31.2082L6.99998 21.9999Z" fill="#2D16D4"/>
+                            </svg>
+                        </div>
+                        <!-- /.advantages__item-svgBx -->
+                        <h4 class="advantages__item-title">Срочный ремонт техники</h4>
+                        <!-- /.advantages__item-title -->
+                        <p class="advantages__item-subtitle">Ремонт, проверка устройства, оформление заказ-наряда и
+                            гарантийного
+                            талона происходят в течение одного рабочего дня</p>
+                        <!-- /.advantages__item-subtitle -->
+                    </div>
+                    <!-- /.advantages__item -->
+                    <div class="advantages__item">
+                        <div class="advantages__item-svgBx">
+                            <svg width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25.3335 30C24.8613 30 24.4657 29.84 24.1468 29.52C23.8268 29.2011 23.6668 28.8056 23.6668 28.3333V15C23.6668 14.5278 23.8268 14.1317 24.1468 13.8117C24.4657 13.4928 24.8613 13.3333 25.3335 13.3333H32.0001C32.4724 13.3333 32.8679 13.4928 33.1868 13.8117C33.5068 14.1317 33.6668 14.5278 33.6668 15V28.3333C33.6668 28.8056 33.5068 29.2011 33.1868 29.52C32.8679 29.84 32.4724 30 32.0001 30H25.3335ZM25.3335 26.6667H32.0001V16.6667H25.3335V26.6667ZM12.0001 30C11.5279 30 11.1324 29.84 10.8135 29.52C10.4935 29.2011 10.3335 28.8056 10.3335 28.3333C10.3335 27.8611 10.4935 27.4656 10.8135 27.1467C11.1324 26.8267 11.5279 26.6667 12.0001 26.6667H13.6668V23.3333H3.6668C2.75013 23.3333 1.96569 23.0072 1.31347 22.355C0.660132 21.7017 0.333466 20.9167 0.333466 20V3.33333C0.333466 2.41667 0.660132 1.63167 1.31347 0.978333C1.96569 0.326111 2.75013 0 3.6668 0H27.0001C27.9168 0 28.7018 0.326111 29.3551 0.978333C30.0074 1.63167 30.3335 2.41667 30.3335 3.33333V8.33333C30.3335 8.80556 30.1735 9.20111 29.8535 9.52C29.5346 9.84 29.139 10 28.6668 10C28.1946 10 27.799 9.84 27.4801 9.52C27.1601 9.20111 27.0001 8.80556 27.0001 8.33333V3.33333H3.6668V20H18.6668C19.139 20 19.5351 20.1594 19.8551 20.4783C20.174 20.7983 20.3335 21.1944 20.3335 21.6667C20.3335 22.1389 20.174 22.5344 19.8551 22.8533C19.5351 23.1733 19.139 23.3333 18.6668 23.3333H17.0001V26.6667H18.6668C19.139 26.6667 19.5351 26.8267 19.8551 27.1467C20.174 27.4656 20.3335 27.8611 20.3335 28.3333C20.3335 28.8056 20.174 29.2011 19.8551 29.52C19.5351 29.84 19.139 30 18.6668 30H12.0001ZM13.5418 16.375L15.3335 15L17.1251 16.375C17.4307 16.625 17.7574 16.6317 18.1051 16.395C18.4518 16.1594 18.5557 15.8472 18.4168 15.4583L17.7501 13.1667L19.7501 11.5833C20.0557 11.3333 20.139 11.0206 20.0001 10.645C19.8612 10.2706 19.5974 10.0833 19.2085 10.0833H16.8335L16.1251 7.875C16.0696 7.68056 15.9657 7.535 15.8135 7.43833C15.6601 7.34056 15.5001 7.29167 15.3335 7.29167C15.1668 7.29167 15.0074 7.34056 14.8551 7.43833C14.7018 7.535 14.5974 7.68056 14.5418 7.875L13.8335 10.0833H11.4585C11.0696 10.0833 10.8057 10.2706 10.6668 10.645C10.5279 11.0206 10.6112 11.3333 10.9168 11.5833L12.9168 13.1667L12.2501 15.4583C12.1112 15.8472 12.2157 16.1594 12.5635 16.395C12.9101 16.6317 13.2362 16.625 13.5418 16.375Z" fill="#2D16D4"/>
+                            </svg>
+                        </div>
+                        <!-- /.advantages__item-svgBx -->
+                        <h4 class="advantages__item-title">Гарантия на детали и услуги</h4>
+                        <!-- /.advantages__item-title -->
+                        <p class="advantages__item-subtitle">На все детали для ремонта и выполненные услуги выписывается
+                            гарантийный талон с печатью нашей организации</p>
+                        <!-- /.advantages__item-subtitle -->
+                    </div>
+                    <!-- /.advantages__item -->
+                </div>
+            </div>
+            <!-- /.advantages-box -->
+        </div>
+        <!-- /.advantages__container -->
+        <img class="advantages__pattern" src="images/advantages/pattern.svg" alt="">
+    </section>
+    <!-- /.advantages -->
+
+    <section class="question promocode">
+        <div class="question__container">
+            <div class="question-lineBx">
+                <span class="question__line"></span>
+            </div>
+            <div class="question-inner promocode-inner">
+                <div class="question-box">
+                    <h2 class="animate-title title promocode__title">Воспользуйтесь промокодом <br>на 1 000 рублей</h2>
+                    <!-- /.promocode__title title -->
+                    <ul class="animate-subtitle promocode-lists">
+                        <li class="promocode-lists__item">Вам придет SMS-сообщение с промокодом</li>
+                        <li class="promocode-lists__item">Сообщите код администратору при обращении в сервис</li>
+                        <li class="promocode-lists__item">Получите скидку в 1 000 рублей при оплате выполненных работ,
+                            но не
+                            более 15% от полной суммы ремонта
+                        </li>
+                    </ul>
+                    <!-- /.promocode-lists -->
+                    <div class="animate-box promocode-box">
+                        <button class="pb promocode__button" data-type="promocode-sms">Получить промокод по SMS</button>
+                        <!-- /.promocode__button -->
+                        <p class="promocode__notice">* скидки по акциям не суммируются</p>
+                        <!-- /.promocode__notice -->
+                    </div>
+                    <!-- /.promocode-box -->
+                </div>
+                <div class="question-imgBx">
+                    <img src="images/promocode/main.png" alt="" class="question__img">
+                    <div class="animate-box question-commBx mobile">
+                        <button class="pb question-commBx__button" data-type="promocode">Получить промокод по SMS</button>
+                        <p class="promocode__notice">* скидки по акциям не суммируются</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.questions -->
+
+    <section class="repair">
+        <div class="repair__container">
+            <div class="repair-inner">
+                <div class="repair-item">
+                    <h2 class="animate-title title repair__title">Сервис высокого уровня, который всегда рядом</h2>
+                    <ul class="animate-subtitle repair-lists">
+                        <li class="repair-lists__item">Отличное расположение сервиса</li>
+                        <li class="repair-lists__item">Есть бесплатная парковка</li>
+                        <li class="repair-lists__item">Бесплатный курьер в пределах города</li>
+                        <li class="repair-lists__item">Работаем без выходных и праздников</li>
+                    </ul>
+                    <!-- /.repair-lists -->
+                    <p class="animate-box repair__office">Центральный офис</p>
+                    <!-- /.repair__office -->
+                    <p class="animate-box repair__address">121059, Москва, площадь Киевского Вокзала, 2</p>
+                    <!-- /.repair__address -->
+                    <div class="animate-box repair-buttonBx">
+                        <button class="pb repair__button" data-type="repair">Заказать ремонт</button>
+                        <!-- /.repair__button -->
+                        <button class="repair__call" data-type="courier">Вызвать бесплатного курьера</button>
+                        <!-- /.repair__call -->
+                    </div>
+                    <!-- /.repair-buttonBx -->
+                </div>
+                <!-- /.repair-item -->
+                <div class="repair-map">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ploshchad_kiyevskogo_vokzala_2/Z04YcwFmSUIFQFtvfXt1dXpgYw==/?azimuth=6.242279152835972&ll=37.566847%2C55.744613&tilt=0.040580314147553836&utm_medium=mapframe&utm_source=maps&z=16.14" style="color:#eee;font-size:12px;position:absolute;top:14px;">Площадь Киевского Вокзала, 2 —
+                        Яндекс Карты</a>
+                        <iframe src="https://yandex.ru/map-widget/v1/?azimuth=6.242279152835972&ll=37.566847%2C55.744613&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzkzNzE0MhJP0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINC_0LvQvtGJ0LDQtNGMINCa0LjQtdCy0YHQutC-0LPQviDQktC-0LrQt9Cw0LvQsCwgMiIKDalDFkIVgvpeQg%2C%2C&tilt=0.040580314147553836&z=16.14" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
+                </div>
+                <!-- /.repair-map -->
+            </div>
+            <!-- /.repair-inner -->
+        </div>
+        <!-- /.repair__container -->
+    </section>
+    <!-- /.repair -->
+</main>
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer-box">
+            <div class="footer-logoBx">
+                <div class="footer-imgBx"><img src="images/footer/logo.svg" alt=""></div>
+                <p class="footer-logoBx__text">Сервисный центр Apple в Москве</p>
+                <!-- /.footer-logoBx__text -->
+            </div>
+            <!-- /.footer-logoBx -->
+            <div class="footer-phoneBx">
+                <a href="" class="footer-phoneBx__phone">+7 (969) 999-42-80</a>
+                <p class="footer-phoneBx__text">Eжедневно с 9.00 до 21.00</p>
+                <!-- /.footer-phoneBx__text -->
+            </div>
+            <!-- /.footer-phoneBx -->
+        </div>
+        <!-- /.footer-box -->
+    </div>
+    <div class="footer-bottom">
+        <p class="footer__notice">
+            Copyright © 2023. Копирование и использование информации и материалов сайта запрещено.
+            Сайт
+            носит информационный характер и ни при каких условиях не является офертой. Товарные знаки, торговые марки,
+            фирменные
+            обозначения используемые на сайте, принадлежат производителю и не являются собственностью сервисного центра.
+            Общество с ограниченной ответственностью "Варна" ИНН: 2130226362 ОГРН: 1212100004995
+        </p>
+    </div>
+    <!-- /.footer__notice -->
+</footer>
+<script src="static/plugins/jquery.min.js"></script>
+<script src="static/plugins/jquery.maskedinput.min.js"></script>
+<script src="static/plugins/gsap.min.js"></script>
+<script src="static/plugins/ScrollTrigger.min.js"></script>
+<script src="static/plugins/ScrollSmoother.min.js"></script>
+<script src="static/plugins/swiped-events.min.js"></script>
+
+<script src="js/app.js"></script>
+</body>
+</html>

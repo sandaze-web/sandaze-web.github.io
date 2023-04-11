@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- ========== COLOR BRAND ========== -->
+    <link rel="stylesheet" href="static/css/color.css">
+
+    <!-- ========== MAIN CSS ========== -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ========== PLUGINS CSS ========== -->
+    <link rel="stylesheet" href="static/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+    <!-- ========== FAVICONS ========== -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./static/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Цены</title>
+</head>
+<body>
+<main class="main">
+    <!--active для активации-->
+<div class="blackout"></div>
+
+<!--При открытии модальног окна-->
+<div class="over"></div>
+
+<!--active для активации-->
+<div class="close-on-blackout thanks-modal">
+  <h2 class="thanks-modal__title title">Спасибо, ваша заявка отправлена</h2>
+  <p class="thanks-modal__subtitle">Менеджер нашего сервисного центра свяжется с вами в течение 5 минут</p>
+  <button class="accent-button cross thanks-modal__button"><span>Отлично</span></button>
+  <svg class="cross thanks-modal__cross" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21 7L7 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7 7L21 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</div>
+
+<!--active для активации-->
+<div class="close-on-blackout thanks-modal not-found">
+  <h2 class="thanks-modal__title title">Ваш заказ не найден</h2>
+  <p class="thanks-modal__subtitle">Возможно, вы неправильно ввели номер заказа. Повторите попытку</p>
+  <button class="accent-button cross thanks-modal__button"><span>Попробовать ещё</span></button>
+  <svg class="cross thanks-modal__cross" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21 7L7 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7 7L21 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</div>
+
+<header class="header">
+  <div class="header__container">
+    <div class="header-inner">
+      <div class="header-logoBx">
+        <a href="./" class="header-logo">
+          <p>acer</p>
+          <p>:ruexpert</p>
+        </a>
+        <!-- /.header-logo -->
+        <div class="header-selectBx">
+          <p class="header-selected">Москва</p>
+          <div class="header-variants">
+            <div class="header-variants__item isSelected">Москва</div>
+            <div class="header-variants__item">Калининград</div>
+            <div class="header-variants__item">Санкт-Петербург</div>
+          </div>
+        </div>
+        <!-- /.header-selectBx -->
+      </div>
+      <!-- /.header-logoBx -->
+      <nav class="close-on-blackout header-nav">
+        <ul>
+          <li class="dropdown">
+            <p class="close-on-blackout header-dropdown">Цены</p>
+            <div class="header-dropdownBx">
+              <a href="#" class="header-dropdownBx__item">Смартфон</a>
+              <a href="#" class="header-dropdownBx__item">Ноутбук</a>
+              <a href="#" class="header-dropdownBx__item">Компьютер</a>
+              <a href="#" class="header-dropdownBx__item">Монитор</a>
+              <a href="#" class="header-dropdownBx__item">Телевизор</a>
+              <a href="#" class="header-dropdownBx__item">Моноблок</a>
+              <a href="#" class="header-dropdownBx__item">Проектор</a>
+              <a href="#" class="header-dropdownBx__item">Сервер</a>
+            </div>
+          </li>
+          <li><a href="#" class="">Комплектующие</a></li>
+          <li><a href="#" class="">Неисправности</a></li>
+          <li><a href="#" class="">О компании</a></li>
+          <li><a href="#" class="">Контакты</a></li>
+        </ul>
+        <div class="header-nav-about">
+          <p class="header-nav-about__address">г. Москва,улица Академика Королёва, 19</p>
+          <div class="header-nav-aboutBx">
+            <p class="header-nav-about__time">с 9:00 до 21:00</p>
+            <!-- /.header-nav-about__time -->
+            <a href="tel: +7(495)182-07-71" class="header-nav-about__phone">+7(495)182-07-71</a>
+            <!-- /.header-nav-about__phone -->
+          </div>
+        </div>
+        <!-- /.header-nav-about -->
+      </nav>
+      <!-- /.header-nav -->
+      <div class="header-about">
+        <p class="header__time">с 9:00 до 21:00</p>
+        <!-- /.header__time -->
+        <a href="" class="header__phone">+7(495)182-07-71</a>
+        <!-- /.header__phone -->
+        <a href="#offer" class="accent-button header__button"><span>Заказать ремонт</span></a>
+        <!-- /.header__button -->
+      </div>
+      <!-- /.header-about -->
+      <div class="close-on-blackout header-burger">
+        <span></span>
+      </div>
+    </div>
+    <!-- /.header-inner -->
+  </div>
+  <!-- /.header__container -->
+</header>
+
+    <section class="content">
+        <div class="content__container">
+            <div class="content-info">
+                <div class="content-crumbs">
+                    <a href="#" class="content-crumbs__item active">Главная</a>
+                    <a href="#" class="content-crumbs__item">Моноблоки</a>
+                </div>
+                <!-- /.content__address -->
+                <div class="content-contacts" data-observ>
+                    <p class="content__time">с 9:00 до 21:00</p>
+                    <a href="tel: +7(495)182-07-71" class="content__phone">+7(495)182-07-71</a>
+                </div>
+                <!-- /.content-contacts -->
+            </div>
+            <!-- /.content-info -->
+            <div class="content-inner">
+                <div class="content__item">
+                    <h1 class="content__title">Обслуживание моноблоков Acer</h1>
+                    <p class="content__subtitle">Ремонтируя технику Acer в фирменном сервисном центре, вы получаете:</p>
+                    <ul class="content-lists">
+                        <li class="content-lists__item">20% от прайс-листа по предварительной записи;</li>
+                        <li class="content-lists__item">Бесплатная экспресс диагностика;</li>
+                        <li class="content-lists__item">Конкурентные цены на все услуги и запчасти;</li>
+                        <li class="content-lists__item">Бесплатный курьер в пределах Москвы.</li>
+                    </ul>
+                    <!-- /.content-lists -->
+                    <form action="#" class="content-form">
+                        <div class="border-input content-inputBx">
+                            <input class="animate-input mask-phone" type="text" placeholder="+7 (999) 000-00-00" required>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.9625 13.75C11.35 13.75 9.77825 13.3905 8.24725 12.6715C6.71575 11.953 5.3595 11.003 4.1785 9.8215C2.997 8.6405 2.047 7.28425 1.3285 5.75275C0.6095 4.22175 0.25 2.65 0.25 1.0375C0.25 0.8125 0.325 0.625 0.475 0.475C0.625 0.325 0.8125 0.25 1.0375 0.25H4.075C4.25 0.25 4.40625 0.30625 4.54375 0.41875C4.68125 0.53125 4.7625 0.675 4.7875 0.85L5.275 3.475C5.3 3.65 5.297 3.80925 5.266 3.95275C5.2345 4.09675 5.1625 4.225 5.05 4.3375L3.23125 6.175C3.75625 7.075 4.41575 7.91875 5.20975 8.70625C6.00325 9.49375 6.875 10.175 7.825 10.75L9.5875 8.9875C9.7 8.875 9.847 8.7905 10.0285 8.734C10.2095 8.678 10.3875 8.6625 10.5625 8.6875L13.15 9.2125C13.325 9.25 13.4688 9.33425 13.5812 9.46525C13.6937 9.59675 13.75 9.75 13.75 9.925V12.9625C13.75 13.1875 13.675 13.375 13.525 13.525C13.375 13.675 13.1875 13.75 12.9625 13.75ZM2.51875 4.75L3.75625 3.5125L3.4375 1.75H1.76875C1.83125 2.2625 1.91875 2.76875 2.03125 3.26875C2.14375 3.76875 2.30625 4.2625 2.51875 4.75ZM12.25 12.2125V10.5625L10.4875 10.2062L9.23125 11.4625C9.71875 11.675 10.2157 11.8438 10.7222 11.9688C11.2282 12.0938 11.7375 12.175 12.25 12.2125Z" fill="#202020"/>
+                            </svg>
+                        </div>
+                        <!-- /.content-inputBx -->
+                        <button class="accent-button content__button"><span>Заказать ремонт</span></button>
+                    </form>
+                    <p class="content__notice">*отправляя форму, вы даёте согласие на <a href="#">обработку персональных
+                        данных</a></p>
+                </div>
+                <!-- /.content__item -->
+                <div class="content__item pt_25">
+                    <div class="content-imgBx">
+                        <img class="content__img" src="./images/content/price/main.png" alt="ноутбуки">
+                        <img class="content__pattern" src="./images/content/pattern.svg" alt="паттерн">
+                    </div>
+                    <div class="content-timerBx">
+                        <div class="content-timerBx__item">
+                            <p class="content-timerBx__sale">20%</p>
+                            <p class="content-timerBx__desc">Скидка по предварительной записи на сайте</p>
+                        </div>
+                        <div class="content-timerBx__item">
+                            <p class="content-timerBx__title">до конца акции</p>
+                            <!-- /.content-timerBx__title -->
+                            <div class="content-timer">
+                                <div class="content-timer__item">
+                                    <span class="days">02</span>
+                                    <span>дня</span>
+                                </div>
+                                <div class="content-timer__item">
+                                    <span class="hours">09</span>
+                                    <span>часы</span>
+                                </div>
+                                <div class="content-timer__item">
+                                    <span class="minutes">13</span>
+                                    <span>мин</span>
+                                </div>
+                            </div>
+                            <!-- /.content-timer -->
+                        </div>
+                    </div>
+                    <!-- /.content-timerBx -->
+                </div>
+                <!-- /.content__item -->
+            </div>
+            <!-- /.content-inner -->
+        </div>
+        <!-- /.content__container -->
+    </section>
+    <!-- /.content -->
+
+    <section class="slide standard-table">
+        <div class="slide__container">
+            <div class="slide-inner">
+                <div class="slide__item">
+                    <h2 class="slide__title">Прайслист на ремонт моноблоков в Ruexpert</h2>
+                    <!-- /.slide__title -->
+                    <p class="slide__subtitle">Ремонт моноблока это работа, которую не стоит возлагать на любителей и должна выполняться в сервисном центре соответствующей специализации. Наличие фирменных запчастей, профессиональное специализированное оборудование и квалификация и практика наших мастеров позволяет проводить нам даже самый трудный ремонт доброкачественно и качественно и быстро. Что бы ни привело к поломке профессиональный ремонт вернет ваш Асер в прежнее функциональное состояние. Специалисты нашего центра знают, как найти подход к любой модели!</p>
+                    <!-- /.slide__desc -->
+                    <p class="slide__desc">Цены указаны за работу специалиста без учёта стоимости запчастей <br>
+                        В таблице указано среднее время оказания услуг при условии наличия необходимых для ремонта комплектующих</p>
+                    <!-- /.slide__desc -->
+                    <div class="slide-tableBx">
+                        <table id="slide-table" class="blur assortment-table provide-table">
+                            <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Время</th>
+                                <th>Время</th>
+                                <th>Цена</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a href="#">Замена дисплейного модуля</a></td>
+                                <td><a href="#">2 часа</a></td>
+                                <td><a href="#"><span>от</span> 1 200 ₽</a></td>
+                                <td>Смартфон</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Замена сенсорного стекла</a></td>
+                                <td><a href="#">45 мин</a></td>
+                                <td><a href="#"><span>от</span> 600 ₽</a></td>
+                                <td>Смартфон</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Ремонт шлейфа экрана</a></td>
+                                <td><a href="#">40 мин</a></td>
+                                <td><a href="#"><span>от</span> 500 ₽</a></td>
+                                <td>Смартфон</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Замена датчика света</a></td>
+                                <td><a href="#">50 мин</a></td>
+                                <td><a href="#"><span>от</span> 800 ₽</a></td>
+                                <td>Смартфон</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Замена голосового динамика</a></td>
+                                <td><a href="#">45 мин</a></td>
+                                <td><a href="#"><span>от</span> 800 ₽</a></td>
+                                <td>Смартфон</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Замена динамика полифонии</a></td>
+                                <td><a href="#">1 час</a></td>
+                                <td><a href="#"><span>от</span> 800 ₽</a></td>
+                                <td>Смартфон</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Замена гарнитурного разъема</a></td>
+                                <td><a href="#">25 мин</a></td>
+                                <td><a href="#"><span>от</span> 500 ₽</a></td>
+                                <td>Смартфон</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Замена микрофона</a></td>
+                                <td><a href="#">30 мин</a></td>
+                                <td><a href="#"><span>от</span> 500 ₽</a></td>
+                                <td>Смартфон</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Замена вибромотора</a></td>
+                                <td><a href="#">30 мин</a></td>
+                                <td><a href="#"><span>от</span> 500 ₽</a></td>
+                                <td>Смартфон</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Замена входа ЗУ</a></td>
+                                <td><a href="#">30 мин</a></td>
+                                <td><a href="#"><span>от</span> 500 ₽</a></td>
+                                <td>Смартфон</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Замена входа ЗУ</a></td>
+                                <td><a href="#">30 мин</a></td>
+                                <td><a href="#"><span>от</span> 500 ₽</a></td>
+                                <td>Смартфон</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <button class="blur assortment__another table-more">Показать еще</button>
+                    </div>
+                    <!-- /.slide-tableBx -->
+                </div>
+                <div class="slide__item">
+                    <div class="slide-formBx">
+                        <h3 class="slide-formBx__title">Записаться на ремонт техники</h3>
+                        <!-- /.slide-formBx__title -->
+                        <p class="slide-formBx__subtitle">Cкидка на работы 20% при заказе с сайта</p>
+                        <!-- /.slide-formBx__subtitle -->
+                        <form class="slide-form">
+                            <div class="border-input slide-form-inputBx">
+                                <input type="text" class="animate-input" placeholder="Как вас зовут?" required>
+                            </div>
+                            <!-- /.slide-form-inputBx -->
+                            <div class="border-input slide-form-inputBx">
+                                <input type="text" class="animate-input mask-phone" placeholder="+7 (999) 000-00-00" required>
+                            </div>
+                            <!-- /.slide-form-inputBx -->
+                            <button class="accent-button slide-form__button"><span>Записаться</span></button>
+                            <!-- /.slide__button -->
+                            <p class="slide-form__notice">Нажимая кнопку «Записаться», вы соглашаетесь на обработку персональных данных и подтверждаете своё совершеннолетие в соответствие с
+                                <a href="#">условиями</a></p>
+                        </form>
+                        <!-- /.slide-form -->
+                    </div>
+                    <!-- /.slide-formBx -->
+                    <div class="slide-formBx">
+                        <h3 class="slide-formBx__title">Проверить статус заказа</h3>
+                        <!-- /.slide-formBx__title -->
+                        <p class="slide-formBx__subtitle">Cкидка на работы 20% при заказе с сайта</p>
+                        <!-- /.slide-formBx__subtitle -->
+                        <form class="slide-form form-status">
+                            <div class="border-input slide-form-inputBx">
+                                <input type="text" class="animate-input mask-code" placeholder="Пример: AX22-9813" required>
+                            </div>
+                            <!-- /.slide-form-inputBx -->
+                            <button class="slide-form__button secondary-button" type="submit">Проверить</button>
+                            <!-- /.slide__button -->
+                        </form>
+                        <!-- /.slide-form -->
+                    </div>
+                    <!-- /.slide-formBx -->
+                </div>
+            </div>
+            <!-- /.slide-inner -->
+        </div>
+        <!-- /.slide__container -->
+    </section>
+    <!-- /.slide -->
+
+    <section class="offer" id="offer">
+    <div class="offer__container">
+        <div class="offer-inner">
+            <div class="offer-formBx">
+                <h2 class="offer__title">Если у вас остались вопросы</h2>
+                <!-- /.offer__title -->
+                <p class="offer__subtitle">Свяжитесь с нами, наш менеджер свяжется в течение 5 минут</p>
+                <!-- /.offer__subtitle -->
+                <form action="#" class="offer-form">
+                    <div class="border-input offer-inputBx">
+                        <input class="animate-input mask-phone" id="date" type="text" placeholder="+7 (999) 000-00-00" required>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9625 13.75C11.35 13.75 9.77825 13.3905 8.24725 12.6715C6.71575 11.953 5.3595 11.003 4.1785 9.8215C2.997 8.6405 2.047 7.28425 1.3285 5.75275C0.6095 4.22175 0.25 2.65 0.25 1.0375C0.25 0.8125 0.325 0.625 0.475 0.475C0.625 0.325 0.8125 0.25 1.0375 0.25H4.075C4.25 0.25 4.40625 0.30625 4.54375 0.41875C4.68125 0.53125 4.7625 0.675 4.7875 0.85L5.275 3.475C5.3 3.65 5.297 3.80925 5.266 3.95275C5.2345 4.09675 5.1625 4.225 5.05 4.3375L3.23125 6.175C3.75625 7.075 4.41575 7.91875 5.20975 8.70625C6.00325 9.49375 6.875 10.175 7.825 10.75L9.5875 8.9875C9.7 8.875 9.847 8.7905 10.0285 8.734C10.2095 8.678 10.3875 8.6625 10.5625 8.6875L13.15 9.2125C13.325 9.25 13.4688 9.33425 13.5812 9.46525C13.6937 9.59675 13.75 9.75 13.75 9.925V12.9625C13.75 13.1875 13.675 13.375 13.525 13.525C13.375 13.675 13.1875 13.75 12.9625 13.75ZM2.51875 4.75L3.75625 3.5125L3.4375 1.75H1.76875C1.83125 2.2625 1.91875 2.76875 2.03125 3.26875C2.14375 3.76875 2.30625 4.2625 2.51875 4.75ZM12.25 12.2125V10.5625L10.4875 10.2062L9.23125 11.4625C9.71875 11.675 10.2157 11.8438 10.7222 11.9688C11.2282 12.0938 11.7375 12.175 12.25 12.2125Z" fill="#202020"/>
+                        </svg>
+                    </div>
+                    <button class="accent-button offer__button"><span>Отправить заявку</span></button>
+                </form>
+                <!-- /.offer-form -->
+                <p class="offer__notice">*отправляя форму, вы даёте согласие на <a href="#">обработку персональных данных</a></p>
+            </div>
+            <!-- /.offer-formBx -->
+            <div class="offer-map">
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_akademika_korolyova_19/Z04YcAdkTEwFQFtvfXRzcXhqZQ==/?azimuth=6.281139999462416&ll=37.605646%2C55.821518&utm_medium=mapframe&utm_source=maps&z=16.52" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Академика Королёва, 19 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?azimuth=6.281139999462416&ll=37.605646%2C55.821518&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njc2ODYxMhJO0KDQvtGB0YHQuNGPLCDQnNC%2B0YHQutCy0LAsINGD0LvQuNGG0LAg0JDQutCw0LTQtdC80LjQutCwINCa0L7RgNC%2B0LvRkdCy0LAsIDE5IgoNGmsWQhUvSF9C&z=16.52" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </div>
+            <!-- /.offer-map -->
+        </div>
+        <!-- /.offer-inner -->
+    </div>
+    <!-- /.offer__container -->
+</section>
+<!-- /.offer -->
+
+    <section class="contacts">
+    <div class="contacts__container">
+        <div class="contacts-box">
+            <div class="contacts__item">
+                <div class="contacts__item-svgBx">
+                    <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 21.8332C5.08611 21.8332 3.52431 21.5309 2.31458 20.9264C1.10486 20.3212 0.5 19.5401 0.5 18.5832C0.5 17.9512 0.761805 17.4005 1.28542 16.9311C1.80903 16.4616 2.53125 16.0915 3.45208 15.8207L4.075 17.879C3.76806 17.9693 3.48819 18.0823 3.23542 18.2181C2.98264 18.3531 2.81111 18.4748 2.72083 18.5832C2.95556 18.8721 3.49722 19.1248 4.34583 19.3415C5.19444 19.5582 6.07917 19.6665 7 19.6665C7.92083 19.6665 8.81025 19.5582 9.66825 19.3415C10.5255 19.1248 11.0715 18.8721 11.3063 18.5832C11.216 18.4748 11.0444 18.3531 10.7917 18.2181C10.5389 18.0823 10.259 17.9693 9.95208 17.879L10.575 15.8207C11.4958 16.0915 12.2137 16.4616 12.7287 16.9311C13.2429 17.4005 13.5 17.9512 13.5 18.5832C13.5 19.5401 12.8951 20.3212 11.6854 20.9264C10.4757 21.5309 8.91389 21.8332 7 21.8332ZM7 14.6019C7.325 14.0061 7.66806 13.4597 8.02917 12.9628C8.39028 12.4667 8.74236 11.9929 9.08542 11.5415C9.75347 10.6748 10.2861 9.89375 10.6833 9.19825C11.0806 8.50348 11.2792 7.6415 11.2792 6.61234C11.2792 5.42067 10.8639 4.40956 10.0333 3.579C9.20278 2.74845 8.19167 2.33317 7 2.33317C5.80833 2.33317 4.79722 2.74845 3.96667 3.579C3.13611 4.40956 2.72083 5.42067 2.72083 6.61234C2.72083 7.6415 2.91945 8.50348 3.31667 9.19825C3.71389 9.89375 4.24653 10.6748 4.91458 11.5415C5.25764 11.9929 5.60972 12.4667 5.97083 12.9628C6.33194 13.4597 6.675 14.0061 7 14.6019ZM7 18.5832C6.80139 18.5832 6.62083 18.5243 6.45833 18.4066C6.29583 18.2896 6.17847 18.1318 6.10625 17.9332C5.69097 16.6512 5.16736 15.5769 4.53542 14.7103C3.90347 13.8436 3.28958 13.013 2.69375 12.2186C2.11597 11.4241 1.61511 10.6026 1.19117 9.754C0.7665 8.90539 0.554167 7.85817 0.554167 6.61234C0.554167 4.80678 1.17708 3.28109 2.42292 2.03525C3.66875 0.789421 5.19444 0.166504 7 0.166504C8.80556 0.166504 10.3313 0.789421 11.5771 2.03525C12.8229 3.28109 13.4458 4.80678 13.4458 6.61234C13.4458 7.85817 13.2382 8.90539 12.8229 9.754C12.4076 10.6026 11.9021 11.4241 11.3063 12.2186C10.7285 13.013 10.1193 13.8436 9.47867 14.7103C8.83733 15.5769 8.30903 16.6512 7.89375 17.9332C7.82153 18.1318 7.70417 18.2896 7.54167 18.4066C7.37917 18.5243 7.19861 18.5832 7 18.5832ZM7 8.91442C7.63194 8.91442 8.17361 8.68873 8.625 8.23734C9.07639 7.78595 9.30208 7.24428 9.30208 6.61234C9.30208 5.98039 9.07639 5.43873 8.625 4.98734C8.17361 4.53595 7.63194 4.31025 7 4.31025C6.36806 4.31025 5.82639 4.53595 5.375 4.98734C4.92361 5.43873 4.69792 5.98039 4.69792 6.61234C4.69792 7.24428 4.92361 7.78595 5.375 8.23734C5.82639 8.68873 6.36806 8.91442 7 8.91442Z" fill="#202020"/>
+                    </svg>
+                </div>
+                <!-- /.contacts__item-svgBx -->
+                <h3 class="contacts__item-title">Сервисный центр:</h3>
+                <!-- /.contacts__item-title -->
+                <p class="contacts__item-subtitle">Москва, улица Академика Королёва, 19</p>
+                <!-- /.contacts__item-subtitle -->
+            </div>
+            <!-- /.contacts__item -->
+            <div class="contacts__item">
+                <div class="contacts__item-svgBx">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.8438 15.3603C14.0424 15.5589 14.2861 15.6582 14.575 15.6582C14.8639 15.6582 15.1167 15.5498 15.3333 15.3332C15.5319 15.1346 15.6313 14.8818 15.6313 14.5748C15.6313 14.2679 15.5319 14.0151 15.3333 13.8165L12.0833 10.5665V6.63942C12.0833 6.33248 11.9795 6.0797 11.7719 5.88109C11.5642 5.68248 11.3069 5.58317 11 5.58317C10.6931 5.58317 10.4358 5.68699 10.2281 5.89463C10.0205 6.10227 9.91667 6.35956 9.91667 6.6665V10.9728C9.91667 11.1172 9.94375 11.2571 9.99792 11.3925C10.0521 11.528 10.1333 11.6498 10.2417 11.7582L13.8438 15.3603ZM11 21.8332C9.50139 21.8332 8.09306 21.5488 6.775 20.98C5.45695 20.4113 4.31042 19.6394 3.33542 18.6644C2.36042 17.6894 1.58854 16.5429 1.01979 15.2248C0.451045 13.9068 0.16667 12.4984 0.16667 10.9998C0.16667 9.50123 0.451045 8.09289 1.01979 6.77484C1.58854 5.45678 2.36042 4.31025 3.33542 3.33525C4.31042 2.36025 5.45695 1.58838 6.775 1.01963C8.09306 0.450879 9.50139 0.166504 11 0.166504C12.4986 0.166504 13.9069 0.450879 15.225 1.01963C16.5431 1.58838 17.6896 2.36025 18.6646 3.33525C19.6396 4.31025 20.4115 5.45678 20.9802 6.77484C21.549 8.09289 21.8333 9.50123 21.8333 10.9998C21.8333 12.4984 21.549 13.9068 20.9802 15.2248C20.4115 16.5429 19.6396 17.6894 18.6646 18.6644C17.6896 19.6394 16.5431 20.4113 15.225 20.98C13.9069 21.5488 12.4986 21.8332 11 21.8332ZM11 19.6665C13.4014 19.6665 15.4462 18.8224 17.1344 17.1342C18.8226 15.446 19.6667 13.4012 19.6667 10.9998C19.6667 8.59845 18.8226 6.55366 17.1344 4.86546C15.4462 3.17727 13.4014 2.33317 11 2.33317C8.59861 2.33317 6.55382 3.17727 4.86563 4.86546C3.17743 6.55366 2.33334 8.59845 2.33334 10.9998C2.33334 13.4012 3.17743 15.446 4.86563 17.1342C6.55382 18.8224 8.59861 19.6665 11 19.6665Z" fill="#202020"/>
+                    </svg>
+                </div>
+                <!-- /.contacts__item-svgBx -->
+                <h3 class="contacts__item-title">Режим работы:</h3>
+                <!-- /.contacts__item-title -->
+                <p class="contacts__item-subtitle">Ежедневно с 09:00 до 21:00</p>
+                <!-- /.contacts__item-subtitle -->
+            </div>
+            <!-- /.contacts__item -->
+            <div class="contacts__item">
+                <div class="contacts__item-svgBx">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.6125 19.75C16.2833 19.75 14.013 19.2307 11.8016 18.1922C9.58942 17.1543 7.63039 15.7821 5.9245 14.0755C4.21789 12.3696 2.84567 10.4106 1.80783 8.19842C0.769278 5.98697 0.25 3.71667 0.25 1.3875C0.25 1.0625 0.358333 0.791667 0.575 0.575C0.791667 0.358333 1.0625 0.25 1.3875 0.25H5.775C6.02778 0.25 6.25347 0.33125 6.45208 0.49375C6.6507 0.65625 6.76806 0.863889 6.80417 1.11667L7.50833 4.90833C7.54444 5.16111 7.54011 5.39114 7.49533 5.59842C7.44983 5.80642 7.34583 5.99167 7.18333 6.15417L4.55625 8.80833C5.31458 10.1083 6.26719 11.3271 7.41408 12.4646C8.56025 13.6021 9.81945 14.5861 11.1917 15.4167L13.7375 12.8708C13.9 12.7083 14.1123 12.5863 14.3745 12.5047C14.6359 12.4238 14.8931 12.4014 15.1458 12.4375L18.8833 13.1958C19.1361 13.25 19.3438 13.3717 19.5063 13.5609C19.6688 13.7509 19.75 13.9722 19.75 14.225V18.6125C19.75 18.9375 19.6417 19.2083 19.425 19.425C19.2083 19.6417 18.9375 19.75 18.6125 19.75ZM3.52708 6.75L5.31458 4.9625L4.85417 2.41667H2.44375C2.53403 3.15694 2.66042 3.88819 2.82292 4.61042C2.98542 5.33264 3.22014 6.04583 3.52708 6.75ZM17.5833 17.5292V15.1458L15.0375 14.6313L13.2229 16.4458C13.9271 16.7528 14.645 16.9965 15.3766 17.1771C16.1075 17.3576 16.8431 17.475 17.5833 17.5292Z" fill="#202020"/>
+                    </svg>
+                </div>
+                <!-- /.contacts__item-svgBx -->
+                <a href="tel: +7(495)182-07-71" class="contacts__item-title">+7(495)182-07-71</a>
+                <!-- /.contacts__item-title -->
+                <p class="contacts__item-subtitle">(многоканальный)</p>
+                <!-- /.contacts__item-subtitle -->
+            </div>
+            <!-- /.contacts__item -->
+        </div>
+        <!-- /.contacts-box -->
+    </div>
+    <!-- /.contacts__container -->
+</section>
+
+    <footer class="footer">
+    <div class="footer__container">
+        <div class="footer-inner">
+            <div class="footer-about">
+                <div class="footer-logoBx">
+                    <div class="footer-logo">
+                        <p>acer</p>
+                        <p>:ruexpert</p>
+                    </div>
+                    <!-- /.footer-logo -->
+                    <p class="footer__time">Ежедневно с 09:00 до 21:00</p>
+                    <!-- /.footer__time -->
+                </div>
+                <!-- /.footer-logoBx -->
+                <div class="footer-info">
+                    <div class="footer-phoneBx">
+                        <a href="tel: +7(495)182-07-71" class="footer__phone">+7(495)182-07-71</a>
+                        <p class="footer-phoneBx__desc">Многоканальный</p>
+                    </div>
+                    <!-- /.footer-phoneBx -->
+                    <div class="footer-addressBx">
+                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 21.8333C5.08611 21.8333 3.52431 21.531 2.31458 20.9265C1.10486 20.3213 0.5 19.5402 0.5 18.5833C0.5 17.9513 0.761805 17.4006 1.28542 16.9312C1.80903 16.4617 2.53125 16.0916 3.45208 15.8208L4.075 17.8791C3.76806 17.9694 3.48819 18.0824 3.23542 18.2182C2.98264 18.3532 2.81111 18.4749 2.72083 18.5833C2.95556 18.8722 3.49722 19.1249 4.34583 19.3416C5.19444 19.5583 6.07917 19.6666 7 19.6666C7.92083 19.6666 8.81025 19.5583 9.66825 19.3416C10.5255 19.1249 11.0715 18.8722 11.3063 18.5833C11.216 18.4749 11.0444 18.3532 10.7917 18.2182C10.5389 18.0824 10.259 17.9694 9.95208 17.8791L10.575 15.8208C11.4958 16.0916 12.2137 16.4617 12.7287 16.9312C13.2429 17.4006 13.5 17.9513 13.5 18.5833C13.5 19.5402 12.8951 20.3213 11.6854 20.9265C10.4757 21.531 8.91389 21.8333 7 21.8333ZM7 14.602C7.325 14.0062 7.66806 13.4598 8.02917 12.9629C8.39028 12.4668 8.74236 11.993 9.08542 11.5416C9.75347 10.6749 10.2861 9.89385 10.6833 9.19835C11.0806 8.50357 11.2792 7.6416 11.2792 6.61243C11.2792 5.42076 10.8639 4.40965 10.0333 3.5791C9.20278 2.74854 8.19167 2.33326 7 2.33326C5.80833 2.33326 4.79722 2.74854 3.96667 3.5791C3.13611 4.40965 2.72083 5.42076 2.72083 6.61243C2.72083 7.6416 2.91944 8.50357 3.31667 9.19835C3.71389 9.89385 4.24653 10.6749 4.91458 11.5416C5.25764 11.993 5.60972 12.4668 5.97083 12.9629C6.33194 13.4598 6.675 14.0062 7 14.602ZM7 18.5833C6.80139 18.5833 6.62083 18.5244 6.45833 18.4067C6.29583 18.2897 6.17847 18.1319 6.10625 17.9333C5.69097 16.6513 5.16736 15.577 4.53542 14.7103C3.90347 13.8437 3.28958 13.0131 2.69375 12.2187C2.11597 11.4242 1.61511 10.6027 1.19117 9.7541C0.7665 8.90549 0.554167 7.85826 0.554167 6.61243C0.554167 4.80687 1.17708 3.28118 2.42292 2.03535C3.66875 0.789512 5.19444 0.166595 7 0.166595C8.80556 0.166595 10.3313 0.789512 11.5771 2.03535C12.8229 3.28118 13.4458 4.80687 13.4458 6.61243C13.4458 7.85826 13.2382 8.90549 12.8229 9.7541C12.4076 10.6027 11.9021 11.4242 11.3063 12.2187C10.7285 13.0131 10.1193 13.8437 9.47867 14.7103C8.83733 15.577 8.30903 16.6513 7.89375 17.9333C7.82153 18.1319 7.70417 18.2897 7.54167 18.4067C7.37917 18.5244 7.19861 18.5833 7 18.5833ZM7 8.91451C7.63194 8.91451 8.17361 8.68882 8.625 8.23743C9.07639 7.78604 9.30208 7.24437 9.30208 6.61243C9.30208 5.98048 9.07639 5.43882 8.625 4.98743C8.17361 4.53604 7.63194 4.31035 7 4.31035C6.36806 4.31035 5.82639 4.53604 5.375 4.98743C4.92361 5.43882 4.69792 5.98048 4.69792 6.61243C4.69792 7.24437 4.92361 7.78604 5.375 8.23743C5.82639 8.68882 6.36806 8.91451 7 8.91451Z" fill="white"/>
+                        </svg>
+                        <p class="footer__address">ул. Академика Королёва, 19</p>
+                    </div>
+                </div>
+                <!-- /.footer-info -->
+                <div class="footer-rateBx">
+                    <p class="footer-rateBx__title">Рейтинг сервиса</p>
+                    <img src="./images/footer/stars.svg" alt="" class="footer-rateBx__stars">
+                    <p class="footer-rateBx__desc">4.8-5.0 - 403 голоса</p>
+                </div>
+                <!-- /.footer-rateBx -->
+                <p class="footer-copyright">© Acer, 2023 г. Все права защищены.</p>
+            </div>
+            <!-- /.footer-about -->
+            <div class="footer-pages">
+                <div class="footer-box">
+                    <div class="footer-item">
+                        <h3 class="footer-item__title">Что мы чиним</h3>
+                        <!-- /.footer-item__title -->
+                        <div class="footer-lists">
+                            <a href="">Смартфоны</a>
+                            <a href="">Планшеты</a>
+                            <a href="">Ноутбуки</a>
+                            <a href="">Компьютеры</a>
+                            <a href="">Серверы</a>
+                            <a href="">Моноблоки</a>
+                            <a href="">Мониторы</a>
+                            <a href="">Телевизоры</a>
+                            <a href="">Проекторы</a>
+                        </div>
+                        <!-- /.footer-lists -->
+                    </div>
+                    <!-- /.footer-item -->
+                    <div class="footer-item">
+                        <h3 class="footer-item__title">Сервис</h3>
+                        <!-- /.footer-item__title -->
+                        <div class="footer-lists">
+                            <a href="">О нас</a>
+                            <a href="">Неисправности</a>
+                            <a href="">Комплектующие</a>
+                            <a href="">Цены</a>
+                            <a href="">Контакты</a>
+                        </div>
+                        <!-- /.footer-lists -->
+                    </div>
+                    <!-- /.footer-item -->
+                    <div class="footer-item">
+                        <h3 class="footer-item__title">Ruexpert в вашем городе</h3>
+                        <!-- /.footer-item__title -->
+                        <div class="footer-lists">
+                            <a href="">Барнаул</a>
+                            <a href="">Астрахань</a>
+                            <a href="">Брянск</a>
+                            <a href="">Липецк</a>
+                            <a href="">Вологда</a>
+                            <a href="">Пермь</a>
+                        </div>
+                        <!-- /.footer-lists -->
+                    </div>
+                    <!-- /.footer-item -->
+                </div>
+                <!-- /.footer-box -->
+                <div class="footer-helper">
+                    <div class="footer-rateBx">
+                        <p class="footer-rateBx__title">Рейтинг сервиса</p>
+                        <img src="./images/footer/stars.svg" alt="" class="footer-rateBx__stars">
+                        <p class="footer-rateBx__desc">4.8-5.0 - 403 голоса</p>
+                    </div>
+                    <!-- /.footer-rateBx -->
+                    <p class="footer-copyright">© Acer, 2023 г. Все права защищены.</p>
+                </div>
+                <!-- /.footer-helper -->
+                <p class="footer-cookies">Используем coockies для корректной работы сайта, персонализации пользователей и других целей, предусмотренных
+                    <a href="#">политикой обработки персональных данных</a></p>
+            </div>
+            <!-- /.footer-pages -->
+        </div>
+        <!-- /.footer-inner -->
+    </div>
+    <!-- /.footer__container -->
+</footer>
+<!-- /.footer -->
+    <script defer="defer" src="static/plugins/jquery.min.js"></script>
+<script defer="defer" src="static/plugins/jquery.maskedinput.min.js"></script>
+<script defer="defer" src="static/plugins/jquery.spincrement.min.js"></script>
+
+<script defer="defer" type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"></script>
+<script defer="defer" src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script defer="defer" src="js/app.js"></script>
+</main>
+</body>
+</html> 

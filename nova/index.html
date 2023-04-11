@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <meta name="theme-color" content="#ffffff">
+    <title>Сервисные центры в Новосибирске</title>
+
+    <!--==========   STYLESHEET   ==========-->
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="plugins/root.css"/>
+    <link rel="stylesheet" href="plugins/awesome/all.css"/>
+    <link rel="stylesheet" href="plugins/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!--==========   PLUGINS   ==========-->
+    <script defer src="plugins/jquery.min.js"></script>
+    <script defer src="plugins/jquery.hideseek.min.js"></script>
+    <script defer src="plugins/inputmask.min.js"></script>
+    <script defer src="plugins/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"></script>
+    <script defer src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js"></script>
+
+    <!--==========   SCRIPTS   ==========-->
+    <script defer src="js/index.js"></script>
+
+</head>
+
+<body>
+
+
+<main class="main main-index">
+
+    <div class="dropdown close-on-blackout">
+        <div class="container">
+            <div class="dropdown-inner">
+                <div class="dropdown-technics">
+                    <h2 class="dropdown__title">Разновидности техники</h2>
+                    <!-- /.dropdown__title -->
+                    <div class="dropdown-technicsBx">
+                        <ul class="dropdown-technicsBx__item">
+                            <li data-id="">Ноутбуки</li>
+                            <li data-id="">Планшеты</li>
+                            <li data-id="">Смартфоны</li>
+                            <li data-id="">Компьютеры</li>
+                            <li data-id="">Мониторы</li>
+                            <li data-id="">Моноблоки</li>
+                            <li data-id="">Проекторы</li>
+                            <li data-id="">Телевизоры</li>
+                            <li data-id="">Смарт-часы</li>
+                            <li data-id="">Принтеры</li>
+                            <li data-id="">Плоттеры</li>
+                            <li data-id="">Холодильники</li>
+                        </ul>
+                        <ul class="dropdown-technicsBx__item">
+                            <li data-id="">Посудомойки</li>
+                            <li data-id="">Стиральные машины</li>
+                            <li data-id="">Фотоаппараты</li>
+                            <li data-id="">Видеокамеры</li>
+                            <li data-id="">Игровые приставки</li>
+                            <li data-id="">Наушники</li>
+                            <li data-id="">Квадрокоптеры</li>
+                            <li data-id="">Сегвеи</li>
+                            <li data-id="">Электросамокаты</li>
+                            <li data-id="">Моноколеса</li>
+                            <li data-id="">Массажные кресла</li>
+                            <li data-id="">Гироскутеры</li>
+                        </ul>
+                    </div>
+                    <!-- /.dropdown-technicsBx -->
+                </div>
+                <!-- /.dropdown-technics -->
+                <div class="dropdown-brands">
+                    <h2 class="dropdown__title">Бренды</h2>
+                    <div class="dropdown-brandsBx">
+                        <a href="" class="dropdown-brandsBx__item">AEG</a>
+                        <a href="" class="dropdown-brandsBx__item">Ardo</a>
+                        <a href="" class="dropdown-brandsBx__item">Ariston</a>
+                        <a href="" class="dropdown-brandsBx__item">Atlant</a>
+                        <a href="" class="dropdown-brandsBx__item">Bauknecht</a>
+                        <a href="" class="dropdown-brandsBx__item">Beko</a>
+                        <a href="" class="dropdown-brandsBx__item">Bosch</a>
+                        <a href="" class="dropdown-brandsBx__item">Candy</a>
+                        <a href="" class="dropdown-brandsBx__item">Electrolux</a>
+                        <a href="" class="dropdown-brandsBx__item">Gorenje</a>
+                        <a href="" class="dropdown-brandsBx__item">Hansa</a>
+                        <a href="" class="dropdown-brandsBx__item">Indesit</a>
+                        <a href="" class="dropdown-brandsBx__item">Kaiser</a>
+                        <a href="" class="dropdown-brandsBx__item">Kuppersberg</a>
+                        <a href="" class="dropdown-brandsBx__item">LG</a>
+                        <a href="" class="dropdown-brandsBx__item">Miele</a>
+                        <a href="" class="dropdown-brandsBx__item">Neff</a>
+                        <a href="" class="dropdown-brandsBx__item">Panasonic</a>
+                    </div>
+                </div>
+                <!-- /.dropdown-brands -->
+            </div>
+            <!-- /.dropdown-inner -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.dropdown --><div class="nav-mobile close-on-blackout">
+        <button class="nav-mobile__item button hidden">Записаться на ремонт</button>
+        <ul>
+            <li class="nav-mobile__item"><a href="">Главная</a></li>
+            <li class="nav-mobile__item"><a href="">Цены</a></li>
+            <li class="nav-mobile__item"><a href="">О сервисе</a></li>
+            <li class="nav-mobile__item"><a href="">Контакты</a></li>
+            <li class="nav-mobile__item header-nav_dropdown">Техника</li>
+        </ul>
+    </div>
+    <!-- /.nav-mobile -->
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-logoBx">
+                    <a href="./" class="header-logo">
+                        <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.933 15.933L7.95103 5.95103C5.75496 3.75496 2 5.3103 2 8.41603V23.5784C2 26.6841 5.75495 28.2395 7.95103 26.0434L9.06704 24.9274" stroke="black" stroke-width="3.54" stroke-linecap="square"/>
+                            <path d="M9.06704 16.0614L19.049 26.0434C21.245 28.2394 25 26.6841 25 23.5784V8.41601C25 5.31028 21.245 3.75492 19.049 5.951L17.933 7.06701" stroke="black" stroke-width="3.54" stroke-linecap="square"/>
+                        </svg>
+                        <div class="header-brand-wrapper">
+                            <div class="header-brand-overflow">
+                                <img src="./images/header/logo-text.svg" alt="" class="header-logo__img">
+                            </div>
+                        </div>
+                    </a>
+                    <!-- /.header-logo -->
+                    <p class="header__city">Новосибирск</p>
+                </div>
+                <!-- /.header-logoBx -->
+                <nav class="header-nav">
+                    <ul>
+                        <li class="header-nav__item"><a href="#">Главная</a></li>
+                        <li class="header-nav__item header-nav_dropdown close-on-blackout"><p>Техника</p></li>
+                        <li class="header-nav__item"><a href="#" >Цены</a></li>
+                        <li class="header-nav__item"><a href="#">О сервисе</a></li>
+                        <li class="header-nav__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-about">
+                    <p class="header__graph">График работы: Пн-Пт с 10:00 до 18:00</p>
+                    <a href="tel:+7 (383) 285-01-59" class="header__phone">+7 (383) 285-01-59</a>
+                </div>
+                <!-- /.header-about -->
+                <div class="header-burger close-on-blackout">
+                    <span></span>
+                </div>
+                <!-- /.header-burger -->
+            </div>
+            <!-- /.header-inner -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+    <svg width="0" height="0" viewBox="0 0 1093 1018" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Assets" fill="none">
+            <defs>
+                <clipPath id="main" clipPathUnits="objectBoundingBox" transform="scale(0.00091575091, 0.00098328416)">
+                    <path d="M118.506 79.5117C143.647 15.2168 216.15 -16.5238 280.445 8.61717C377.696 46.6448 463.604 114.071 472.108 227.977C475.717 276.304 463.415 319.903 449.187 354.328C434.851 389.012 415.387 421.839 396.729 450.585C381.609 473.882 364.671 497.993 349.047 520.232C345.467 525.328 341.955 530.326 338.551 535.194C319.396 562.579 302.32 587.628 287.844 611.955C257.064 663.68 261.864 663.381 263 682.033C280.963 701.453 260.271 716.159 309.864 761.396C312.847 764.117 316.643 765.877 320.676 766.061C331.773 766.566 339.968 764.064 353.13 755.026C368.823 744.249 391.473 720.505 409.427 669.518C471.263 493.903 593.581 385.458 737.516 365.695C877.089 346.531 1014.11 416.421 1078.9 544.668C1110.03 606.287 1085.32 681.474 1023.7 712.604C962.078 743.734 886.891 719.017 855.761 657.399C839.72 625.646 806.742 608.536 771.523 613.372C740.665 617.609 683.399 644.164 645.236 752.549C613.189 843.562 561.978 914.876 494.656 961.109C427.121 1007.49 350.458 1023.58 278.387 1015.1C140.076 998.824 10.2817 888.304 0.562307 728.628C-5.30234 632.28 35.7977 546.637 73.0039 484.112C92.5206 451.314 114.134 419.863 133.689 391.905C137.799 386.029 141.785 380.352 145.657 374.838C161.054 352.912 174.649 333.551 187.025 314.482C202.441 290.729 212.395 272.742 218.144 258.833C218.628 257.662 219.061 256.569 219.449 255.552C213.397 251.926 203.899 247.119 189.401 241.45C125.106 216.309 93.3654 143.807 118.506 79.5117ZM229.013 262.991C228.849 263.024 228.014 262.317 227.001 260.767C228.671 262.182 229.178 262.957 229.013 262.991Z" id="Path"></path>
+                </clipPath>
+            </defs>
+        </g>
+    </svg>
+
+    <section class="content">
+        <div class="container">
+            <div class="content-inner">
+                <div class="content-item">
+                    <h1 class="content__title">Сеть сервисных центров nova проводит ремонт:</h1>
+                    <p class="content__subtitle">фотоаппаратов, моноблоков, компьютеров, стиральных машин, планшетов, принтеров, ноутбуков, телевизоров, смартфонов, посудомоечных машин, электросамокатов, холодильников</p>
+                    <div class="content-buttonBx">
+                        <button class="content__button primary-button action-button"><span>Записаться на ремонт</span></button>
+                        <button class="content__button secondary-button">Узнать больше</button>
+                    </div>
+                </div>
+                <!-- /.content-item -->
+
+                <div class="content-wrapper home-wrapper">
+                    <div class="content-imgBx">
+                        <img class="parallax" src="./images/content/parallax/main.png" alt="">
+                        <img class="mobile" src="./images/content/main.png" alt="">
+                    </div>
+                    <div class="content-sliderBx swiper">
+                        <div class="content-slider swiper-wrapper">
+                            <div class="content-slider__item swiper-slide"><img src="./images/content/1.png" alt=""></div>
+                            <!-- /.content-slider__item -->
+                            <div class="content-slider__item swiper-slide"><img src="./images/content/2.png" alt=""></div>
+                            <!-- /.content-slider__item -->
+                            <div class="content-slider__item swiper-slide"><img src="./images/content/3.png" alt=""></div>
+                            <!-- /.content-slider__item -->
+                        </div>
+                        <!-- /.content-slider -->
+                    </div>
+                    <svg class="content-path" width="307" height="314" viewBox="0 0 295 303" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 303V0C6 227.2 199.167 296.667 295 303H0Z" fill="#F1F2F3"/>
+                    </svg>
+                </div>
+                <!-- /.content-wrapper -->
+            </div>
+            <!-- /.content-inner -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.content -->
+
+    <section class="services">
+        <div class="services-inner services_m">
+            <div class="container">
+                <div class="services-titleBx">
+                    <h2 class="services__title title">Сервисные центры в Новосибирске</h2>
+                    <div class="services-searchBx">
+                        <input id="services-centers-search" data-list=".services-box" type="text" class="services__search animate-input" placeholder="Поиск">
+                    </div>
+                </div>
+                <!-- /.services-titleBx -->
+                <div class="services-wrapper services-wrapper_m">
+                    <div class="services-lines">
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <ul class="services-box">
+                        <li><a href="#">Acer</a></li>
+                        <li><a href="#">JVC</a></li>
+                        <li><a href="#">AEG</a></li>
+                        <li><a href="#">Kaiser</a></li>
+                        <li><a href="#">Airwheel</a></li>
+                        <li><a href="#">Kingsong</a></li>
+                        <li><a href="#">Asus</a></li>
+                        <li><a href="#">Lenovo</a></li>
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Kugoo</a></li>
+                        <li><a href="#">Ardo</a></li>
+                        <li><a href="#">Kuppersberg</a></li>
+                        <li><a href="#">Ariston</a></li>
+                        <li><a href="#">Leica</a></li>
+                        <li><a href="#">BBK</a></li>
+                        <li><a href="#">Miele</a></li>
+                        <li><a href="#">Atlant</a></li>
+                        <li><a href="#">LG</a></li>
+                        <li><a href="#">Barco</a></li>
+                        <li><a href="#">Meizu</a></li>
+                        <li><a href="#">Bauknecht</a></li>
+                        <li><a href="#">Microsoft</a></li>
+                        <li><a href="#">Blackmagic</a></li>
+                        <li><a href="#">Neff</a></li>
+                        <li><a href="#">Beko</a></li>
+                        <li><a href="#">Mimaki</a></li>
+                        <li><a href="#">BenQ</a></li>
+                        <li><a href="#">MSI</a></li>
+                        <li><a href="#">Beurer</a></li>
+                        <li><a href="#">NEC</a></li>
+                        <li><a href="#">Candy</a></li>
+                        <li><a href="#">Nvidia</a></li>
+                        <li><a href="#">Bork</a></li>
+                        <li><a href="#">Nikon</a></li>
+                        <li><a href="#">Bosch</a></li>
+                        <li><a href="#">Nintendo</a></li>
+                        <li><a href="#">Brother</a></li>
+                        <li><a href="#">Nokia</a></li>
+                        <li><a href="#">Cinemood</a></li>
+                        <li><a href="#">Panasonic</a></li>
+                        <li><a href="#">Canon</a></li>
+                        <li><a href="#">Olympus</a></li>
+                        <li><a href="#">Casada</a></li>
+                        <li><a href="#">OnePlus</a></li>
+                        <li><a href="#">Christie</a></li>
+                        <li><a href="#">Optoma</a></li>
+                        <li><a href="#">Digma</a></li>
+                        <li><a href="#">Razor</a></li>
+                        <li><a href="#">Compaq</a></li>
+                        <li><a href="#">Philips</a></li>
+                        <li><a href="#">Dell</a></li>
+                        <li><a href="#">Polaroid</a></li>
+                        <li><a href="#">Dexp</a></li>
+                        <li><a href="#">Prestigio</a></li>
+                        <li><a href="#">Electrolux</a></li>
+                        <li><a href="#">Roland</a></li>
+                        <li><a href="#">DJI</a></li>
+                        <li><a href="#">Restart</a></li>
+                        <li><a href="#">e-Twow</a></li>
+                        <li><a href="#">Richter</a></li>
+                        <li><a href="#">Ego</a></li>
+                        <li><a href="#">Ricoh</a></li>
+                        <li><a href="#">Fly</a></li>
+                        <li><a href="#">Sharp</a></li>
+                        <li><a href="#">Eltreco</a></li>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Epson</a></li>
+                        <li><a href="#">Sanyo</a></li>
+                        <li><a href="#">Ergonova</a></li>
+                        <li><a href="#">Sensa</a></li>
+                        <li><a href="#">Gess</a></li>
+                        <li><a href="#">Smeg</a></li>
+                        <li><a href="#">Fujifilm</a></li>
+                        <li><a href="#">Siemens</a></li>
+                        <li><a href="#">Fujiiryoki</a></li>
+                        <li><a href="#">Sigma</a></li>
+                        <li><a href="#">GCC</a></li>
+                        <li><a href="#">Silhoutte</a></li>
+                        <li><a href="#">Graphtec</a></li>
+                        <li><a href="#">UNO</a></li>
+                        <li><a href="#">Globber</a></li>
+                        <li><a href="#">Sony</a></li>
+                        <li><a href="#">Gorenje</a></li>
+                        <li><a href="#">Takasima</a></li>
+                        <li><a href="#">Gotway</a></li>
+                        <li><a href="#">Toshiba</a></li>
+                        <li><a href="#">Hiper</a></li>
+                        <li><a href="#">Victoryfit</a></li>
+                        <li><a href="#">Halten</a></li>
+                        <li><a href="#">UC Medica</a></li>
+                        <li><a href="#">Hansa</a></li>
+                        <li><a href="#">Vestfrost</a></li>
+                        <li><a href="#">Hasselblad</a></li>
+                        <li><a href="#">Vicsign</a></li>
+                        <li><a href="#">HTC</a></li>
+                        <li><a href="#">Xgimi</a></li>
+                        <li><a href="#">Hitachi</a></li>
+                        <li><a href="#">ViewSonic</a></li>
+                        <li><a href="#">Hoverbot</a></li>
+                        <li><a href="#">Vivitek</a></li>
+                        <li><a href="#">HP</a></li>
+                        <li><a href="#">Walkera</a></li>
+                        <li><a href="#">Inada</a></li>
+                        <li><a href="#">Zanussi</a></li>
+                        <li><a href="#">Huawei</a></li>
+                        <li><a href="#">Xiaomi</a></li>
+                        <li><a href="#">Hubsan</a></li>
+                        <li><a href="#">Xiro</a></li>
+                        <li><a href="#">iconBIT</a></li>
+                        <li><a href="#">Yamaguchi</a></li>
+                        <li><a href="#">Irest</a></li>
+                        <li><a href="#">Zaxboard</a></li>
+                        <li><a href="#">Indesit</a></li>
+                        <li><a href="#">Zaxboard</a></li>
+                        <li><a href="#">Infocus</a></li>
+                        <li><a href="#">ZTE</a></li>
+                        <li><a href="#">Inmotion</a></li>
+                        <li><a href="#">Alcatel</a></li>
+                        <li><a href="#">Kodak</a></li>
+                        <li><a href="#">ZTE</a></li>
+                    </ul>
+                </div>
+                <button class="services__button secondary-button">Показать ещё</button>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.services-inner -->
+    </section>
+    <!-- /.services -->
+
+    <section class="popular">
+        <div class="container">
+            <h2 class="popular__title title">Популярно в сервисных центрах nova</h2>
+            <div class="popular-box">
+                <svg class="popular-mobile-svg popular-mobile-svg__top" preserveAspectRatio="none" width="375" height="322" viewBox="0 0 375 322" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-604 7C-587.167 102.333 -496.717 297.253 -288 238.5C152.5 114.5 241 163.5 498.5 263C704.5 342.6 945.333 146.833 1040 39" stroke="var(--color-accent)" stroke-width="80"/>
+                </svg>
+                <svg class="popular-mobile-svg popular-mobile-svg__bottom" preserveAspectRatio="none" width="375" height="322" viewBox="0 0 375 322" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-604 7C-587.167 102.333 -496.717 297.253 -288 238.5C152.5 114.5 241 163.5 498.5 263C704.5 342.6 945.333 146.833 1040 39" stroke="var(--color-accent)" stroke-width="80"/>
+                </svg>
+                <div class="popular__item">
+                    <h3 class="popular__item-title">Популярные линейки</h3>
+                    <div class="popular-devicesBx">
+                        <ul>
+                            <li><a href="#">Redmi</a></li>
+                            <li><a href="#">iPad</a></li>
+                            <li><a href="#">Nexus</a></li>
+                            <li><a href="#">Xperia</a></li>
+                            <li><a href="#">Streak</a></li>
+                            <li><a href="#">Transformerbook</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Redmi Note</a></li>
+                            <li><a href="#">Vivotab</a></li>
+                            <li><a href="#">Macbook</a></li>
+                            <li><a href="#">Tablet</a></li>
+                            <li><a href="#">Galaxy</a></li>
+                            <li><a href="#">Apple Watch</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popular__item">
+                    <h3 class="popular__item-title">Популярные устройства</h3>
+                    <div class="popular-devicesBx">
+                        <ul>
+                            <li><a href="#">Lenovo Thinkpad TABLET</a></li>
+                            <li><a href="#">Apple iPad Pro 128Gb</a></li>
+                            <li><a href="#">Lenovo B560</a></li>
+                            <li><a href="#">Lenovo Thinkpad TABLET 2</a></li>
+                            <li><a href="#">Apple iPad 128Gb Wi-Fi</a></li>
+                            <li><a href="#">Lenovo G570</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Lenovo Yoga BOOK</a></li>
+                            <li><a href="#">MacBook Air 2020</a></li>
+                            <li><a href="#">Dell inspiron n5110</a></li>
+                            <li><a href="#">Samsung Galaxy TabPr...</a></li>
+                            <li><a href="#">MacBook Pro 14”</a></li>
+                            <li><a href="#">Apple Watch SE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /.popular-box -->
+        </div>
+        <!-- /.container -->
+        <svg class="popular-svg" width="1440" height="323" viewBox="0 0 1440 323" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-57 7.5C-40.1667 102.833 50.2831 297.753 259 239C699.5 115 788 164 1045.5 263.5C1251.5 343.1 1492.33 147.333 1587 39.5" stroke="var(--color-accent)" stroke-width="80"/>
+        </svg>
+    </section>
+    <!-- /.popular -->
+
+    <section class="advantages">
+        <div class="container">
+            <h2 class="advantages__title title">Преимущества сервиса nova</h2>
+            <!-- /.advantages__title -->
+            <p class="advantages__subtitle">Мы используем только оригинальные комплектующие, на протяжении нашего сотрудничества вас будет вести личный менеджер, вы всегда будете знать о статусе ремонта, цены в нашем СЦ фиксированные. Будем рады видеть вас среди наших гостей.</p>
+            <!-- /.advantages__subtitle -->
+            <div class="advantages-wrapper">
+                <div class="advantages-box advantages-box_m blur">
+                    <div class="advantages__item active" data-img="1">
+                        <h3 class="advantages__item-title">Качественные комплектующие</h3>
+                        <!-- /.advantages__item-title -->
+                        <p class="advantages__item-subtitle">Оригинальные комплектующие всегда в наличии. Возможность
+                            персонального дозаказа.</p>
+                        <!-- /.advantages__item-subtitle -->
+                    </div>
+                    <!-- /.advantages__item -->
+                    <div class="advantages__item" data-img="2">
+                        <h3 class="advantages__item-title">Ремонт любых неисправностей</h3>
+                        <!-- /.advantages__item-title -->
+                        <p class="advantages__item-subtitle">В наших мастерских производится ремонт любого уровня
+                            сложности аппаратов.</p>
+                        <!-- /.advantages__item-subtitle -->
+                    </div>
+                    <!-- /.advantages__item -->
+                    <div class="advantages__item" data-img="3">
+                        <h3 class="advantages__item-title">Срочная диагностика, тех. заключение</h3>
+                        <!-- /.advantages__item-title -->
+                        <p class="advantages__item-subtitle">Срочная диагностика, не отходя от кассы. Углублённое
+                            аппаратное и программное тестирование техники.</p>
+                        <!-- /.advantages__item-subtitle -->
+                    </div>
+                    <!-- /.advantages__item -->
+                    <div class="advantages__item" data-img="4">
+                        <h3 class="advantages__item-title">Доставка вашей техники</h3>
+                        <!-- /.advantages__item-title -->
+                        <p class="advantages__item-subtitle">Чтобы вернуть в строй вашу технику, не обязательно выходить
+                            из дома.</p>
+                        <!-- /.advantages__item-subtitle -->
+                    </div>
+                    <!-- /.advantages__item -->
+                </div>
+                <!-- /.advantages-box -->
+                <div class="advantages-imgBx">
+                    <img class="desktop" src="./images/advantages/1.png" alt="">
+                    <img class="mobile" src="./images/advantages/1-mobile.png" alt="">
+                </div>
+            </div>
+            <!-- /.advantages-wrapper -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.advantages -->
+    <section class="feedback">
+        <div class="container">
+            <h2 class="feedback__title title">Отзывы наших клиентов</h2>
+            <p class="feedback__subtitle">99% наших клиентов остаются довольны ремонтом и оставляют свои восторженные отзывы. Вы можете стать в их числе, если загляните в наш сервис</p>
+            <div class="feedback-box feedback-slider swiper">
+                <div class="feedback-wrapper swiper-wrapper">
+                    <div class="feedback__item blur swiper-slide">
+                        <div class="feedback-titleBx">
+                            <h3>Константин</h3>
+                            <p>1 месяц назад</p>
+                        </div>
+                        <div class="feedback__desc">Обращались в сервис неоднократно, всегда быстро, качественно, доброжелательно. Но самое главное недорого :) Всем рекомендую.</div>
+                        <div class="feedback-estimateBx">
+                            <img src="./images/feedback/five.svg" alt="">
+                            <img src="./images/feedback/1.png" class="feedback-estimateBx__company">
+                        </div>
+                    </div>
+                    <div class="feedback__item blur swiper-slide">
+                        <div class="feedback-titleBx">
+                            <h3>Елизавета</h3>
+                            <p>1 месяц назад</p>
+                        </div>
+                        <div class="feedback__desc">Добрый день! Большое спасибо за оперативную и отличную работу по замене дисплея на iPhone, теперь мой смартфон, как новый. Если чинить, то только здесь)</div>
+                        <div class="feedback-estimateBx">
+                            <img src="./images/feedback/five.svg" alt="">
+                            <img src="./images/feedback/2.png" class="feedback-estimateBx__company">
+                        </div>
+                    </div>
+                    <div class="feedback__item blur swiper-slide">
+                        <div class="feedback-titleBx">
+                            <h3>Артемий</h3>
+                            <p>1 месяц назад</p>
+                        </div>
+                        <div class="feedback__desc">Утопил свой телефон, подсушил и сразу стал искать сервис. Нашел этих ребят. Сделали всё быстро и дешево, специалисты знают что делают, за что им большая благодарность. Кстати защитное стекло подарили.</div>
+                        <div class="feedback-estimateBx">
+                            <img src="./images/feedback/five.svg" alt="">
+                            <img src="./images/feedback/1.png" class="feedback-estimateBx__company">
+                        </div>
+                    </div>
+                    <div class="feedback__item blur swiper-slide">
+                        <div class="feedback-titleBx">
+                            <h3>Владимир</h3>
+                            <p>1 месяц назад</p>
+                        </div>
+                        <div class="feedback__desc">Не заряжался ноутбук, ломал голову что делать. Ребята из nova помогли с вопросом. Недорого и быстро, отремонтировали на месте всего за 15 минут. Дали инструкцию по верной эксплуатации, что что им спасибо.</div>
+                        <div class="feedback-estimateBx">
+                            <img src="./images/feedback/five.svg" alt="">
+                            <img src="./images/feedback/3.png" class="feedback-estimateBx__company">
+                        </div>
+                    </div>
+                    <div class="feedback__item blur swiper-slide">
+                        <div class="feedback-titleBx">
+                            <h3>Марина</h3>
+                            <p>2 месяца назад</p>
+                        </div>
+                        <div class="feedback__desc">Хочу выразить благодарность специалистам сервиса nova, починили холодильник, который перестал работать.</div>
+                        <div class="feedback-estimateBx">
+                            <img src="./images/feedback/four.svg" alt="">
+                            <img src="./images/feedback/2.png" class="feedback-estimateBx__company">
+                        </div>
+                    </div>
+                    <div class="feedback__item blur swiper-slide">
+                        <div class="feedback-titleBx">
+                            <h3>Никита</h3>
+                            <p>3 месяца назад</p>
+                        </div>
+                        <div class="feedback__desc">Отличные ребята, помогли мне с видеокартой на моем ПК, у них же купил термопасту для процессора. Большое спасибо</div>
+                        <div class="feedback-estimateBx">
+                            <img src="./images/feedback/four.svg" alt="">
+                            <img src="./images/feedback/3.png" class="feedback-estimateBx__company">
+                        </div>
+                    </div>
+                    <div class="feedback__item blur hidden swiper-slide">
+                        <div class="feedback-titleBx">
+                            <h3>Елизавета</h3>
+                            <p>1 месяц назад</p>
+                        </div>
+                        <div class="feedback__desc">Добрый день! Большое спасибо за оперативную и отличную работу по замене дисплея на iPhone, теперь мой смартфон, как новый. Если чинить, то только здесь)</div>
+                        <div class="feedback-estimateBx">
+                            <img src="./images/feedback/five.svg" alt="">
+                            <img src="./images/feedback/2.png" class="feedback-estimateBx__company">
+                        </div>
+                    </div>
+                    <div class="feedback__item blur hidden swiper-slide">
+                        <div class="feedback-titleBx">
+                            <h3>Владимир</h3>
+                            <p>1 месяц назад</p>
+                        </div>
+                        <div class="feedback__desc">Не заряжался ноутбук, ломал голову что делать. Ребята из nova помогли с вопросом. Недорого и быстро, отремонтировали на месте всего за 15 минут. Дали инструкцию по верной эксплуатации, что что им спасибо.</div>
+                        <div class="feedback-estimateBx">
+                            <img src="./images/feedback/four.svg" alt="">
+                            <img src="./images/feedback/1.png" class="feedback-estimateBx__company">
+                        </div>
+                    </div>
+                </div>
+                <!-- /.feedback-wrapper -->
+            </div>
+            <!-- /.feedback-box -->
+            <button class="feedback__more secondary-button">Показать ещё</button>
+            <!-- /.feedback__more -->
+            <div class="swiper-pagination myClass"></div>
+    
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.feedback -->
+    <section class="plan">
+        <div class="container">
+            <div class="plan-inner">
+                <div class="plan-titleBx">
+                    <h2 class="plan__title title">План ремонта вашей техники
+                        в сервисном центре nova</h2>
+                    <p class="plan__subtitle">Ремонт цифровой и бытовой техники любых брендов и моделей
+                        с предоставлением обязательной гарантии на все работы и запчасти. Алгоритм работы понятен и прозрачен.</p>
+                    <button class="plan__button primary-button action-button">Записаться</button>
+                </div>
+                <ul class="plan-box">
+                    <li class="plan__item">
+                        <div class="plan-iconBx-helper">
+                            <div class="plan-iconBx">
+                                <svg width="20" height="30" viewBox="0 0 20 30" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 21.4458C12.4556 19.4625 14.309 17.5559 15.5604 15.7261C16.8118 13.8962 17.4375 12.1903 17.4375 10.6083C17.4375 9.21529 17.1837 8.03473 16.676 7.06668C16.1684 6.09862 15.5427 5.30765 14.799 4.69376C14.0552 4.07987 13.2465 3.63716 12.3729 3.36564C11.4993 3.09411 10.7083 2.95834 10 2.95834C9.29167 2.95834 8.50069 3.09411 7.62708 3.36564C6.75347 3.63716 5.94479 4.07987 5.20104 4.69376C4.45729 5.30765 3.8316 6.09862 3.32396 7.06668C2.81632 8.03473 2.5625 9.21529 2.5625 10.6083C2.5625 12.1903 3.18819 13.8962 4.43958 15.7261C5.69097 17.5559 7.54444 19.4625 10 21.4458ZM10 23.7479C9.83472 23.7479 9.68125 23.7302 9.53958 23.6948C9.39792 23.6594 9.26805 23.5945 9.15 23.5C6.19861 21.2097 4.00868 19.008 2.58021 16.8948C1.15174 14.7816 0.4375 12.6861 0.4375 10.6083C0.4375 9.00279 0.726736 7.59202 1.30521 6.37605C1.88368 5.16008 2.63333 4.1389 3.55417 3.31251C4.475 2.48612 5.50208 1.86633 6.63542 1.45314C7.76875 1.03994 8.89028 0.833344 10 0.833344C11.1097 0.833344 12.2312 1.03994 13.3646 1.45314C14.4979 1.86633 15.525 2.48612 16.4458 3.31251C17.3667 4.1389 18.1163 5.16008 18.6948 6.37605C19.2733 7.59202 19.5625 9.00279 19.5625 10.6083C19.5625 12.6861 18.8483 14.7816 17.4198 16.8948C15.9913 19.008 13.8014 21.2097 10.85 23.5C10.7319 23.5945 10.6021 23.6594 10.4604 23.6948C10.3187 23.7302 10.1653 23.7479 10 23.7479ZM10 12.875C10.6847 12.875 11.2691 12.633 11.7531 12.149C12.2372 11.6649 12.4792 11.0806 12.4792 10.3958C12.4792 9.71112 12.2372 9.12675 11.7531 8.64272C11.2691 8.15869 10.6847 7.91668 10 7.91668C9.31528 7.91668 8.7309 8.15869 8.24687 8.64272C7.76285 9.12675 7.52083 9.71112 7.52083 10.3958C7.52083 11.0806 7.76285 11.6649 8.24687 12.149C8.7309 12.633 9.31528 12.875 10 12.875ZM1.5 29.1667C1.19306 29.1667 0.939236 29.0663 0.738542 28.8656C0.537847 28.6649 0.4375 28.4111 0.4375 28.1042C0.4375 27.7972 0.537847 27.5434 0.738542 27.3427C0.939236 27.142 1.19306 27.0417 1.5 27.0417H18.5C18.8069 27.0417 19.0608 27.142 19.2615 27.3427C19.4622 27.5434 19.5625 27.7972 19.5625 28.1042C19.5625 28.4111 19.4622 28.6649 19.2615 28.8656C19.0608 29.0663 18.8069 29.1667 18.5 29.1667H1.5Z"
+                                          fill="#1D1D1F"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- /.plan-iconBx -->
+                        <div class="plan__item-titleBx">
+                            <h4 class="plan__item-title">Передача  техники</h4>
+                            <!-- /.plan__item-title -->
+                            <p class="plan__item-subtitle">Вы приезжаете к нам в сервисный центр
+                                или вызываете курьера на дом</p>
+                            <!-- /.plan__item-subtitle -->
+                        </div>
+                        <!-- /.plan__item-titleBx -->
+                    </li>
+                    <!-- /.plan__item -->
+                    <li class="plan__item">
+                        <div class="plan-iconBx-helper">
+                            <div class="plan-iconBx">
+                                <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.2646 28.2542H2.375C1.80833 28.2542 1.3125 28.0417 0.8875 27.6167C0.4625 27.1917 0.25 26.6958 0.25 26.1292V5.51668C0.25 4.95002 0.432986 4.45418 0.798958 4.02918C1.16493 3.60418 1.47778 3.39168 1.7375 3.39168H8.89167C9.05694 2.56529 9.46424 1.88647 10.1135 1.35522C10.7628 0.823975 11.5125 0.55835 12.3625 0.55835C13.2125 0.55835 13.9622 0.823975 14.6115 1.35522C15.2608 1.88647 15.6681 2.56529 15.8333 3.39168H22.9875C23.5542 3.39168 24.05 3.60418 24.475 4.02918C24.9 4.45418 25.1125 4.95002 25.1125 5.51668V12.7063H22.9875V5.51668H19.2333V7.99585C19.2333 8.58613 19.0267 9.08786 18.6135 9.50106C18.2003 9.91425 17.6986 10.1208 17.1083 10.1208H8.25417C7.66389 10.1208 7.16215 9.91425 6.74896 9.50106C6.33576 9.08786 6.12917 8.58613 6.12917 7.99585V5.51668H2.375V26.1292H11.2646V28.2542ZM17.9583 24.3229L25.6792 16.6021C25.8917 16.3896 26.1396 16.2893 26.4229 16.3011C26.7062 16.3129 26.9542 16.425 27.1667 16.6375C27.3792 16.85 27.4854 17.1038 27.4854 17.399C27.4854 17.6941 27.3792 17.9479 27.1667 18.1604L18.7021 26.625C18.4896 26.8375 18.2417 26.9438 17.9583 26.9438C17.675 26.9438 17.4271 26.8375 17.2146 26.625L13.0354 22.4458C12.8229 22.2333 12.7226 21.9795 12.7344 21.6844C12.7462 21.3893 12.8583 21.1354 13.0708 20.9229C13.2833 20.7104 13.5372 20.6042 13.8323 20.6042C14.1274 20.6042 14.3812 20.7104 14.5938 20.9229L17.9583 24.3229ZM13 5.37502C13.4014 5.37502 13.7378 5.23925 14.0094 4.96772C14.2809 4.6962 14.4167 4.35974 14.4167 3.95835C14.4167 3.55696 14.2809 3.2205 14.0094 2.94897C13.7378 2.67745 13.4014 2.54168 13 2.54168C12.5986 2.54168 12.2622 2.67745 11.9906 2.94897C11.7191 3.2205 11.5833 3.55696 11.5833 3.95835C11.5833 4.35974 11.7191 4.6962 11.9906 4.96772C12.2622 5.23925 12.5986 5.37502 13 5.37502Z" fill="#1D1D1F"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- /.plan-iconBx -->
+                        <div class="plan__item-titleBx">
+                            <h4 class="plan__item-title">Согласовываем работу</h4>
+                            <!-- /.plan__item-title -->
+                            <p class="plan__item-subtitle">Мы проводим диагностику и согласовываем
+                                с вами ремонтные работы</p>
+                            <!-- /.plan__item-subtitle -->
+                        </div>
+                        <!-- /.plan__item-titleBx -->
+                    </li>
+                    <!-- /.plan__item -->
+                    <li class="plan__item">
+                        <div class="plan-iconBx-helper">
+                            <div class="plan-iconBx">
+                                <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.6688 8.89996C23.5744 8.89996 23.4799 8.87635 23.3855 8.82913C23.291 8.7819 23.2202 8.69926 23.173 8.58121L22.1105 6.27913L19.8084 5.21663C19.6903 5.1694 19.6077 5.09857 19.5605 5.00413C19.5132 4.90968 19.4896 4.81524 19.4896 4.72079C19.4896 4.62635 19.5132 4.5319 19.5605 4.43746C19.6077 4.34301 19.6903 4.27218 19.8084 4.22496L22.1105 3.16246L23.173 0.860376C23.2202 0.74232 23.291 0.659681 23.3855 0.612459C23.4799 0.565237 23.5744 0.541626 23.6688 0.541626C23.7632 0.541626 23.8577 0.565237 23.9521 0.612459C24.0466 0.659681 24.1174 0.74232 24.1646 0.860376L25.2271 3.16246L27.5292 4.22496C27.6473 4.27218 27.7299 4.34301 27.7771 4.43746C27.8244 4.5319 27.848 4.62635 27.848 4.72079C27.848 4.81524 27.8244 4.90968 27.7771 5.00413C27.7299 5.09857 27.6473 5.1694 27.5292 5.21663L25.2271 6.27913L24.1646 8.58121C24.1174 8.69926 24.0466 8.7819 23.9521 8.82913C23.8577 8.87635 23.7632 8.89996 23.6688 8.89996ZM26.6438 19.1354C26.5494 19.1354 26.4549 19.1118 26.3605 19.0645C26.266 19.0173 26.1952 18.9465 26.148 18.852L25.5813 17.6125L24.3417 17.0458C24.2945 17.0222 24.2001 16.8569 24.0584 16.55C24.0584 16.4555 24.082 16.3611 24.1292 16.2666C24.1764 16.1722 24.2473 16.1013 24.3417 16.0541L25.5813 15.4875L26.148 14.2479C26.1716 14.2007 26.3369 14.1062 26.6438 13.9645C26.7382 13.9645 26.8327 13.9882 26.9271 14.0354C27.0216 14.0826 27.0924 14.1534 27.1396 14.2479L27.7063 15.4875L28.9459 16.0541C28.9931 16.0777 29.0876 16.243 29.2292 16.55C29.2292 16.6444 29.2056 16.7388 29.1584 16.8333C29.1112 16.9277 29.0403 16.9986 28.9459 17.0458L27.7063 17.6125L27.1396 18.852C27.116 18.8993 26.9507 18.9937 26.6438 19.1354ZM9.07713 28.1666C8.81741 28.1666 8.5872 28.0722 8.38651 27.8833C8.18582 27.6944 8.06186 27.4701 8.01463 27.2104L7.76672 24.9083C7.43616 24.8611 7.0938 24.7548 6.73963 24.5895C6.38547 24.4243 6.07852 24.2236 5.8188 23.9875L3.9063 24.802C3.67019 24.9201 3.42818 24.9319 3.18026 24.8375C2.93234 24.743 2.73755 24.5895 2.59588 24.377L0.470883 20.9416C0.305606 20.6819 0.252481 20.4163 0.311508 20.1448C0.370536 19.8732 0.529911 19.6548 0.789633 19.4895L2.6313 18.2854C2.51324 17.884 2.45422 17.5298 2.45422 17.2229C2.45422 16.9159 2.51324 16.5618 2.6313 16.1604L0.789633 14.9562C0.529911 14.7909 0.370536 14.5725 0.311508 14.301C0.252481 14.0295 0.305606 13.7638 0.470883 13.5041L2.59588 10.0687C2.73755 9.85621 2.93234 9.70274 3.18026 9.60829C3.42818 9.51385 3.67019 9.52565 3.9063 9.64371L5.8188 10.4583C6.07852 10.2222 6.38547 10.0215 6.73963 9.85621C7.0938 9.69093 7.43616 9.58468 7.76672 9.53746L8.01463 7.23538C8.06186 6.97565 8.18582 6.75135 8.38651 6.56246C8.5872 6.37357 8.81741 6.27913 9.07713 6.27913H13.1146C13.3744 6.27913 13.6046 6.37357 13.8053 6.56246C14.006 6.75135 14.1299 6.97565 14.1771 7.23538L14.4251 9.53746C14.7556 9.58468 15.098 9.69093 15.4521 9.85621C15.8063 10.0215 16.1132 10.2222 16.373 10.4583L18.2855 9.64371C18.5216 9.52565 18.7636 9.51385 19.0115 9.60829C19.2594 9.70274 19.4542 9.85621 19.5959 10.0687L21.7209 13.5041C21.8862 13.7638 21.9393 14.0295 21.8803 14.301C21.8212 14.5725 21.6619 14.7909 21.4021 14.9562L19.5605 16.1604C19.6785 16.5618 19.7376 16.9159 19.7376 17.2229C19.7376 17.5298 19.6785 17.884 19.5605 18.2854L21.4021 19.4895C21.6619 19.6548 21.8212 19.8732 21.8803 20.1448C21.9393 20.4163 21.8862 20.6819 21.7209 20.9416L19.5959 24.377C19.4542 24.5895 19.2594 24.743 19.0115 24.8375C18.7636 24.9319 18.5216 24.9201 18.2855 24.802L16.373 23.9875C16.1132 24.2236 15.8063 24.4243 15.4521 24.5895C15.098 24.7548 14.7556 24.8611 14.4251 24.9083L14.1771 27.2104C14.1299 27.4701 14.006 27.6944 13.8053 27.8833C13.6046 28.0722 13.3744 28.1666 13.1146 28.1666H9.07713ZM11.0959 21.2958C12.2764 21.2958 13.2504 20.9121 14.0178 20.1448C14.7851 19.3774 15.1688 18.4034 15.1688 17.2229C15.1688 16.0423 14.7851 15.0684 14.0178 14.301C13.2504 13.5336 12.2764 13.15 11.0959 13.15C9.91533 13.15 8.94137 13.5336 8.17401 14.301C7.40665 15.0684 7.02297 16.0423 7.02297 17.2229C7.02297 18.4034 7.40665 19.3774 8.17401 20.1448C8.94137 20.9121 9.91533 21.2958 11.0959 21.2958ZM11.0959 19.1708C10.5292 19.1708 10.0629 18.9878 9.69693 18.6218C9.33095 18.2559 9.14797 17.7895 9.14797 17.2229C9.14797 16.6562 9.33095 16.1899 9.69693 15.8239C10.0629 15.4579 10.5292 15.275 11.0959 15.275C11.6626 15.275 12.1289 15.4579 12.4948 15.8239C12.8608 16.1899 13.0438 16.6562 13.0438 17.2229C13.0438 17.7895 12.8608 18.2559 12.4948 18.6218C12.1289 18.9878 11.6626 19.1708 11.0959 19.1708ZM9.89172 26.0416H12.3001L12.5834 23.35C13.2681 23.1847 13.8938 22.9486 14.4605 22.6416C15.0271 22.3347 15.5466 21.9333 16.0188 21.4375L18.3209 22.4645L19.4896 20.6229L17.2938 19.0645C17.5535 18.4743 17.6834 17.8604 17.6834 17.2229C17.6834 16.5854 17.5535 15.9715 17.2938 15.3812L19.4896 13.8229L18.3209 11.9812L16.0188 13.0083C15.5466 12.5125 15.0271 12.1111 14.4605 11.8041C13.8938 11.4972 13.2681 11.2611 12.5834 11.0958L12.3001 8.40413H9.89172L9.60838 11.0958C8.92366 11.2611 8.29797 11.4972 7.7313 11.8041C7.16463 12.1111 6.64519 12.5125 6.17297 13.0083L3.87088 11.9812L2.70213 13.8229L4.89797 15.3812C4.63824 15.9715 4.50838 16.5854 4.50838 17.2229C4.50838 17.8604 4.63824 18.4743 4.89797 19.0645L2.70213 20.6229L3.87088 22.4645L6.17297 21.4375C6.64519 21.9333 7.16463 22.3347 7.7313 22.6416C8.29797 22.9486 8.92366 23.1847 9.60838 23.35L9.89172 26.0416Z" fill="#1D1D1F"/>
+                                </svg>
+                            </div>
+                            <!-- /.plan-iconBx -->
+                        </div>
+                        <div class="plan__item-titleBx">
+                            <h4 class="plan__item-title">Ремонтируем</h4>
+                            <!-- /.plan__item-title -->
+                            <p class="plan__item-subtitle">Качественно ремонтируем вашу любимую технику и выдаем гарантию</p>
+                            <!-- /.plan__item-subtitle -->
+                        </div>
+                        <!-- /.plan__item-titleBx -->
+                    </li>
+                    <!-- /.plan__item -->
+                    <li class="plan__item">
+                        <div class="plan-iconBx-helper">
+                            <div class="plan-iconBx">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.43125 25.75C6.14097 25.75 4.20486 24.959 2.62292 23.3771C1.04097 21.7951 0.25 19.859 0.25 17.5688V8.43125C0.25 6.14097 1.04097 4.20486 2.62292 2.62292C4.20486 1.04097 6.14097 0.25 8.43125 0.25H17.5688C19.859 0.25 21.7951 1.04097 23.3771 2.62292C24.959 4.20486 25.75 6.14097 25.75 8.43125V17.5688C25.75 19.859 24.959 21.7951 23.3771 23.3771C21.7951 24.959 19.859 25.75 17.5688 25.75H8.43125ZM11.5479 18.4896L20.0479 9.98958L18.525 8.46667L11.5479 15.4438L8.1125 12.0083L6.58958 13.5312L11.5479 18.4896ZM8.43125 23.625H17.5688C19.2451 23.625 20.6736 23.0347 21.8542 21.8542C23.0347 20.6736 23.625 19.2451 23.625 17.5688V8.43125C23.625 6.75486 23.0347 5.32639 21.8542 4.14583C20.6736 2.96528 19.2451 2.375 17.5688 2.375H8.43125C6.75486 2.375 5.32639 2.96528 4.14583 4.14583C2.96528 5.32639 2.375 6.75486 2.375 8.43125V17.5688C2.375 19.2451 2.96528 20.6736 4.14583 21.8542C5.32639 23.0347 6.75486 23.625 8.43125 23.625Z" fill="#1D1D1F"/>
+                                </svg>
+                            </div>
+                            <!-- /.plan-iconBx -->
+                        </div>
+                        <div class="plan__item-titleBx">
+                            <h4 class="plan__item-title">Передаем готовую технику</h4>
+                            <!-- /.plan__item-title -->
+                            <p class="plan__item-subtitle">Вы наслаждаетесь своим отремонтированным гаджетом с гарантией</p>
+                            <!-- /.plan__item-subtitle -->
+                        </div>
+                        <!-- /.plan__item-titleBx -->
+                    </li>
+                    <!-- /.plan__item -->
+                </ul>
+                <!-- /.plan-box -->
+                <button class="plan__button primary-button action-button mobile">Записаться</button>
+            </div>
+            <!-- /.plan-inner -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.plan -->
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-box">
+                        <div class="footer-item">
+                            <div class="footer-logoBx">
+                                <img src="./images/footer/white-logo.svg" alt="">
+                            </div>
+                            <!-- /.footer-logoBx -->
+                            <p class="footer__desc">Сервисные центры по ремонту цифровой и бытовой техники в
+                                Новосибирске</p>
+                            <p class="footer__graph">График работы пн - вс: 10:00 - 20:00</p>
+                            <p class="footer__notice desktop">Товарные знаки используется с целью описания товара, в
+                                отношении
+                                которых производятся услуги по ремонту сервисными центрами. Услуги оказываются в
+                                неавторизованных сервисных центрах, не связанными с компаниями.</p>
+                        </div>
+                        <div class="footer-item">
+                            <div class="footer-clients">
+                                <h2 class="footer__title">Клиентам</h2>
+                                <!-- /.footer__title -->
+                                <ul class="footer-pages">
+                                    <li class="footer-pages__item"><a href="">Доставка</a></li>
+                                    <!-- /.footer-pages__item -->
+                                    <li class="footer-pages__item"><a href="">Вакансии</a></li>
+                                    <!-- /.footer-pages__item -->
+                                    <li class="footer-pages__item"><a href="">Контакты</a></li>
+                                    <!-- /.footer-pages__item -->
+                                </ul>
+                                <!-- /.footer-pages -->
+                            </div>
+                            <!-- /.footer-clients -->
+                            <div class="footer-contacts">
+                                <h2 class="footer__title">Контакты</h2>
+                                <!-- /.footer__title -->
+                                <ul>
+                                    <li class="footer-contacts__item">
+                                        <span>Новосибирск:</span>
+                                        <a href="tel: 7 (383) 285-01-59">7 (383) 285-01-59</a>
+                                    </li>
+                                    <!-- /.footer-contacts__item -->
+                                    <li class="footer-contacts__item">
+                                        <span>Москва: </span>
+                                        <a href="tel: 7 (495) 236-84-48">7 (495) 236-84-48</a>
+                                    </li>
+                                    <!-- /.footer-contacts__item -->
+                                    <li class="footer-contacts__item">
+                                        <span>Санкт-Петербург: </span>
+                                        <a href="tel: 7 (812) 643-52-25">7 (812) 643-52-25</a>
+                                    </li>
+                                    <!-- /.footer-contacts__item -->
+                                    <li class="footer-contacts__item">
+                                        <span>Нижний новгород: </span>
+                                        <a href="tel: 7 (831) 215-50-40">7 (831) 215-50-40</a>
+                                    </li>
+                                    <!-- /.footer-contacts__item -->
+                                    <li class="footer-contacts__item">
+                                        <span>Екатеренбург: </span>
+                                        <a href="tel: 7 (343) 239-61-11">7 (343) 239-61-11</a>
+                                    </li>
+                                    <!-- /.footer-contacts__item -->
+                                    <li class="footer-contacts__item">
+                                        <span>Казань:</span>
+                                        <a href="tel: 7 (843) 211-00-02">7 (843) 211-00-02</a>
+                                    </li>
+                                    <!-- /.footer-contacts__item -->
+                                </ul>
+                            </div>
+                            <!-- /.footer-contacts -->
+                        </div>
+                        <!-- /.footer-item -->
+                    </div>
+                    <!-- /.footer-box -->
+                    <div class="footer-docs footer-docs_m">
+                        <h2 class="footer__text-logo">nova 2023</h2>
+                        <div class="footer-docsBx">
+                            <a href="" class="footer-docsBx__item">Пользовательское cоглашение</a>
+                            <a href="" class="footer-docsBx__item">Политика конфиденциальности</a>
+                        </div>
+                        <p class="footer__notice mobile">Товарные знаки используется с целью описания товара, в
+                            отношении
+                            которых производятся услуги по ремонту сервисными центрами. Услуги оказываются в
+                            неавторизованных сервисных центрах, не связанными с компаниями.</p>
+                    </div>
+                </div>
+                <!-- /.footer-inner -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.footer-wrapper -->
+    </footer>
+    <!-- /.footer -->
+    <div class="blackout"></div>
+    <div class="blackout over"></div>
+    <!--<div class="preloader"></div>-->
+    
+    <div class="modal close-on-blackout">
+        <div class="modal-formBx">
+            <h2 class="modal__title">Запись на ремонт</h2>
+            <p class="modal__subtitle">Оставьте свои контактные данные для записи. Мы перезвоним вам в течение 15 минут.</p>
+            <form action="" class="modal-form">
+                <div class="modal-inputBx"><input type="text" placeholder="Имя" required></div>
+                <div class="modal-inputBx"><input type="text" placeholder="Номер телефона" class="input-mask" required></div>
+                <button class="modal__button primary-button" type="submit">Записаться на ремонт</button>
+                <p class="modal__notice">Отправляя свои данные вы соглашаетесь с политикой обработки данных нашего сайта</p>
+            </form>
+            <div class="provide-success">
+                <div class="provide-formBx-top">
+                    <p class="provide-formBx__record">Запись на ремонт</p>
+                    <svg class="provide-formBx__svg close-modal-cross" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 5L5 15" stroke="#B0B0B1" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M5 5L15 15" stroke="#B0B0B1" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="provide-formBx__title">Данные успешно отправлены</h3>
+                <p class="provide-formBx__subtitle">Наш специалист перезвонит вам в течение 15 минут</p>
+                <button class="provide-form__button primary-button close-modal-cross provide-success__button">Отлично</button>
+                <!-- /.provide-success -->
+            </div>
+            <!-- /.provide-success -->
+        </div>
+        <svg class="modal-cross" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 5L5 15" stroke="#B0B0B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 5L15 15" stroke="#B0B0B1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    
+    <div class="provide-helper close-on-blackout wrapper-with-form mobile">
+        <div class="provide-formBx blur">
+            <div class="provide-formBx-top">
+                <p class="provide-formBx__record">Запись на ремонт</p>
+                <svg class="provide-formBx__svg close-modal-cross" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 5L5 15" stroke="#B0B0B1" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M5 5L15 15" stroke="#B0B0B1" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <!-- /.provide-formBx-top -->
+            <h3 class="provide-formBx__title"><span class="change-title">Настройка биос</span> <span class="change-device">ноутбука </span> acer</h3>
+            <p class="provide-formBx__subtitle">Оставьте свои контактные данные для записи. Мы
+                перезвоним вам в течение 15 минут.</p>
+            <form action="" class="provide-form">
+                <div class="provide-form-inputBx">
+                    <input type="text" placeholder="Имя" class="animate-input" required>
+                    <input type="text" placeholder="Номер телефона" class="animate-input input-mask" required>
+                </div>
+                <button class="provide-form__button primary-button">Записаться на ремонт</button>
+                <p class="provide-form__notice">Отправляя свои данные вы соглашаетесь с политикой
+                    обработки данных нашего сайта</p>
+            </form>
+    
+            <div class="provide-success">
+                <div class="provide-formBx-top">
+                    <p class="provide-formBx__record">Запись на ремонт</p>
+                    <svg class="provide-formBx__svg close-modal-cross" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 5L5 15" stroke="#B0B0B1" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M5 5L15 15" stroke="#B0B0B1" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="provide-formBx__title">Данные успешно отправлены</h3>
+                <p class="provide-formBx__subtitle">Наш специалист перезвонит вам в течение 15 минут</p>
+                <button class="provide-form__button primary-button close-modal-cross provide-success__button">Записаться на ремонт</button>
+                <!-- /.provide-success -->
+            </div>
+            <!-- /.provide-success -->
+        </div>
+    </div>
+    <!-- /.provide-formBx --></main>
+
+</body>
+</html>
