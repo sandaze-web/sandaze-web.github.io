@@ -1,0 +1,15 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="mail">
+<g id="Vector">
+<path d="M3.33464 3.33325H16.668C17.5846 3.33325 18.3346 4.08325 18.3346 4.99992V14.9999C18.3346 15.9166 17.5846 16.6666 16.668 16.6666H3.33464C2.41797 16.6666 1.66797 15.9166 1.66797 14.9999V4.99992C1.66797 4.08325 2.41797 3.33325 3.33464 3.33325Z" fill="#242424"/>
+<path d="M3.33464 3.33325H16.668C17.5846 3.33325 18.3346 4.08325 18.3346 4.99992V14.9999C18.3346 15.9166 17.5846 16.6666 16.668 16.6666H3.33464C2.41797 16.6666 1.66797 15.9166 1.66797 14.9999V4.99992C1.66797 4.08325 2.41797 3.33325 3.33464 3.33325Z" fill="url(#paint0_linear_206_10068)"/>
+</g>
+<path id="Vector_2" d="M18.3346 5L10.0013 10.8333L1.66797 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_206_10068" x1="1.66797" y1="16.6666" x2="19.2689" y2="15.2915" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1C9AEA"/>
+<stop offset="1" stop-color="#3AB8FF"/>
+</linearGradient>
+</defs>
+</svg>

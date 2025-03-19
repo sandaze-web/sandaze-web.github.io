@@ -1,0 +1,15 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="clock">
+<g id="Vector">
+<path d="M10.0013 18.3334C14.6037 18.3334 18.3346 14.6025 18.3346 10.0001C18.3346 5.39771 14.6037 1.66675 10.0013 1.66675C5.39893 1.66675 1.66797 5.39771 1.66797 10.0001C1.66797 14.6025 5.39893 18.3334 10.0013 18.3334Z" fill="#242424"/>
+<path d="M10.0013 18.3334C14.6037 18.3334 18.3346 14.6025 18.3346 10.0001C18.3346 5.39771 14.6037 1.66675 10.0013 1.66675C5.39893 1.66675 1.66797 5.39771 1.66797 10.0001C1.66797 14.6025 5.39893 18.3334 10.0013 18.3334Z" fill="url(#paint0_linear_206_10082)"/>
+</g>
+<path id="Vector_2" d="M10 5V10L13.3333 11.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_206_10082" x1="1.66797" y1="18.3334" x2="19.3074" y2="17.2309" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1C9AEA"/>
+<stop offset="1" stop-color="#3AB8FF"/>
+</linearGradient>
+</defs>
+</svg>
