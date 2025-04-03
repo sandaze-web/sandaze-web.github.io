@@ -1,4 +1,4 @@
-# Ссылки на вышеперечисленные сайты
+# Ссылки на сайты
 - [IQPools](https://sandaze-web.github.io/iq-pools/) - _***в этом году; актуальная верстка вместе с бэкендом***_
 - [1001center](https://sandaze-web.github.io/1001centre) - _***в этом году; актуальная верстка вместе с бэкендом***_
 - [fixdom](https://sandaze-web.github.io/fixdom/) - _***в этом году***_
