@@ -1,6 +1,6 @@
 # Ссылки на вышеперечисленные сайты
-- [IQPools](https://iqpools.ru/) - _***в этом году; актуальная верстка вместе с бэкендом***_
-- [1001center](https://1001centr.ru/) - _***в этом году; актуальная верстка вместе с бэкендом***_
+- [IQPools](https://sandaze-web.github.io/iq-pools/) - _***в этом году; актуальная верстка вместе с бэкендом***_
+- [1001center](https://sandaze-web.github.io/1001centre) - _***в этом году; актуальная верстка вместе с бэкендом***_
 - [fixdom](https://sandaze-web.github.io/fixdom/) - _***в этом году***_
 - [betacenter](https://sandaze-web.github.io/betacenter/) - _***в этом году***_
 - [nova](https://sandaze-web.github.io/nova/) - _***1 год назад***_
