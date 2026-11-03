@@ -1782,17 +1782,17 @@ function initFaq() {
             const expand = item.dataset.expanded !== 'true';
 
             // Закрываем предыдущий вопрос
-            if (expand) {
-                items.forEach(other => {
-                    if (
-                        other !== item &&
-                        other.dataset.expanded === 'true'
-                    ) {
-                        other.dataset.expanded = 'false';
-                        animateItem(other, false);
-                    }
-                });
-            }
+            // if (expand) {
+            //     items.forEach(other => {
+            //         if (
+            //             other !== item &&
+            //             other.dataset.expanded === 'true'
+            //         ) {
+            //             other.dataset.expanded = 'false';
+            //             animateItem(other, false);
+            //         }
+            //     });
+            // }
 
             item.dataset.expanded = String(expand);
             animateItem(item, expand);
