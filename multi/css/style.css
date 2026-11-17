@@ -351,6 +351,11 @@ button, input, textarea {
   font: inherit;
 }
 
+.fancybox__container {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
 button {
   background: transparent;
 }
@@ -5417,10 +5422,10 @@ button.vehicle-trim__name {
   }
   .vehicle-page .vehicle-enquiry__form .button {
     padding: 12px clamp(12px, 5vw, 20px);
+    align-self: stretch;
   }
   .vehicle-page .vehicle-enquiry__form .field__input {
     min-height: 44px;
-    padding-block: 10px;
   }
   .vehicle-page .vehicle-specifications {
     padding-top: 48px;
@@ -5489,10 +5494,7 @@ button.vehicle-trim__name {
     padding-inline: 20px;
   }
   .vehicle-page--used .vehicle-enquiry__form .field__input {
-    padding-block: 18px 6px;
-  }
-  .vehicle-page--used .vehicle-enquiry__form .field__input:placeholder-shown:not(:focus) {
-    padding-block: 12px;
+    padding-inline: 16px 30px;
   }
   .vehicle-page--used .vehicle-enquiry__form .field__label {
     top: 12px;
@@ -5506,6 +5508,9 @@ button.vehicle-trim__name {
   .vehicle-page--used .vehicle-trims__group > h3 {
     font-size: 12px;
     line-height: 20px;
+  }
+  .vehicle-enquiry__form .field__input {
+    padding: 20px 52px 12px 20px;
   }
 }
 .vehicle-finance .section-title {
