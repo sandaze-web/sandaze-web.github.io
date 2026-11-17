@@ -31,10 +31,24 @@ function initPhoneInputs() {
     const clearEmptyMask = () => {
       if (!phone.mask()) input.value = '';
     };
+    const insertCountryPrefix = event => {
+      const digit = event.type === 'beforeinput' ? event.data : event.key;
+      if (input.value || digit !== '7' || event.ctrlKey || event.metaKey || event.altKey || !event.cancelable) return;
+
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      input.value = input.placeholder;
+      input.setSelectionRange(4, 4);
+    };
 
     // The plugin normally inserts the full mask before the user types.
     phone.off('focus.mask');
-    phone.on('keydown keypress blur', clearEmptyMask);
+    input.addEventListener('keypress', insertCountryPrefix, true);
+    input.addEventListener('beforeinput', insertCountryPrefix, true);
+    phone.on('blur', clearEmptyMask);
+    phone.on('keydown', event => {
+      if (event.key === 'Backspace' || event.key === 'Delete') clearEmptyMask();
+    });
     phone.on('input paste', () => window.setTimeout(clearEmptyMask, 0));
   });
 }
@@ -207,6 +221,38 @@ function initBankTicker(viewport) {
   resize.observe(list);
 }
 
+function createPriceCounter(element, format) {
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  let frame;
+  let current;
+  let target;
+
+  return value => {
+    value = Math.round(value);
+    if (value === target) return;
+    target = value;
+    cancelAnimationFrame(frame);
+    if (current === undefined || current === target || reducedMotion.matches) {
+      current = target;
+      element.textContent = format(current);
+      element.removeAttribute('aria-busy');
+      return;
+    }
+
+    const from = current;
+    const start = performance.now();
+    element.setAttribute('aria-busy', 'true');
+    const tick = now => {
+      const progress = Math.min(1, (now - start) / 360);
+      current = Math.round(from + (target - from) * (1 - (1 - progress) ** 3));
+      element.textContent = format(current);
+      if (progress < 1) frame = requestAnimationFrame(tick);
+      else element.removeAttribute('aria-busy');
+    };
+    frame = requestAnimationFrame(tick);
+  };
+}
+
 function initVehicleFinance(finance) {
   const price = finance.querySelector('#credit-price');
   const term = finance.querySelector('#credit-term');
@@ -217,6 +263,7 @@ function initVehicleFinance(finance) {
   const vehiclePrice = () => price ? price.valueAsNumber : fixedPrice;
   const monthlyRate = 0.049 / 12;
   const rubles = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 0 });
+  const updatePayment = createPriceCounter(payment, value => `от ${rubles.format(value)} ₽`);
   const duration = new Intl.NumberFormat('ru-RU', { style: 'unit', unit: 'month', unitDisplay: 'long' });
   const years = new Intl.NumberFormat('ru-RU', { style: 'unit', unit: 'year', unitDisplay: 'long' });
 
@@ -243,13 +290,16 @@ function initVehicleFinance(finance) {
     updateRange(term, termText);
     updateRange(deposit, `${rubles.format(depositAmount)} ₽`);
     if (price) updateRange(price, `${rubles.format(vehiclePrice())} ₽`);
-    payment.value = `от ${rubles.format(monthlyPayment)} ₽`;
+    updatePayment(monthlyPayment);
   };
 
   const applyOption = option => {
     if (option === 'payment' || option === 'rate') term.value = term.max;
     if (option === 'payment') deposit.value = deposit.max;
-    if (option === 'no-deposit') deposit.value = deposit.min;
+    if (option === 'no-deposit') {
+      deposit.value = deposit.min;
+      if (price) term.value = term.defaultValue;
+    }
     updateCalculator();
   };
 
@@ -328,6 +378,9 @@ function initVehicleDiscounts(offer) {
   if (!total || !Number.isSafeInteger(basePrice) || basePrice < 0) return;
 
   const rubles = new Intl.NumberFormat('ru-RU');
+  const formatPrice = value => `от ${rubles.format(value)} ₽`;
+  total.parentElement.dataset.priceWidth = formatPrice(basePrice);
+  const updatePrice = createPriceCounter(total, formatPrice);
   const updateTotal = () => {
     let savingsAmount = 0;
     for (const toggle of offer.querySelectorAll('input[data-discount]:checked')) {
@@ -336,7 +389,7 @@ function initVehicleDiscounts(offer) {
         savingsAmount = Math.min(basePrice, savingsAmount + discount);
       }
     }
-    total.textContent = `от ${rubles.format(basePrice - savingsAmount)} ₽`;
+    updatePrice(basePrice - savingsAmount);
     if (savings) savings.textContent = `${rubles.format(savingsAmount)} ₽`;
   };
 
@@ -344,6 +397,23 @@ function initVehicleDiscounts(offer) {
     if (event.target.matches('input[data-discount]')) updateTotal();
   });
   updateTotal();
+}
+
+function initGalleryLightbox(slider) {
+  const photos = [...slider.querySelectorAll('.vehicle-gallery__photo')].map(link => ({
+    src: link.href,
+    type: 'image',
+    alt: link.querySelector('img').alt,
+  }));
+
+  slider.addEventListener('click', event => {
+    const link = event.target.closest('.vehicle-gallery__photo');
+    if (!link || !window.Fancybox || event.defaultPrevented || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const startIndex = photos.findIndex(photo => photo.src === link.href);
+    if (startIndex < 0) return;
+    event.preventDefault();
+    window.Fancybox.show(photos, { startIndex, triggerEl: link });
+  });
 }
 
 function initVehicle() {
@@ -367,12 +437,14 @@ function initVehicle() {
   document.querySelectorAll('.vehicle-carousel').forEach(carousel => {
     const slider = carousel.querySelector('.vehicle-carousel__slider');
     const gallery = slider.dataset.carousel === 'gallery';
+    if (gallery) initGalleryLightbox(slider);
     new Swiper(slider, {
       slidesPerView: 'auto',
       spaceBetween: 12,
       centeredSlides: gallery,
       initialSlide: gallery ? 1 : 0,
-      rewind:true,
+      loop:gallery,
+      rewind:!gallery,
       watchOverflow:false,
       speed: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 450,
       navigation: {
@@ -658,7 +730,7 @@ function initCarSlider(slider) {
   const updatePagination = swiper => card.querySelectorAll('.car-card__dot').forEach((button, i) => {
     button.setAttribute('aria-current', String(i === swiper.activeIndex));
   });
-  new Swiper(slider, {
+  const swiper = new Swiper(slider, {
     speed: 600,
     watchOverflow: true,
     pagination: {
@@ -670,7 +742,26 @@ function initCarSlider(slider) {
     },
     on: { init: updatePagination, slideChange: updatePagination },
   });
+
+  slider.addEventListener('pointermove', event => {
+    if (event.pointerType !== 'mouse' || event.buttons || !swiper.enabled) return;
+    const { left, width } = slider.getBoundingClientRect();
+    if (!width) return;
+    const index = Math.floor((event.clientX - left) / width * swiper.slides.length);
+    if (index >= 0 && index < swiper.slides.length && index !== swiper.activeIndex) {
+      swiper.slideTo(index, 0);
+    }
+  });
 }
+
+document.addEventListener('click', event => {
+  if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  if (event.target.closest('a, button, input, select, textarea, label, summary, [role="button"]')) return;
+  const card = event.target.closest('.car-card');
+  if (!card || card.querySelector('.car-card__slider')?.swiper?.allowClick === false) return;
+  if (!window.getSelection()?.isCollapsed) return;
+  card.querySelector('.car-card__heading h3 a[href]')?.click();
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   initPhoneInputs();
@@ -695,12 +786,24 @@ document.addEventListener('DOMContentLoaded', () => {
     filterBrands();
   }
   const offerRequest = document.getElementById('offer-request');
+    const offerRequestTitle = offerRequest?.querySelector('#offer-request-title');
+
+    const defaultOfferTitle = offerRequestTitle?.textContent.trim() || '';
   document.addEventListener('click', event => {
     const trigger = event.target.closest('[data-offer-request]');
     if (!trigger || event.defaultPrevented || event.button !== 0) return;
     if (trigger.matches('a[href]') && (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey)) return;
 
+
     event.preventDefault();
+
+      // Получаем заголовок из атрибута кнопки
+      const title = trigger.dataset.offerTitle?.trim() || "Получить предложение";
+
+      // Меняем заголовок модального окна
+      if (offerRequestTitle) {
+          offerRequestTitle.textContent = title;
+      }
     if (!offerRequest.open) offerRequest.showModal();
   });
   offerRequest.querySelector('.offer-request__close').addEventListener('click', () => offerRequest.close());
@@ -746,11 +849,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   const sliderSpeed = 600;
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const heroSlider = document.querySelector('.hero__slider');
   const hero = heroSlider && new Swiper(heroSlider, {
-    speed: 800,
+    speed: reducedMotion.matches ? 0 : 420,
     effect: 'fade',
     fadeEffect: { crossFade: true },
+    // autoplay: reducedMotion.matches ? false : { delay: 5000, disableOnInteraction: false },
+    rewind: true,
+    threshold: 3,
+    longSwipesMs: 450,
+    longSwipesRatio: 0.2,
     keyboard: { enabled: true, onlyInViewport: true },
     pagination: {
       el: '.hero__pagination', clickable: true,
@@ -786,7 +895,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const offersSlider = document.querySelector('.offers__slider');
   if (offersSlider) new Swiper(offersSlider, {
     speed: sliderSpeed, slidesPerView: 'auto', initialSlide: 1,
-    centeredSlides: false, spaceBetween: 24,
+    loop: true, centeredSlides: false, spaceBetween: 24,
     breakpoints: { 481: { centeredSlides: true, spaceBetween: 115 } },
     navigation: { prevEl: '.offers__prev', nextEl: '.offers__next' },
   });
