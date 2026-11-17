@@ -855,7 +855,7 @@ document.addEventListener('DOMContentLoaded', () => {
     speed: reducedMotion.matches ? 0 : 420,
     effect: 'fade',
     fadeEffect: { crossFade: true },
-    // autoplay: reducedMotion.matches ? false : { delay: 5000, disableOnInteraction: false },
+    autoplay: reducedMotion.matches ? false : { delay: 5000, disableOnInteraction: false },
     rewind: true,
     threshold: 3,
     longSwipesMs: 450,
