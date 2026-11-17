@@ -129,13 +129,6 @@ function initInventorySheets(inventory, filters) {
 function initInventory(inventory) {
   const filters = inventory.querySelector('.inventory-filter');
   const grid = inventory.querySelector('.inventory__grid');
-  const more = inventory.querySelector('.catalog__more');
-  const template = inventory.querySelector('#inventory-card');
-  const mobile = matchMedia('(max-width: 480px)');
-  const desktopBatchSize = grid.childElementCount;
-  const hasMobileToolbar = Boolean(inventory.querySelector('.inventory__toolbar'));
-  const maxBatches = Number(more.dataset.maxBatches);
-  let loadedBatches = 1;
 
   const brand = filters.querySelector('[name="brand"]');
   const model = filters.querySelector('[name="model"]');
@@ -153,23 +146,6 @@ function initInventory(inventory) {
   initInventoryRange(filters, 'year', digits => {
     const year = digits.slice(0, 4);
     return Number(year) > currentYear ? String(currentYear) : year;
-  });
-
-  more.addEventListener('click', () => {
-    if (loadedBatches === maxBatches) return;
-    const fragment = document.createDocumentFragment();
-    const hiddenCards = mobile.matches ? [...grid.querySelectorAll('.car-card--inventory-extra')] : [];
-    for (const card of hiddenCards) card.classList.remove('car-card--inventory-extra');
-    const batchSize = hasMobileToolbar && mobile.matches ? 10 : desktopBatchSize;
-    for (let index = hiddenCards.length; index < batchSize; index++) fragment.append(template.content.cloneNode(true));
-    const firstCard = hiddenCards[0] || fragment.firstElementChild;
-    const sliders = fragment.querySelectorAll('.car-card__slider');
-    grid.append(fragment);
-    sliders.forEach(initCarSlider);
-    hiddenCards.forEach(card => card.querySelector('.car-card__slider')?.swiper?.update());
-    loadedBatches++;
-    more.hidden = loadedBatches === maxBatches;
-    if (more.hidden) firstCard.querySelector('button').focus({ preventScroll: true });
   });
 
   initCarTrimMenus(grid);
@@ -798,7 +774,7 @@ document.addEventListener('DOMContentLoaded', () => {
     event.preventDefault();
 
       // Получаем заголовок из атрибута кнопки
-      const title = trigger.dataset.offerTitle?.trim() || "Получить предложение";
+      const title = trigger.dataset.offerTitle?.trim() || "получить предложение";
 
       // Меняем заголовок модального окна
       if (offerRequestTitle) {

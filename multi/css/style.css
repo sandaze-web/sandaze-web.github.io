@@ -442,7 +442,7 @@ button, a {
 }
 
 .button--trade-in {
-  --button-hover:#b1f939;
+  --button-hover:#3d8bfd;
 }
 
 .button--dark {
@@ -1158,7 +1158,7 @@ html {
   margin-left: 0;
 }
 
-:is(.header--light:not(.header--scrolled), .header--scrolled:not(.header--light)) {
+:is(.header--light:not(.header--transparent), .header--scrolled) {
   --header-foreground:#101012;
   --header-logo-dark-opacity:1;
   --header-link-hover:#0d6efd;
@@ -1175,14 +1175,6 @@ html {
   --header-surface:#fff;
   --header-radius:36px;
   --header-shadow:0 8px 8px -4px rgba(47, 51, 89, 0.03), 0 20px 24px -4px rgba(47, 51, 89, 0.08);
-}
-.header--scrolled.header--light {
-  --header-surface:#fff;
-  --header-shadow:none;
-  --header-foreground:#101012;
-}
-.header--scrolled.header--light .header__logo--dark {
-  opacity: 1;
 }
 
 .header__container {
@@ -1216,27 +1208,8 @@ html {
   opacity: calc(1 - var(--header-logo-dark-opacity));
 }
 
-.header--transparent .header__logo--light {
-  opacity: 1;
-}
-
-.header--transparent .header__logo--dark {
-  opacity: 0;
-}
-
-.header--transparent {
-  --header-surface: transparent;
-  --header-foreground: #fff !important;
-}
-
-.header--scrolled.header--light.header--transparent {
-  --header-surface: #000;
-}
-.header--scrolled.header--light.header--transparent .header__logo--dark {
-  opacity: 0;
-}
-.header--scrolled.header--light.header--transparent .header__logo--light {
-  opacity: 1;
+.header--transparent:not(.header--scrolled) {
+  --header-surface:transparent;
 }
 
 .header__contacts {
@@ -1330,6 +1303,11 @@ html {
   line-height: 20px;
 }
 
+.header__dropdown-trigger:not([aria-expanded=true]):not(:is(:hover, :focus-visible)),
+.header__search:not(:is(:hover, :focus-visible)) {
+  transition: none;
+}
+
 .header__dropdown-trigger[aria-expanded=true] {
   color: var(--link-hover);
 }
@@ -1380,7 +1358,7 @@ html {
   background: #fff;
 }
 
-:is(.header--light:not(.header--scrolled), .header--scrolled:not(.header--light)) .header__submenu-list {
+:is(.header--light:not(.header--transparent), .header--scrolled) .header__submenu-list {
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(12px) saturate(1.12);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 8px 20px rgba(182, 182, 182, 0.15);
@@ -1419,7 +1397,7 @@ html {
   .header__nav--open {
     display: block;
   }
-  :is(.header--light:not(.header--scrolled), .header--scrolled:not(.header--light)) .header__nav {
+  :is(.header--light:not(.header--transparent), .header--scrolled) .header__nav {
     box-shadow: 0 8px 20px rgba(182, 182, 182, 0.15);
   }
   .header__nav-list {
@@ -1502,9 +1480,6 @@ html {
 }
 
 @media (max-width: 480px) {
-  .header--light.header--scrolled .header__contacts a {
-    text-decoration: underline;
-  }
   .header--mobile {
     --link-hover:#3d8bfd;
     isolation: isolate;
@@ -1639,24 +1614,6 @@ html {
     color: #0d6efd;
   }
   .header--mobile:has(.header__nav--open) .ui-icon--menu {
-    --icon:url("../images/search/close.svg");
-  }
-}
-@media (max-width: 480px) {
-  .header--mobile.header--transparent:has(.header__nav--open) {
-    --header-surface:#000;
-    --header-foreground:#101012;
-    --header-logo-dark-opacity:1;
-    --header-radius:0;
-    --header-shadow:none;
-  }
-  .header--mobile.header--transparent:has(.header__nav--open) .header__contacts a {
-    text-decoration: none;
-  }
-  .header--mobile.header--transparent:has(.header__nav--open) .header__toggle:is(:hover, :focus-visible), .header--mobile.header--transparent:has(.header__nav--open) .icon-button:is(:hover, :focus-visible) {
-    color: #0d6efd;
-  }
-  .header--mobile.header--transparent:has(.header__nav--open) .ui-icon--menu {
     --icon:url("../images/search/close.svg");
   }
 }
@@ -2124,7 +2081,7 @@ html {
   }
   .brands-directory .inventory-heading__breadcrumb {
     margin-inline: 8px;
-    font-size: 8px;
+    font-size: 12px;
     font-weight: 500;
   }
   .brands-directory__container {
@@ -2188,6 +2145,10 @@ html {
 
 .car-card__slider .swiper-wrapper {
   height: 100%;
+}
+
+.car-card__slider:not(.swiper-initialized) .car-card__slide:not(:first-child) {
+  display: none;
 }
 
 .car-card__slide {
@@ -2495,17 +2456,14 @@ html {
     padding: 8px;
     gap: 4px;
   }
+  :is(.home-page__main, .search__grid, .catalog-page--inventory .inventory__grid, .vehicle-page #vehicle-related, .service-page .catalog, .catalog-page--favorites .catalog__grid, #comparison-related, .post-offers__slider) .car-card .car-card__heading h3, :is(.home-page__main, .search__grid, .catalog-page--inventory .inventory__grid, .vehicle-page #vehicle-related, .service-page .catalog, .catalog-page--favorites .catalog__grid, #comparison-related, .post-offers__slider) .car-card .car-card__year--exclusive {
+    font-size: 14px;
+    line-height: 20px;
+  }
   :is(.home-page__main, .search__grid, .catalog-page--inventory .inventory__grid, .vehicle-page #vehicle-related, .service-page .catalog, .catalog-page--favorites .catalog__grid, #comparison-related, .post-offers__slider) .car-card .car-card__heading h3 {
     display: flex;
     gap: 4px;
     align-items: center;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  :is(.home-page__main, .search__grid, .catalog-page--inventory .inventory__grid, .vehicle-page #vehicle-related, .service-page .catalog, .catalog-page--favorites .catalog__grid, #comparison-related, .post-offers__slider) .car-card .car-card__mobile-year:not(:empty) {
-    font-size: 12px;
-    font-weight: 400;
-    color: #6c757d;
   }
   :is(.home-page__main, .search__grid, .catalog-page--inventory .inventory__grid, .vehicle-page #vehicle-related, .service-page .catalog, .catalog-page--favorites .catalog__grid, #comparison-related, .post-offers__slider) .car-card .car-card__dots, :is(.home-page__main, .search__grid, .catalog-page--inventory .inventory__grid, .vehicle-page #vehicle-related, .service-page .catalog, .catalog-page--favorites .catalog__grid, #comparison-related, .post-offers__slider) .car-card .car-card__colors, :is(.home-page__main, .search__grid, .catalog-page--inventory .inventory__grid, .vehicle-page #vehicle-related, .service-page .catalog, .catalog-page--favorites .catalog__grid, #comparison-related, .post-offers__slider) .car-card .car-card__spec--desktop, :is(.home-page__main, .search__grid, .catalog-page--inventory .inventory__grid, .vehicle-page #vehicle-related, .service-page .catalog, .catalog-page--favorites .catalog__grid, #comparison-related, .post-offers__slider) .car-card .car-card__amount > a, :is(.home-page__main, .search__grid, .catalog-page--inventory .inventory__grid, .vehicle-page #vehicle-related, .service-page .catalog, .catalog-page--favorites .catalog__grid, #comparison-related, .post-offers__slider) .car-card .car-card__desktop-action {
     display: none;
@@ -2537,6 +2495,9 @@ html {
   }
   :is(.home-page__main, .search__grid, .catalog-page--inventory .inventory__grid, .vehicle-page #vehicle-related, .service-page .catalog, .catalog-page--favorites .catalog__grid, #comparison-related, .post-offers__slider) .car-card .car-card__status img {
     width: 6px;
+  }
+  :is(.home-page__main, .search__grid, .catalog-page--inventory .inventory__grid, .vehicle-page #vehicle-related, .service-page .catalog, .catalog-page--favorites .catalog__grid, #comparison-related, .post-offers__slider) .car-card .car-card__heading:has(.car-card__year) + .car-card__status img {
+    margin-top: -3px;
   }
   :is(.home-page__main, .search__grid, .catalog-page--inventory .inventory__grid, .vehicle-page #vehicle-related, .service-page .catalog, .catalog-page--favorites .catalog__grid, #comparison-related, .post-offers__slider) .car-card .car-card__heading {
     grid-area: 1/1;
@@ -2620,8 +2581,37 @@ html {
   :is(.catalog-page--inventory .inventory__grid, .vehicle-page--used #vehicle-related, .service-page .catalog, .catalog-page--favorites .catalog__grid, #comparison-related, .post-offers__slider) .car-card.car-card--special .car-card__price > :first-child {
     line-height: 21px;
   }
+  .home-page__main #exclusive .car-card__dots:not(:empty) {
+    position: absolute;
+    inset: auto 0 100%;
+    display: flex;
+    z-index: 1;
+  }
+  .home-page__main #exclusive .car-card__heading {
+    flex-wrap: nowrap;
+  }
+  .home-page__main #exclusive .car-card__heading h3 {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .home-page__main #exclusive .car-card__heading h3 a::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-inline-start: 4px;
+    margin-top: -3px;
+    vertical-align: middle;
+    background: #2dca72;
+    border-radius: 50%;
+  }
   .home-page__main #exclusive .car-card__status {
-    margin-left: 84px;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
   }
   .home-page__main .catalog__more {
     margin-top: 16px;
@@ -2963,9 +2953,35 @@ html {
 }
 
 .offers__slide {
+  position: relative;
+  --offer-image-scale:1;
   width: 806px;
 }
+.offers__slide:is(:hover, :focus-within) .offers__trigger {
+  color: #0d6efd;
+}
 
+.offers__trigger {
+  text-align: start;
+  cursor: pointer;
+}
+.offers__trigger::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .offers__trigger {
+    transition: color 220ms ease;
+  }
+  .offers__image img {
+    transition: scale 220ms ease;
+  }
+  .offers__slide:is(:hover, :focus-within) {
+    --offer-image-scale:1.04;
+  }
+}
 .offers__image {
   aspect-ratio: 806/289;
   border-radius: 36px;
@@ -2977,6 +2993,7 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  scale: var(--offer-image-scale);
 }
 
 @media (min-width: 481px) {
@@ -3557,7 +3574,7 @@ html {
 }
 @media (max-width: 480px) {
   .dealer-contacts .inventory-heading__breadcrumb {
-    font-size: 8px;
+    font-size: 12px;
   }
   .dealer-contacts__title {
     max-inline-size: 12ch;
@@ -3589,6 +3606,7 @@ html {
 .dream {
   margin-top: 96px;
   background: #000;
+  overflow: hidden;
 }
 
 .dream__scene {
@@ -3663,47 +3681,55 @@ html {
 }
 
 @media (max-width: 480px) {
-  :is(.home-page, .promotions-page, .contacts-page, .catalog-page--comparison, .brands-page) .dream .dream__scene {
+  .dream:has(.dream__mobile-media) {
+    position: relative;
+    z-index: 2;
+    isolation: isolate;
+    overflow-x: hidden;
+  }
+  .dream:has(.dream__mobile-media) .dream__scene {
     border-radius: 0 0 32px 32px;
     background: #fff;
+    overflow: hidden;
   }
-  :is(.home-page, .promotions-page, .contacts-page, .catalog-page--comparison, .brands-page) .dream .dream__container {
+  .dream:has(.dream__mobile-media) .dream__container {
     min-height: 0;
   }
-  :is(.home-page, .promotions-page, .contacts-page, .catalog-page--comparison, .brands-page) .dream .dream__content {
+  .dream:has(.dream__mobile-media) .dream__content {
     padding-bottom: 0;
   }
-  :is(.home-page, .promotions-page, .contacts-page, .catalog-page--comparison, .brands-page) .dream .dream__content h2 {
+  .dream:has(.dream__mobile-media) .dream__content h2 {
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -0.9px;
   }
-  :is(.home-page, .promotions-page, .contacts-page, .catalog-page--comparison, .brands-page) .dream .dream__content p {
+  .dream:has(.dream__mobile-media) .dream__content p {
     margin-top: 8px;
     font-size: 14px;
     line-height: 20px;
   }
-  :is(.home-page, .promotions-page, .contacts-page, .catalog-page--comparison, .brands-page) .dream .dream__content .button {
+  .dream:has(.dream__mobile-media) .dream__content .button {
     margin-top: 24px;
     padding: 12px 16px;
     background: #0d6efd;
   }
-  :is(.home-page, .promotions-page, .contacts-page, .catalog-page--comparison, .brands-page) .dream .dream__mobile-icon {
+  .dream:has(.dream__mobile-media) .dream__mobile-icon {
     display: block;
   }
-  :is(.home-page, .promotions-page, .contacts-page, .catalog-page--comparison, .brands-page) .dream .dream__mobile-media {
+  .dream:has(.dream__mobile-media) .dream__mobile-media {
     display: block;
     margin-block-start: 20px;
   }
-  :is(.home-page, .promotions-page, .contacts-page, .catalog-page--comparison, .brands-page) .dream .dream__mobile-media img {
+  .dream:has(.dream__mobile-media) .dream__mobile-media img {
     display: block;
-    width: calc(100% + 30px);
+    width: 125%;
     max-width: none;
-    margin-inline-start: -30px;
+    margin-inline-start: -16%;
+    margin-block-start: -30px;
+    transform: translateY(30px);
     aspect-ratio: 11/5;
     object-fit: cover;
     object-position: center bottom;
-    margin-bottom: clamp(-25px, -5vw, -16px);
   }
 }
 .footer {
@@ -3712,6 +3738,13 @@ html {
   background: radial-gradient(ellipse var(--footer-gradient-size) at 50% 109%, #057ffa, #045fbc 25%, #03407d 50%, #01203f 75%, #000);
 }
 
+@media (max-width: 480px) {
+  body:has(main .dream__mobile-media) > .footer {
+    position: relative;
+    z-index: 4;
+    margin-block-start: -8px;
+  }
+}
 .footer__credit {
   margin-top: 48px;
   font-size: 14.889px;
@@ -4599,7 +4632,7 @@ html {
   }
   :is(.catalog-page--inventory, .catalog-page--favorites, .catalog-page--comparison) .inventory-heading__breadcrumb {
     color: #fff;
-    font-size: 8px;
+    font-size: 12px;
     font-weight: 500;
   }
   :is(.catalog-page--inventory, .catalog-page--favorites, .catalog-page--comparison) .inventory-heading__breadcrumb a:not(:is(:hover, :focus-visible)) {
@@ -4617,9 +4650,6 @@ html {
   .catalog-page--inventory .inventory__container {
     width: calc(100% - 18px);
   }
-  .catalog-page--inventory .car-card--inventory-extra {
-    display: none;
-  }
   .catalog-page--inventory .inventory__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px 4px;
@@ -4627,7 +4657,7 @@ html {
   .catalog-page--inventory .inventory__grid .car-card__price {
     margin-bottom: 0;
   }
-  .catalog-page--inventory .inventory .catalog__more, .catalog-page--inventory .pagination {
+  .catalog-page--inventory .pagination {
     margin-top: 16px;
   }
   .catalog-page--inventory .pagination {
@@ -5017,9 +5047,6 @@ html {
   padding-inline: 28px 24px;
   justify-content: space-between;
 }
-.vehicle-overview__actions .button--trade-in {
-  --button-hover:#3d8bfd;
-}
 
 .vehicle-page :is(.vehicle-overview, .vehicle-finance, .vehicle-trims) .button--blue {
   background: #0d6efd;
@@ -5038,7 +5065,7 @@ html {
   }
   .vehicle-page .vehicle-overview .vehicle-overview__breadcrumb {
     grid-area: 1/2;
-    font-size: 8px;
+    font-size: 12px;
   }
   .vehicle-page .vehicle-overview .vehicle-overview__title {
     grid-area: 2/2;
@@ -5476,6 +5503,15 @@ button.vehicle-trim__name {
   }
   .vehicle-page .vehicle-trim__row .button {
     justify-self: start;
+  }
+  .vehicle-page .vehicle-trim__features[open] + .vehicle-trim__row {
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 16px;
+    background: #f8f9fa;
+  }
+  .vehicle-page .vehicle-trim__features[open] + .vehicle-trim__row .button {
+    justify-self: stretch;
   }
   .vehicle-page .vehicle-trim__prices {
     gap: 4px;
@@ -7047,7 +7083,7 @@ button.vehicle-trim__name {
     margin: 0 8px 24px;
   }
   .promotions__heading .inventory-heading__breadcrumb {
-    font-size: 8px;
+    font-size: 12px;
   }
   .promotions__heading h1 {
     font-size: 36px;
@@ -7388,8 +7424,8 @@ button.vehicle-trim__name {
   inline-size: 24px;
   block-size: 24px;
   border-radius: 6px;
-  background: #fff;
-  color: #6c757d;
+  background: transparent;
+  color: #adb5bd;
 }
 
 @media (hover: hover) {
@@ -7611,6 +7647,10 @@ button.vehicle-trim__name {
   .catalog-page--comparison .inventory-heading {
     background: linear-gradient(transparent, rgba(7, 9, 15, 0.65));
   }
+  .catalog-page--comparison .inventory-heading .inventory-heading__breadcrumb {
+    font-size: 12px;
+    line-height: 16px;
+  }
   .catalog-page--comparison .inventory-heading .section-title {
     line-height: 40px;
   }
@@ -7641,7 +7681,7 @@ button.vehicle-trim__name {
   .comparison__panel {
     position: sticky;
     inset-block-start: var(--site-header-height, 0px);
-    z-index: 1;
+    z-index: 2;
     display: grid;
     gap: 14px;
     padding-block: 20px 7px;
@@ -7654,8 +7694,11 @@ button.vehicle-trim__name {
   .comparison__container > .comparison__toolbar {
     padding-block-start: 20px;
   }
-  .comparison__count, .comparison__clear:not(:is(:hover, :focus-visible)) {
+  .comparison__count {
     color: #adb5bd;
+  }
+  .comparison__clear:not(:disabled):not(:is(:hover, :focus-visible)) {
+    color: #101012;
   }
   .comparison__controls {
     padding-block: 0;
@@ -7712,6 +7755,9 @@ button.vehicle-trim__name {
   }
   .comparison__cards > [data-comparison-column] {
     grid-row: 1;
+  }
+  .comparison__cards {
+    isolation: isolate;
   }
   .comparison-card__media .car-photo {
     transform: scale(1.05);
@@ -7875,7 +7921,7 @@ button.vehicle-trim__name {
     letter-spacing: -0.025em;
   }
   .blog-feature__container .inventory-heading__breadcrumb {
-    font-size: 8px;
+    font-size: 12px;
   }
   .blog-feature__image--mirrored {
     inline-size: 100%;
@@ -8490,7 +8536,7 @@ button.vehicle-trim__name {
     background: #d9d9d9;
   }
   .post-lead__cover .inventory-heading__breadcrumb {
-    font-size: 8px;
+    font-size: 12px;
   }
   .post-lead__meta {
     grid-area: 1/1;

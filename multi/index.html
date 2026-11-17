@@ -332,8 +332,9 @@
 
 <div class="car-card__heading">
   <h3>
-     <a class="ui-link" href="car.html">KIA K5</a> <span class="car-card__mobile-year"></span> 
+     <a class="ui-link" href="car.html">KIA K5</a> 
     </h3>
+  
   
   
     <div class="car-card__colors" role="group" aria-label="Доступные цвета">
@@ -432,8 +433,9 @@
 
 <div class="car-card__heading">
   <h3>
-     <a class="ui-link" href="car.html">KIA K5</a> <span class="car-card__mobile-year"></span> 
+     <a class="ui-link" href="car.html">KIA K5</a> 
     </h3>
+  
   
   
     <div class="car-card__colors" role="group" aria-label="Доступные цвета">
@@ -532,8 +534,9 @@
 
 <div class="car-card__heading">
   <h3>
-     <a class="ui-link" href="car.html">KIA K5</a> <span class="car-card__mobile-year"></span> 
+     <a class="ui-link" href="car.html">KIA K5</a> 
     </h3>
+  
   
   
     <div class="car-card__colors" role="group" aria-label="Доступные цвета">
@@ -632,8 +635,9 @@
 
 <div class="car-card__heading">
   <h3>
-     <a class="ui-link" href="car.html">KIA K5</a> <span class="car-card__mobile-year"></span> 
+     <a class="ui-link" href="car.html">KIA K5</a> 
     </h3>
+  
   
   
     <div class="car-card__colors" role="group" aria-label="Доступные цвета">
@@ -697,6 +701,8 @@
     
   
 </div>
+
+
 
   <button class="ui-link catalog__more" type="button">показать еще <span class="ui-icon ui-icon--down" aria-hidden="true"></span></button>
 
@@ -705,7 +711,7 @@
 </section>
 
 
-<section class="section collections">
+<section class="section collections" hidden>
 <div class="collections__container">
 <h2 class="section-title">подборки для вас</h2>
 <div class="collections__featured">
@@ -844,7 +850,7 @@
     <img src="images/figma/offer-happy-hours.png" alt="" loading="lazy">
   </div>
   <div class="offers__text">
-    <h3>счастливые часы</h3>
+    <h3><button class="offers__trigger" type="button" data-offer-request aria-haspopup="dialog" aria-controls="offer-request">счастливые часы</button></h3>
     <p>скидка 50 000 ₽ каждому покупателю при покупке автомобиля до 12:00</p>
   </div>
 </article>
@@ -854,7 +860,7 @@
     <img src="images/figma/offer-payments.png" alt="" loading="lazy">
   </div>
   <div class="offers__text">
-    <h3>6 платежей по кредиту за наш счёт</h3>
+    <h3><button class="offers__trigger" type="button" data-offer-request aria-haspopup="dialog" aria-controls="offer-request">6 платежей по кредиту за наш счёт</button></h3>
     <p>покупайте автомобиль сейчас, начинайте платить позже</p>
   </div>
 </article>
@@ -864,7 +870,7 @@
     <img src="images/figma/offer-state-programs.png" alt="" loading="lazy">
   </div>
   <div class="offers__text">
-    <h3>скидки до 20% по госпрограммам</h3>
+    <h3><button class="offers__trigger" type="button" data-offer-request aria-haspopup="dialog" aria-controls="offer-request">скидки до 20% по госпрограммам</button></h3>
     <p>специальные условия по программе «Первый авто» и для льготных категорий: медработников, учителей, военных, многодетных семей и пенсионеров</p>
   </div>
 </article>
@@ -874,7 +880,7 @@
     <img src="images/figma/offer-trade-in.png" alt="" loading="lazy">
   </div>
   <div class="offers__text">
-    <h3>выгода по трейд-ин до 350 000 ₽</h3>
+    <h3><button class="offers__trigger" type="button" data-offer-request aria-haspopup="dialog" aria-controls="offer-request">выгода по трейд-ин до 350 000 ₽</button></h3>
     <p>сдайте свой автомобиль в зачёт нового и получите дополнительную выгоду</p>
   </div>
 </article>
@@ -884,7 +890,7 @@
     <img src="images/figma/offer-approval.png" alt="" loading="lazy">
   </div>
   <div class="offers__text">
-    <h3>98% одобрения кредита при взносе 10%</h3>
+    <h3><button class="offers__trigger" type="button" data-offer-request aria-haspopup="dialog" aria-controls="offer-request">98% одобрения кредита при взносе 10%</button></h3>
     <p>получите кредит на автомобиль быстро и без лишних трудностей</p>
   </div>
 </article>
@@ -894,7 +900,7 @@
     <img src="images/figma/offer-gifts.png" alt="" loading="lazy">
   </div>
   <div class="offers__text">
-    <h3>подарки каждому покупателю</h3>
+    <h3><button class="offers__trigger" type="button" data-offer-request aria-haspopup="dialog" aria-controls="offer-request">подарки каждому покупателю</button></h3>
     <p>зимние шины, страховка ОСАГО, сигнализация с функцией автозапуска, первое техническое обслуживание, регистрация в ГИБДД и многое другое</p>
   </div>
 </article>
@@ -904,7 +910,7 @@
     <img src="images/figma/offer-car-selection.png" alt="" loading="lazy">
   </div>
   <div class="offers__text">
-    <h3>бесплатный подбор автомобиля</h3>
+    <h3><button class="offers__trigger" type="button" data-offer-request aria-haspopup="dialog" aria-controls="offer-request">бесплатный подбор автомобиля</button></h3>
     <p>наш эксперт разработает индивидуальные решения, которые соответствуют вашим требованиям и бюджету, чтобы вы могли сэкономить время на поиске</p>
   </div>
 </article>
@@ -1005,20 +1011,12 @@
 
 <div class="car-card__heading">
   <h3>
-     <a class="ui-link" href="car.html">KIA K5</a> <span class="car-card__mobile-year">2026</span> 
+     <a class="ui-link" href="car.html">KIA K5</a> 
     </h3>
   
   
-    <div class="car-card__colors" role="group" aria-label="Доступные цвета">
-  <button class="car-card__swatch car-card__swatch--light-gray" type="button" aria-label="Светло-серый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--graphite" type="button" aria-label="Графитовый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--black" type="button" aria-label="Чёрный" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--silver" type="button" aria-label="Серебристый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--gray" type="button" aria-label="Серый" aria-pressed="true"></button>
-  <button class="car-card__swatch car-card__swatch--blue" type="button" aria-label="Синий" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--red" type="button" aria-label="Красный" aria-pressed="false"></button>
-</div>
-
+    <span class="car-card__year car-card__year--exclusive">2026</span>
+  
   
   
 </div>
@@ -1137,20 +1135,12 @@
 
 <div class="car-card__heading">
   <h3>
-     <a class="ui-link" href="car.html">KIA K5</a> <span class="car-card__mobile-year">2026</span> 
+     <a class="ui-link" href="car.html">KIA K5</a> 
     </h3>
   
   
-    <div class="car-card__colors" role="group" aria-label="Доступные цвета">
-  <button class="car-card__swatch car-card__swatch--light-gray" type="button" aria-label="Светло-серый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--graphite" type="button" aria-label="Графитовый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--black" type="button" aria-label="Чёрный" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--silver" type="button" aria-label="Серебристый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--gray" type="button" aria-label="Серый" aria-pressed="true"></button>
-  <button class="car-card__swatch car-card__swatch--blue" type="button" aria-label="Синий" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--red" type="button" aria-label="Красный" aria-pressed="false"></button>
-</div>
-
+    <span class="car-card__year car-card__year--exclusive">2026</span>
+  
   
   
 </div>
@@ -1269,20 +1259,12 @@
 
 <div class="car-card__heading">
   <h3>
-     <a class="ui-link" href="car.html">KIA K5</a> <span class="car-card__mobile-year">2026</span> 
+     <a class="ui-link" href="car.html">KIA K5</a> 
     </h3>
   
   
-    <div class="car-card__colors" role="group" aria-label="Доступные цвета">
-  <button class="car-card__swatch car-card__swatch--light-gray" type="button" aria-label="Светло-серый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--graphite" type="button" aria-label="Графитовый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--black" type="button" aria-label="Чёрный" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--silver" type="button" aria-label="Серебристый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--gray" type="button" aria-label="Серый" aria-pressed="true"></button>
-  <button class="car-card__swatch car-card__swatch--blue" type="button" aria-label="Синий" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--red" type="button" aria-label="Красный" aria-pressed="false"></button>
-</div>
-
+    <span class="car-card__year car-card__year--exclusive">2026</span>
+  
   
   
 </div>
@@ -1401,20 +1383,12 @@
 
 <div class="car-card__heading">
   <h3>
-     <a class="ui-link" href="car.html">KIA K5</a> <span class="car-card__mobile-year">2026</span> 
+     <a class="ui-link" href="car.html">KIA K5</a> 
     </h3>
   
   
-    <div class="car-card__colors" role="group" aria-label="Доступные цвета">
-  <button class="car-card__swatch car-card__swatch--light-gray" type="button" aria-label="Светло-серый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--graphite" type="button" aria-label="Графитовый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--black" type="button" aria-label="Чёрный" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--silver" type="button" aria-label="Серебристый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--gray" type="button" aria-label="Серый" aria-pressed="true"></button>
-  <button class="car-card__swatch car-card__swatch--blue" type="button" aria-label="Синий" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--red" type="button" aria-label="Красный" aria-pressed="false"></button>
-</div>
-
+    <span class="car-card__year car-card__year--exclusive">2026</span>
+  
   
   
 </div>
@@ -1450,7 +1424,9 @@
 </div>
 
 
-  <a class="ui-link catalog__more" href="#question">показать еще <span class="ui-icon ui-icon--down" aria-hidden="true"></span></a>
+
+
+  <button class="ui-link catalog__more">показать еще <span class="ui-icon ui-icon--down" aria-hidden="true"></span></button>
 
 </div>
 </section>
@@ -1758,160 +1734,6 @@
      <a class="ui-link" href="car.html">KIA K5 </a> </h3>
   
   
-    <div class="car-card__colors" role="group" aria-label="Доступные цвета">
-  <button class="car-card__swatch car-card__swatch--light-gray" type="button" aria-label="Светло-серый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--graphite" type="button" aria-label="Графитовый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--black" type="button" aria-label="Чёрный" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--silver" type="button" aria-label="Серебристый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--gray" type="button" aria-label="Серый" aria-pressed="true"></button>
-  <button class="car-card__swatch car-card__swatch--blue" type="button" aria-label="Синий" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--red" type="button" aria-label="Красный" aria-pressed="false"></button>
-</div>
-
-  
-  
-</div>
-<p class="car-card__status">
-<img class="" src="images/figma/49-4534-imgDot.svg" alt="" loading="lazy">в наличии</p>
-
-
-
-
-  <p class="car-card__spec car-card__spec--desktop">Сигнатур, 2.0 6AT (160 л.с.) FWD</p>
-  
-    <div class="car-card__mobile-trim">
-       <details class="car-trim" name="inventory-trim">
-  <summary class="car-trim__toggle">
-    <span class="car-trim__value">Сигнатур, 2.0 6AT (160 л.с.) FWD</span>
-    <span class="ui-icon ui-icon--chevron-down" aria-hidden="true"></span>
-  </summary>
-  <div class="car-trim__menu" aria-label="Комплектации KIA K5">
-    <div class="car-trim__group">
-      <p>2.0 6AT (160 л.с.) FWD</p>
-      <button type="button" data-trim="Ноблес" aria-pressed="false">Ноблес / Noblesse</button>
-      <button type="button" data-trim="Престиж" aria-pressed="false">Престиж / Prestige</button>
-      <button type="button" data-trim="Сигнатур" aria-pressed="true">Сигнатур / Signature</button>
-    </div>
-    <div class="car-trim__group">
-      <p>2.5 8AT (191 л.с.) FWD</p>
-      <button type="button" data-trim="LXS" aria-pressed="false">LXS</button>
-      <button type="button" data-trim="GT-Line" aria-pressed="false">GT-Line</button>
-    </div>
-  </div>
-</details>
- 
-      
-    </div>
-  
-
-<div class="car-card__price">
-<div>
-<del>3 029 000 ₽</del> <span class="badge">-30%</span>
-</div>
-<div class="car-card__amount">
-<p>
- <small>от</small>  2 352 000 ₽</p>
-<a href="credit.html#vehicle-finance">от 12 329 ₽/мес</a>
-</div>
-</div>
-<a class="button button--card button--dark" href="#question" data-offer-request aria-haspopup="dialog" aria-controls="offer-request"><span><span class="car-card__desktop-action">купить </span>в кредит</span><img class="" src="images/figma/49-4534-imgArrowNarrowRight.svg" alt="" loading="lazy">
-</a>
-<a class="button button--card button--blue button--trade-in" href="trade-in.html#trade-evaluation" data-offer-request aria-haspopup="dialog" aria-controls="offer-request"><span><span class="car-card__desktop-action">обменять </span>в трейд ин</span><img class="" src="images/figma/49-4534-imgRefreshCw05.svg" alt="" loading="lazy">
-</a>
-</div>
-</article>
-
-
-        
-          <article class="car-card">
-<div class="car-card__media">
-
-  <a class="car-card__mobile-payment" href="credit.html#vehicle-finance"><small>от</small> 12 329 ₽/мес</a>
-
-
-
-
-<div class="swiper car-card__slider" aria-label="Фотографии KIA K5">
-  <div class="swiper-wrapper">
-    
-      <div class="swiper-slide car-card__slide">
-        
-
-<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
-
-
-
-
-      </div>
-    
-      <div class="swiper-slide car-card__slide">
-        
-
-<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
-
-
-
-
-      </div>
-    
-      <div class="swiper-slide car-card__slide">
-        
-
-<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
-
-
-
-
-      </div>
-    
-      <div class="swiper-slide car-card__slide">
-        
-
-<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
-
-
-
-
-      </div>
-    
-      <div class="swiper-slide car-card__slide">
-        
-
-<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
-
-
-
-
-      </div>
-    
-  </div>
-</div>
-
-
-
-  <div class="car-card__tools">
-<button class="car-card__action" type="button" aria-label="Сравнить KIA K5" aria-pressed="false">
-<img src="images/figma/49-4534-imgScales01.svg" alt="" width="20" height="20" loading="lazy">
-<img class="car-card__action-active" src="images/card/compare-active.svg" alt="" width="20" height="20" loading="lazy">
-</button>
-<button class="car-card__action" type="button" aria-label="Добавить KIA K5 в избранное" aria-pressed="false">
-<img src="images/figma/49-4534-imgHeart.svg" alt="" width="20" height="20" loading="lazy">
-<img class="car-card__action-active" src="images/card/favorite-active.svg" alt="" width="20" height="20" loading="lazy">
-</button>
-</div>
-
-
-
-</div>
-<div class="car-card__body">
-
-<div class="car-card__dots" aria-label="Выбрать фотографию"></div>
-
-<div class="car-card__heading">
-  <h3>
-    
-     <a class="ui-link" href="car.html">KIA K5 </a> </h3>
-  
   
     <div class="car-card__colors" role="group" aria-label="Доступные цвета">
   <button class="car-card__swatch car-card__swatch--light-gray" type="button" aria-label="Светло-серый" aria-pressed="false"></button>
@@ -2068,6 +1890,163 @@
      <a class="ui-link" href="car.html">KIA K5 </a> </h3>
   
   
+  
+    <div class="car-card__colors" role="group" aria-label="Доступные цвета">
+  <button class="car-card__swatch car-card__swatch--light-gray" type="button" aria-label="Светло-серый" aria-pressed="false"></button>
+  <button class="car-card__swatch car-card__swatch--graphite" type="button" aria-label="Графитовый" aria-pressed="false"></button>
+  <button class="car-card__swatch car-card__swatch--black" type="button" aria-label="Чёрный" aria-pressed="false"></button>
+  <button class="car-card__swatch car-card__swatch--silver" type="button" aria-label="Серебристый" aria-pressed="false"></button>
+  <button class="car-card__swatch car-card__swatch--gray" type="button" aria-label="Серый" aria-pressed="true"></button>
+  <button class="car-card__swatch car-card__swatch--blue" type="button" aria-label="Синий" aria-pressed="false"></button>
+  <button class="car-card__swatch car-card__swatch--red" type="button" aria-label="Красный" aria-pressed="false"></button>
+</div>
+
+  
+  
+</div>
+<p class="car-card__status">
+<img class="" src="images/figma/49-4534-imgDot.svg" alt="" loading="lazy">в наличии</p>
+
+
+
+
+  <p class="car-card__spec car-card__spec--desktop">Сигнатур, 2.0 6AT (160 л.с.) FWD</p>
+  
+    <div class="car-card__mobile-trim">
+       <details class="car-trim" name="inventory-trim">
+  <summary class="car-trim__toggle">
+    <span class="car-trim__value">Сигнатур, 2.0 6AT (160 л.с.) FWD</span>
+    <span class="ui-icon ui-icon--chevron-down" aria-hidden="true"></span>
+  </summary>
+  <div class="car-trim__menu" aria-label="Комплектации KIA K5">
+    <div class="car-trim__group">
+      <p>2.0 6AT (160 л.с.) FWD</p>
+      <button type="button" data-trim="Ноблес" aria-pressed="false">Ноблес / Noblesse</button>
+      <button type="button" data-trim="Престиж" aria-pressed="false">Престиж / Prestige</button>
+      <button type="button" data-trim="Сигнатур" aria-pressed="true">Сигнатур / Signature</button>
+    </div>
+    <div class="car-trim__group">
+      <p>2.5 8AT (191 л.с.) FWD</p>
+      <button type="button" data-trim="LXS" aria-pressed="false">LXS</button>
+      <button type="button" data-trim="GT-Line" aria-pressed="false">GT-Line</button>
+    </div>
+  </div>
+</details>
+ 
+      
+    </div>
+  
+
+<div class="car-card__price">
+<div>
+<del>3 029 000 ₽</del> <span class="badge">-30%</span>
+</div>
+<div class="car-card__amount">
+<p>
+ <small>от</small>  2 352 000 ₽</p>
+<a href="credit.html#vehicle-finance">от 12 329 ₽/мес</a>
+</div>
+</div>
+<a class="button button--card button--dark" href="#question" data-offer-request aria-haspopup="dialog" aria-controls="offer-request"><span><span class="car-card__desktop-action">купить </span>в кредит</span><img class="" src="images/figma/49-4534-imgArrowNarrowRight.svg" alt="" loading="lazy">
+</a>
+<a class="button button--card button--blue button--trade-in" href="trade-in.html#trade-evaluation" data-offer-request aria-haspopup="dialog" aria-controls="offer-request"><span><span class="car-card__desktop-action">обменять </span>в трейд ин</span><img class="" src="images/figma/49-4534-imgRefreshCw05.svg" alt="" loading="lazy">
+</a>
+</div>
+</article>
+
+
+        
+          <article class="car-card">
+<div class="car-card__media">
+
+  <a class="car-card__mobile-payment" href="credit.html#vehicle-finance"><small>от</small> 12 329 ₽/мес</a>
+
+
+
+
+<div class="swiper car-card__slider" aria-label="Фотографии KIA K5">
+  <div class="swiper-wrapper">
+    
+      <div class="swiper-slide car-card__slide">
+        
+
+<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
+
+
+
+
+      </div>
+    
+      <div class="swiper-slide car-card__slide">
+        
+
+<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
+
+
+
+
+      </div>
+    
+      <div class="swiper-slide car-card__slide">
+        
+
+<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
+
+
+
+
+      </div>
+    
+      <div class="swiper-slide car-card__slide">
+        
+
+<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
+
+
+
+
+      </div>
+    
+      <div class="swiper-slide car-card__slide">
+        
+
+<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
+
+
+
+
+      </div>
+    
+  </div>
+</div>
+
+
+
+  <div class="car-card__tools">
+<button class="car-card__action" type="button" aria-label="Сравнить KIA K5" aria-pressed="false">
+<img src="images/figma/49-4534-imgScales01.svg" alt="" width="20" height="20" loading="lazy">
+<img class="car-card__action-active" src="images/card/compare-active.svg" alt="" width="20" height="20" loading="lazy">
+</button>
+<button class="car-card__action" type="button" aria-label="Добавить KIA K5 в избранное" aria-pressed="false">
+<img src="images/figma/49-4534-imgHeart.svg" alt="" width="20" height="20" loading="lazy">
+<img class="car-card__action-active" src="images/card/favorite-active.svg" alt="" width="20" height="20" loading="lazy">
+</button>
+</div>
+
+
+
+</div>
+<div class="car-card__body">
+
+<div class="car-card__dots" aria-label="Выбрать фотографию"></div>
+
+<div class="car-card__heading">
+  <h3>
+    
+     <a class="ui-link" href="car.html">KIA K5 </a> </h3>
+  
+  
+  
     <div class="car-card__colors" role="group" aria-label="Доступные цвета">
   <button class="car-card__swatch car-card__swatch--light-gray" type="button" aria-label="Светло-серый" aria-pressed="false"></button>
   <button class="car-card__swatch car-card__swatch--graphite" type="button" aria-label="Графитовый" aria-pressed="false"></button>
@@ -2223,160 +2202,6 @@
      <a class="ui-link" href="car.html">KIA K5 </a> </h3>
   
   
-    <div class="car-card__colors" role="group" aria-label="Доступные цвета">
-  <button class="car-card__swatch car-card__swatch--light-gray" type="button" aria-label="Светло-серый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--graphite" type="button" aria-label="Графитовый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--black" type="button" aria-label="Чёрный" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--silver" type="button" aria-label="Серебристый" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--gray" type="button" aria-label="Серый" aria-pressed="true"></button>
-  <button class="car-card__swatch car-card__swatch--blue" type="button" aria-label="Синий" aria-pressed="false"></button>
-  <button class="car-card__swatch car-card__swatch--red" type="button" aria-label="Красный" aria-pressed="false"></button>
-</div>
-
-  
-  
-</div>
-<p class="car-card__status">
-<img class="" src="images/figma/49-4534-imgDot.svg" alt="" loading="lazy">в наличии</p>
-
-
-
-
-  <p class="car-card__spec car-card__spec--desktop">Сигнатур, 2.0 6AT (160 л.с.) FWD</p>
-  
-    <div class="car-card__mobile-trim">
-       <details class="car-trim" name="inventory-trim">
-  <summary class="car-trim__toggle">
-    <span class="car-trim__value">Сигнатур, 2.0 6AT (160 л.с.) FWD</span>
-    <span class="ui-icon ui-icon--chevron-down" aria-hidden="true"></span>
-  </summary>
-  <div class="car-trim__menu" aria-label="Комплектации KIA K5">
-    <div class="car-trim__group">
-      <p>2.0 6AT (160 л.с.) FWD</p>
-      <button type="button" data-trim="Ноблес" aria-pressed="false">Ноблес / Noblesse</button>
-      <button type="button" data-trim="Престиж" aria-pressed="false">Престиж / Prestige</button>
-      <button type="button" data-trim="Сигнатур" aria-pressed="true">Сигнатур / Signature</button>
-    </div>
-    <div class="car-trim__group">
-      <p>2.5 8AT (191 л.с.) FWD</p>
-      <button type="button" data-trim="LXS" aria-pressed="false">LXS</button>
-      <button type="button" data-trim="GT-Line" aria-pressed="false">GT-Line</button>
-    </div>
-  </div>
-</details>
- 
-      
-    </div>
-  
-
-<div class="car-card__price">
-<div>
-<del>3 029 000 ₽</del> <span class="badge">-30%</span>
-</div>
-<div class="car-card__amount">
-<p>
- <small>от</small>  2 352 000 ₽</p>
-<a href="credit.html#vehicle-finance">от 12 329 ₽/мес</a>
-</div>
-</div>
-<a class="button button--card button--dark" href="#question" data-offer-request aria-haspopup="dialog" aria-controls="offer-request"><span><span class="car-card__desktop-action">купить </span>в кредит</span><img class="" src="images/figma/49-4534-imgArrowNarrowRight.svg" alt="" loading="lazy">
-</a>
-<a class="button button--card button--blue button--trade-in" href="trade-in.html#trade-evaluation" data-offer-request aria-haspopup="dialog" aria-controls="offer-request"><span><span class="car-card__desktop-action">обменять </span>в трейд ин</span><img class="" src="images/figma/49-4534-imgRefreshCw05.svg" alt="" loading="lazy">
-</a>
-</div>
-</article>
-
-
-        
-          <article class="car-card car-card--mobile-only">
-<div class="car-card__media">
-
-  <a class="car-card__mobile-payment" href="credit.html#vehicle-finance"><small>от</small> 12 329 ₽/мес</a>
-
-
-
-
-<div class="swiper car-card__slider" aria-label="Фотографии KIA K5">
-  <div class="swiper-wrapper">
-    
-      <div class="swiper-slide car-card__slide">
-        
-
-<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
-
-
-
-
-      </div>
-    
-      <div class="swiper-slide car-card__slide">
-        
-
-<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
-
-
-
-
-      </div>
-    
-      <div class="swiper-slide car-card__slide">
-        
-
-<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
-
-
-
-
-      </div>
-    
-      <div class="swiper-slide car-card__slide">
-        
-
-<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
-
-
-
-
-      </div>
-    
-      <div class="swiper-slide car-card__slide">
-        
-
-<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
-
-
-
-
-      </div>
-    
-  </div>
-</div>
-
-
-
-  <div class="car-card__tools">
-<button class="car-card__action" type="button" aria-label="Сравнить KIA K5" aria-pressed="false">
-<img src="images/figma/49-4534-imgScales01.svg" alt="" width="20" height="20" loading="lazy">
-<img class="car-card__action-active" src="images/card/compare-active.svg" alt="" width="20" height="20" loading="lazy">
-</button>
-<button class="car-card__action" type="button" aria-label="Добавить KIA K5 в избранное" aria-pressed="false">
-<img src="images/figma/49-4534-imgHeart.svg" alt="" width="20" height="20" loading="lazy">
-<img class="car-card__action-active" src="images/card/favorite-active.svg" alt="" width="20" height="20" loading="lazy">
-</button>
-</div>
-
-
-
-</div>
-<div class="car-card__body">
-
-<div class="car-card__dots" aria-label="Выбрать фотографию"></div>
-
-<div class="car-card__heading">
-  <h3>
-    
-     <a class="ui-link" href="car.html">KIA K5 </a> </h3>
-  
   
     <div class="car-card__colors" role="group" aria-label="Доступные цвета">
   <button class="car-card__swatch car-card__swatch--light-gray" type="button" aria-label="Светло-серый" aria-pressed="false"></button>
@@ -2531,6 +2356,163 @@
   <h3>
     
      <a class="ui-link" href="car.html">KIA K5 </a> </h3>
+  
+  
+  
+    <div class="car-card__colors" role="group" aria-label="Доступные цвета">
+  <button class="car-card__swatch car-card__swatch--light-gray" type="button" aria-label="Светло-серый" aria-pressed="false"></button>
+  <button class="car-card__swatch car-card__swatch--graphite" type="button" aria-label="Графитовый" aria-pressed="false"></button>
+  <button class="car-card__swatch car-card__swatch--black" type="button" aria-label="Чёрный" aria-pressed="false"></button>
+  <button class="car-card__swatch car-card__swatch--silver" type="button" aria-label="Серебристый" aria-pressed="false"></button>
+  <button class="car-card__swatch car-card__swatch--gray" type="button" aria-label="Серый" aria-pressed="true"></button>
+  <button class="car-card__swatch car-card__swatch--blue" type="button" aria-label="Синий" aria-pressed="false"></button>
+  <button class="car-card__swatch car-card__swatch--red" type="button" aria-label="Красный" aria-pressed="false"></button>
+</div>
+
+  
+  
+</div>
+<p class="car-card__status">
+<img class="" src="images/figma/49-4534-imgDot.svg" alt="" loading="lazy">в наличии</p>
+
+
+
+
+  <p class="car-card__spec car-card__spec--desktop">Сигнатур, 2.0 6AT (160 л.с.) FWD</p>
+  
+    <div class="car-card__mobile-trim">
+       <details class="car-trim" name="inventory-trim">
+  <summary class="car-trim__toggle">
+    <span class="car-trim__value">Сигнатур, 2.0 6AT (160 л.с.) FWD</span>
+    <span class="ui-icon ui-icon--chevron-down" aria-hidden="true"></span>
+  </summary>
+  <div class="car-trim__menu" aria-label="Комплектации KIA K5">
+    <div class="car-trim__group">
+      <p>2.0 6AT (160 л.с.) FWD</p>
+      <button type="button" data-trim="Ноблес" aria-pressed="false">Ноблес / Noblesse</button>
+      <button type="button" data-trim="Престиж" aria-pressed="false">Престиж / Prestige</button>
+      <button type="button" data-trim="Сигнатур" aria-pressed="true">Сигнатур / Signature</button>
+    </div>
+    <div class="car-trim__group">
+      <p>2.5 8AT (191 л.с.) FWD</p>
+      <button type="button" data-trim="LXS" aria-pressed="false">LXS</button>
+      <button type="button" data-trim="GT-Line" aria-pressed="false">GT-Line</button>
+    </div>
+  </div>
+</details>
+ 
+      
+    </div>
+  
+
+<div class="car-card__price">
+<div>
+<del>3 029 000 ₽</del> <span class="badge">-30%</span>
+</div>
+<div class="car-card__amount">
+<p>
+ <small>от</small>  2 352 000 ₽</p>
+<a href="credit.html#vehicle-finance">от 12 329 ₽/мес</a>
+</div>
+</div>
+<a class="button button--card button--dark" href="#question" data-offer-request aria-haspopup="dialog" aria-controls="offer-request"><span><span class="car-card__desktop-action">купить </span>в кредит</span><img class="" src="images/figma/49-4534-imgArrowNarrowRight.svg" alt="" loading="lazy">
+</a>
+<a class="button button--card button--blue button--trade-in" href="trade-in.html#trade-evaluation" data-offer-request aria-haspopup="dialog" aria-controls="offer-request"><span><span class="car-card__desktop-action">обменять </span>в трейд ин</span><img class="" src="images/figma/49-4534-imgRefreshCw05.svg" alt="" loading="lazy">
+</a>
+</div>
+</article>
+
+
+        
+          <article class="car-card car-card--mobile-only">
+<div class="car-card__media">
+
+  <a class="car-card__mobile-payment" href="credit.html#vehicle-finance"><small>от</small> 12 329 ₽/мес</a>
+
+
+
+
+<div class="swiper car-card__slider" aria-label="Фотографии KIA K5">
+  <div class="swiper-wrapper">
+    
+      <div class="swiper-slide car-card__slide">
+        
+
+<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
+
+
+
+
+      </div>
+    
+      <div class="swiper-slide car-card__slide">
+        
+
+<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
+
+
+
+
+      </div>
+    
+      <div class="swiper-slide car-card__slide">
+        
+
+<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
+
+
+
+
+      </div>
+    
+      <div class="swiper-slide car-card__slide">
+        
+
+<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
+
+
+
+
+      </div>
+    
+      <div class="swiper-slide car-card__slide">
+        
+
+<img class="car-card__image car-photo" src="images/catalog/kia-k5-card.png" width="295" height="201" alt="KIA K5" loading="lazy">
+
+
+
+
+      </div>
+    
+  </div>
+</div>
+
+
+
+  <div class="car-card__tools">
+<button class="car-card__action" type="button" aria-label="Сравнить KIA K5" aria-pressed="false">
+<img src="images/figma/49-4534-imgScales01.svg" alt="" width="20" height="20" loading="lazy">
+<img class="car-card__action-active" src="images/card/compare-active.svg" alt="" width="20" height="20" loading="lazy">
+</button>
+<button class="car-card__action" type="button" aria-label="Добавить KIA K5 в избранное" aria-pressed="false">
+<img src="images/figma/49-4534-imgHeart.svg" alt="" width="20" height="20" loading="lazy">
+<img class="car-card__action-active" src="images/card/favorite-active.svg" alt="" width="20" height="20" loading="lazy">
+</button>
+</div>
+
+
+
+</div>
+<div class="car-card__body">
+
+<div class="car-card__dots" aria-label="Выбрать фотографию"></div>
+
+<div class="car-card__heading">
+  <h3>
+    
+     <a class="ui-link" href="car.html">KIA K5 </a> </h3>
+  
   
   
     <div class="car-card__colors" role="group" aria-label="Доступные цвета">
