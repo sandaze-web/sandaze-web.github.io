@@ -526,6 +526,30 @@ html {
   width: 20px;
   flex: none;
 }
+.haval-button__label {
+  display: block;
+  line-height: 1.25;
+}
+.haval-button__arrow {
+  display: grid;
+  flex: none;
+  width: 1.25em;
+  aspect-ratio: 1;
+  translate: 0 -0.08em;
+}
+.haval-button__arrow img {
+  display: block;
+  grid-area: 1/1;
+  width: 100%;
+  height: auto;
+  transition: opacity 280ms ease-in-out;
+}
+.haval-button__arrow img:first-child {
+  opacity: calc(1 - var(--button-arrow-hover, 0));
+}
+.haval-button__arrow img:last-child {
+  opacity: var(--button-arrow-hover, 0);
+}
 .haval-button--small {
   padding: 9px 14px;
   font-size: 14px;
@@ -544,6 +568,40 @@ html {
     border-color: transparent;
   }
 }
+@media (hover: hover) {
+  .haval-button--outline-light:not(:disabled):not([aria-disabled=true]):hover {
+    background: #f4f7fc;
+    color: #0b0d0c;
+    border-color: #0b0d0c;
+    --button-arrow-hover: 1;
+  }
+}
+.haval-button--outline-light:not(:disabled):not([aria-disabled=true]):focus-visible {
+  background: #f4f7fc;
+  color: #0b0d0c;
+  border-color: #0b0d0c;
+  --button-arrow-hover: 1;
+}
+@media (hover: hover) {
+  .haval-button--outline-dark:not(:disabled):not([aria-disabled=true]):hover {
+    background: #0a2039;
+    color: #e7f5ff;
+    border-color: #f4f7fc;
+    --button-arrow-hover: 1;
+    --button-icon-filter: brightness(0) invert(1);
+  }
+}
+.haval-button--outline-dark:not(:disabled):not([aria-disabled=true]):focus-visible {
+  background: #0a2039;
+  color: #e7f5ff;
+  border-color: #f4f7fc;
+  --button-arrow-hover: 1;
+  --button-icon-filter: brightness(0) invert(1);
+}
+.haval-button--outline-dark > img {
+  filter: var(--button-icon-filter, none);
+  transition: filter 280ms ease-in-out;
+}
 
 html {
   scroll-behavior: smooth;
@@ -553,7 +611,7 @@ html {
   html {
     scroll-behavior: auto;
   }
-  .haval-button, .haval-button::before {
+  .haval-button, .haval-button::before, .haval-button__arrow img, .haval-button--outline-dark > img {
     transition: none;
   }
 }
@@ -820,7 +878,7 @@ html {
   color: #f4f7fc;
 }
 .hero__scene {
-  background: #0a2039 url("../images/haval/hero-desktop.png") 71.1% top/max(125.94%, 1350px) auto no-repeat;
+  background: #0a2039 url("../images/haval/hero-desktop.png") right top/cover no-repeat;
 }
 .hero__container {
   min-height: clamp(675px, 53.333vw, 1440px);
@@ -848,13 +906,6 @@ html {
 }
 .hero__title span {
   display: block;
-}
-.hero__mark {
-  position: absolute;
-  width: clamp(75px, 8.4vw, 161.4px);
-  right: 7.3%;
-  top: 74%;
-  pointer-events: none;
 }
 .hero__intro > p {
   max-width: 567px;
@@ -932,11 +983,6 @@ html {
   }
   .hero__break {
     display: none;
-  }
-  .hero__mark {
-    top: 63%;
-    right: 73px;
-    width: 84px;
   }
   .hero__intro > p {
     max-width: none;
@@ -1073,16 +1119,6 @@ html {
 .car-card__actions .haval-button {
   padding-inline: 6px;
   font-size: clamp(9px, 0.833vw, 16px);
-}
-.car-card__actions .haval-button span {
-  display: block;
-  line-height: 1.25;
-}
-.car-card__actions .haval-button img {
-  width: 1.25em;
-  height: 1.25em;
-  object-fit: contain;
-  translate: 0 -0.08em;
 }
 
 @media (max-width: 1000px) {
@@ -2085,6 +2121,22 @@ html {
   white-space: nowrap;
 }
 
+@media (min-width: 701px) and (hover: hover) {
+  .vehicle-overview__buttons .haval-button--outline:not(:disabled):not([aria-disabled=true]):hover {
+    background: #f4f7fc;
+    color: #0b0d0c;
+    border-color: #0b0d0c;
+    --button-arrow-hover: 1;
+  }
+}
+@media (min-width: 701px) {
+  .vehicle-overview__buttons .haval-button--outline:not(:disabled):not([aria-disabled=true]):focus-visible {
+    background: #f4f7fc;
+    color: #0b0d0c;
+    border-color: #0b0d0c;
+    --button-arrow-hover: 1;
+  }
+}
 .vehicle-slider {
   position: relative;
   min-width: 0;
@@ -2265,25 +2317,32 @@ html {
   .vehicle-overview__buttons .haval-button:last-child::before {
     background: linear-gradient(#abc2d2, #5998c7);
   }
-}
-@media (max-width: 700px) and (hover: hover) {
-  .vehicle-overview__buttons .haval-button:first-child:hover {
-    border-color: transparent;
-  }
-}
-@media (max-width: 700px) {
   .vehicle-slider__controls button {
     width: 34px;
   }
-}
-@media (max-width: 700px) {
   .vehicle-slider__controls img {
     width: 26px;
   }
-}
-@media (max-width: 700px) {
   .vehicle-page .vehicle-overview__benefits li {
     border: 1px solid #fff;
+  }
+}
+@media (max-width: 700px) and (hover: hover) {
+  .vehicle-page:not(.special-offer-page) .vehicle-overview__buttons .haval-button:first-child:not(:disabled):not([aria-disabled=true]):hover {
+    background: #0a2039;
+    color: #e7f5ff;
+    border-color: #f4f7fc;
+    --button-arrow-hover: 1;
+    --button-icon-filter: brightness(0) invert(1);
+  }
+}
+@media (max-width: 700px) {
+  .vehicle-page:not(.special-offer-page) .vehicle-overview__buttons .haval-button:first-child:not(:disabled):not([aria-disabled=true]):focus-visible {
+    background: #0a2039;
+    color: #e7f5ff;
+    border-color: #f4f7fc;
+    --button-arrow-hover: 1;
+    --button-icon-filter: brightness(0) invert(1);
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2877,11 +2936,6 @@ html {
     border-radius: 0;
   }
 }
-@media (hover: hover) {
-  .special-offer-page .vehicle-overview__buttons .haval-button:last-child:hover {
-    border-color: transparent;
-  }
-}
 @media (max-width: 700px) {
   .special-offer-page .vehicle-breadcrumbs {
     margin-block: 24px 20px;
@@ -2917,18 +2971,46 @@ html {
   .special-offer-page .vehicle-overview__buttons .haval-button:last-child {
     color: #000;
   }
+}
+@media (max-width: 700px) and (hover: hover) {
+  .special-offer-page .vehicle-overview__buttons .haval-button:last-child:not(:disabled):not([aria-disabled=true]):hover {
+    background: #0a2039;
+    color: #e7f5ff;
+    border-color: #f4f7fc;
+    --button-arrow-hover: 1;
+    --button-icon-filter: brightness(0) invert(1);
+  }
+}
+@media (max-width: 700px) {
+  .special-offer-page .vehicle-overview__buttons .haval-button:last-child:not(:disabled):not([aria-disabled=true]):focus-visible {
+    background: #0a2039;
+    color: #e7f5ff;
+    border-color: #f4f7fc;
+    --button-arrow-hover: 1;
+    --button-icon-filter: brightness(0) invert(1);
+  }
+}
+@media (max-width: 700px) {
   .special-offer-page .offer-plate--front {
     top: 63.26%;
   }
+}
+@media (max-width: 700px) {
   .special-offer-page .offer-plate--side {
     top: 70.16%;
   }
+}
+@media (max-width: 700px) {
   .special-offer-page .offer-plate--rear {
     top: 48.2%;
   }
+}
+@media (max-width: 700px) {
   .special-offer-page .vehicle-actions__container {
     grid-template-columns: minmax(0, 1fr);
   }
+}
+@media (max-width: 700px) {
   .special-offer-page .vehicle-actions__title {
     font-size: clamp(14px, 4.4444vw, 16px);
     overflow-wrap: anywhere;
