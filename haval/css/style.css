@@ -1491,6 +1491,9 @@ html {
   .credit__model {
     min-height: 47px;
   }
+  .credit__model h3 {
+    font-size: 20px;
+  }
   .credit__model p {
     font-size: 12px;
     line-height: 1.3;
@@ -2870,38 +2873,6 @@ html {
 .special-offer-page .vehicle-overview__buttons .haval-button:last-child::before {
   background: none;
 }
-.special-offer-page .vehicle-overview__gallery figure {
-  position: relative;
-}
-.special-offer-page .vehicle-overview__gallery .offer-plate {
-  position: absolute;
-  z-index: 1;
-  display: block;
-  height: auto;
-  pointer-events: none;
-  object-fit: contain;
-}
-.special-offer-page .vehicle-overview__gallery .offer-plate img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-.special-offer-page .offer-plate--front {
-  left: 85.36%;
-  top: 54.36%;
-  width: 8.74%;
-}
-.special-offer-page .offer-plate--side {
-  left: 38.4%;
-  top: 63.85%;
-  width: 17.9%;
-}
-.special-offer-page .offer-plate--rear {
-  left: 80.66%;
-  top: 33%;
-  width: 9.74%;
-}
 .special-offer-page .vehicle-slider--swiper {
   overflow: hidden;
 }
@@ -2988,21 +2959,6 @@ html {
     border-color: #f4f7fc;
     --button-arrow-hover: 1;
     --button-icon-filter: brightness(0) invert(1);
-  }
-}
-@media (max-width: 700px) {
-  .special-offer-page .offer-plate--front {
-    top: 63.26%;
-  }
-}
-@media (max-width: 700px) {
-  .special-offer-page .offer-plate--side {
-    top: 70.16%;
-  }
-}
-@media (max-width: 700px) {
-  .special-offer-page .offer-plate--rear {
-    top: 48.2%;
   }
 }
 @media (max-width: 700px) {
